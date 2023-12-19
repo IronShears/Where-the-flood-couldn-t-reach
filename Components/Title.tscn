@@ -1,0 +1,66 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Source/RoomButtons.tres" type="Theme" id=1]
+[ext_resource path="res://Source/Title.gd" type="Script" id=2]
+[ext_resource path="res://Source/CRT.tres" type="Material" id=3]
+[ext_resource path="res://Art/Backgrounds/Filter.png" type="Texture" id=4]
+[ext_resource path="res://Sounds/cavein.wav" type="AudioStream" id=5]
+
+[node name="world" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 301.0
+margin_bottom = 201.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="wakeUp" type="Button" parent="."]
+visible = false
+margin_left = 115.0
+margin_top = 91.0
+margin_right = 189.0
+margin_bottom = 104.0
+theme = ExtResource( 1 )
+text = "> Wake up"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="KeepOn" type="Button" parent="."]
+visible = false
+margin_left = 76.0
+margin_top = 83.0
+margin_right = 230.0
+margin_bottom = 96.0
+theme = ExtResource( 1 )
+text = ">Keep CRT Filter On"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TurnOff" type="Button" parent="."]
+visible = false
+margin_left = 72.0
+margin_top = 99.0
+margin_right = 234.0
+margin_bottom = 112.0
+theme = ExtResource( 1 )
+text = ">Turn CRT Filter Off"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="tumble" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[node name="Filter" type="Sprite" parent="."]
+material = ExtResource( 3 )
+texture = ExtResource( 4 )
+centered = false
+
+[connection signal="pressed" from="wakeUp" to="." method="_on_wakeUp_pressed"]
+[connection signal="pressed" from="KeepOn" to="." method="_on_KeepOn_pressed"]
+[connection signal="pressed" from="TurnOff" to="." method="_on_TurnOff_pressed"]

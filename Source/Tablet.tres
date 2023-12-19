@@ -1,0 +1,81 @@
+[gd_resource type="Theme" load_steps=17 format=2]
+
+[ext_resource path="res://Components/Fonts/dogica.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Components/Fonts/basis33.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Components/Fonts/dogicaStrikethrough.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=12]
+size = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxEmpty" id=13]
+content_margin_left = 0.0
+
+[sub_resource type="StyleBoxEmpty" id=14]
+
+[sub_resource type="StyleBoxEmpty" id=15]
+content_margin_left = 2.0
+content_margin_right = 0.0
+content_margin_top = 3.0
+content_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxEmpty" id=16]
+content_margin_left = 0.0
+content_margin_right = 0.0
+content_margin_top = 3.0
+content_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxEmpty" id=17]
+content_margin_left = 0.0
+content_margin_right = 0.0
+content_margin_top = 3.0
+content_margin_bottom = 3.0
+
+[sub_resource type="DynamicFont" id=19]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=18]
+extra_spacing_bottom = -4
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.737255, 0.74902, 0.752941, 1 )
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.309804, 0.501961, 0.627451, 1 )
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id=11]
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id=8]
+content_margin_left = 1.0
+bg_color = Color( 0.239216, 0.266667, 0.27451, 1 )
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id=9]
+anti_aliasing = false
+
+[resource]
+Button/colors/font_color = Color( 0.309804, 0.501961, 0.627451, 1 )
+Button/colors/font_color_focus = Color( 0.309804, 0.501961, 0.627451, 1 )
+Button/colors/font_color_hover = Color( 0.400848, 0.63969, 0.722656, 1 )
+Button/colors/font_color_pressed = Color( 0.309804, 0.501961, 0.627451, 1 )
+Button/fonts/font = SubResource( 12 )
+Button/styles/disabled = SubResource( 13 )
+Button/styles/focus = SubResource( 14 )
+Button/styles/hover = SubResource( 15 )
+Button/styles/normal = SubResource( 16 )
+Button/styles/pressed = SubResource( 17 )
+RichTextLabel/fonts/italics_font = SubResource( 19 )
+RichTextLabel/fonts/normal_font = SubResource( 18 )
+VScrollBar/styles/grabber = SubResource( 7 )
+VScrollBar/styles/grabber_highlight = SubResource( 10 )
+VScrollBar/styles/grabber_pressed = SubResource( 11 )
+VScrollBar/styles/scroll = SubResource( 8 )
+VScrollBar/styles/scroll_focus = SubResource( 9 )

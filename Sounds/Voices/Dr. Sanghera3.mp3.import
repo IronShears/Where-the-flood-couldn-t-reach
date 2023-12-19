@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Dr. Sanghera3.mp3-eb1c44c5576689e468691550080c033b.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Voices/Dr. Sanghera3.mp3"
+dest_files=[ "res://.import/Dr. Sanghera3.mp3-eb1c44c5576689e468691550080c033b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

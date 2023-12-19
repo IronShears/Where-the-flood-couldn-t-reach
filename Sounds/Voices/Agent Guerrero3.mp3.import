@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Agent Guerrero3.mp3-448b9a8fbadf241055921157a5997d4d.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Voices/Agent Guerrero3.mp3"
+dest_files=[ "res://.import/Agent Guerrero3.mp3-448b9a8fbadf241055921157a5997d4d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

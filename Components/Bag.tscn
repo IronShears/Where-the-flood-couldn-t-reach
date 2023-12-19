@@ -1,0 +1,382 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Components/Textures/Tablet.png" type="Texture" id=1]
+[ext_resource path="res://Source/Tablet.tres" type="Theme" id=2]
+[ext_resource path="res://Components/Tablet.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Components/Textures/Buckle.png" type="Texture" id=4]
+[ext_resource path="res://Components/Textures/BagZoom.png" type="Texture" id=5]
+[ext_resource path="res://Components/Bag.gd" type="Script" id=6]
+[ext_resource path="res://Components/Item.gd" type="Script" id=7]
+[ext_resource path="res://Source/DialogueTheme.tres" type="Theme" id=8]
+[ext_resource path="res://Components/Textures/BuckleHover.png" type="Texture" id=9]
+
+[node name="Bag" type="Node2D"]
+script = ExtResource( 6 )
+
+[node name="Bag" type="Sprite" parent="."]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Bag"]
+margin_left = 60.0
+margin_top = 27.0
+margin_right = 245.0
+margin_bottom = 148.0
+theme = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Bag/ScrollContainer"]
+margin_right = 41.0
+margin_bottom = 41.0
+theme = ExtResource( 2 )
+columns = 4
+
+[node name="Tablet" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+margin_right = 41.0
+margin_bottom = 41.0
+texture_normal = ExtResource( 1 )
+
+[node name="Item0" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 86.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item1" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item2" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item3" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item4" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item5" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item6" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item7" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item8" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item9" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item10" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item11" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item12" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item13" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item14" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item15" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item16" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item17" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item18" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item19" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item20" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item21" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item22" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item23" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item24" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="Item25" type="TextureButton" parent="Bag/ScrollContainer/GridContainer"]
+visible = false
+margin_left = 45.0
+margin_right = 45.0
+margin_bottom = 41.0
+script = ExtResource( 7 )
+
+[node name="close" type="TextureButton" parent="Bag"]
+margin_left = 126.0
+margin_top = 5.0
+margin_right = 171.0
+margin_bottom = 30.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FlavorText" type="RichTextLabel" parent="Bag"]
+margin_left = 50.0
+margin_top = 156.0
+margin_right = 262.0
+margin_bottom = 196.0
+theme = ExtResource( 8 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tablet" parent="." instance=ExtResource( 3 )]
+visible = false
+
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Tablet" to="." method="_on_Tablet_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Tablet" to="." method="_on_Tablet_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Tablet" to="." method="_on_Tablet_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item0" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item0" to="Bag/ScrollContainer/GridContainer/Item0" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item0" to="Bag/ScrollContainer/GridContainer/Item0" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item0" to="Bag/ScrollContainer/GridContainer/Item0" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item0" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item1" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item1" to="Bag/ScrollContainer/GridContainer/Item1" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item1" to="Bag/ScrollContainer/GridContainer/Item1" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item1" to="Bag/ScrollContainer/GridContainer/Item1" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item1" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item2" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item2" to="Bag/ScrollContainer/GridContainer/Item2" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item2" to="Bag/ScrollContainer/GridContainer/Item2" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item2" to="Bag/ScrollContainer/GridContainer/Item2" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item2" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item3" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item3" to="Bag/ScrollContainer/GridContainer/Item3" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item3" to="Bag/ScrollContainer/GridContainer/Item3" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item3" to="Bag/ScrollContainer/GridContainer/Item3" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item3" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item4" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item4" to="Bag/ScrollContainer/GridContainer/Item4" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item4" to="Bag/ScrollContainer/GridContainer/Item4" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item4" to="Bag/ScrollContainer/GridContainer/Item4" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item4" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item5" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item5" to="Bag/ScrollContainer/GridContainer/Item5" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item5" to="Bag/ScrollContainer/GridContainer/Item5" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item5" to="Bag/ScrollContainer/GridContainer/Item5" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item5" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item6" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item6" to="Bag/ScrollContainer/GridContainer/Item6" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item6" to="Bag/ScrollContainer/GridContainer/Item6" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item6" to="Bag/ScrollContainer/GridContainer/Item6" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item6" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item7" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item7" to="Bag/ScrollContainer/GridContainer/Item7" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item7" to="Bag/ScrollContainer/GridContainer/Item7" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item7" to="Bag/ScrollContainer/GridContainer/Item7" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item7" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item8" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item8" to="Bag/ScrollContainer/GridContainer/Item8" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item8" to="Bag/ScrollContainer/GridContainer/Item8" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item8" to="Bag/ScrollContainer/GridContainer/Item8" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item8" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item9" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item9" to="Bag/ScrollContainer/GridContainer/Item9" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item9" to="Bag/ScrollContainer/GridContainer/Item9" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item9" to="Bag/ScrollContainer/GridContainer/Item9" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item9" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item10" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item10" to="Bag/ScrollContainer/GridContainer/Item10" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item10" to="Bag/ScrollContainer/GridContainer/Item10" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item10" to="Bag/ScrollContainer/GridContainer/Item10" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item10" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item11" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item11" to="Bag/ScrollContainer/GridContainer/Item11" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item11" to="Bag/ScrollContainer/GridContainer/Item11" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item11" to="Bag/ScrollContainer/GridContainer/Item11" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item11" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item12" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item12" to="Bag/ScrollContainer/GridContainer/Item12" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item12" to="Bag/ScrollContainer/GridContainer/Item12" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item12" to="Bag/ScrollContainer/GridContainer/Item12" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item12" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item13" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item13" to="Bag/ScrollContainer/GridContainer/Item13" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item13" to="Bag/ScrollContainer/GridContainer/Item13" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item13" to="Bag/ScrollContainer/GridContainer/Item13" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item13" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item14" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item14" to="Bag/ScrollContainer/GridContainer/Item14" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item14" to="Bag/ScrollContainer/GridContainer/Item14" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item14" to="Bag/ScrollContainer/GridContainer/Item14" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item14" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item15" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item15" to="Bag/ScrollContainer/GridContainer/Item15" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item15" to="Bag/ScrollContainer/GridContainer/Item15" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item15" to="Bag/ScrollContainer/GridContainer/Item15" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item15" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item16" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item16" to="Bag/ScrollContainer/GridContainer/Item16" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item16" to="Bag/ScrollContainer/GridContainer/Item16" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item16" to="Bag/ScrollContainer/GridContainer/Item16" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item16" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item17" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item17" to="Bag/ScrollContainer/GridContainer/Item17" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item17" to="Bag/ScrollContainer/GridContainer/Item17" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item17" to="Bag/ScrollContainer/GridContainer/Item17" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item17" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item18" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item18" to="Bag/ScrollContainer/GridContainer/Item18" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item18" to="Bag/ScrollContainer/GridContainer/Item18" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item18" to="Bag/ScrollContainer/GridContainer/Item18" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item18" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item19" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item19" to="Bag/ScrollContainer/GridContainer/Item19" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item19" to="Bag/ScrollContainer/GridContainer/Item19" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item19" to="Bag/ScrollContainer/GridContainer/Item19" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item19" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item20" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item20" to="Bag/ScrollContainer/GridContainer/Item20" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item20" to="Bag/ScrollContainer/GridContainer/Item20" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item20" to="Bag/ScrollContainer/GridContainer/Item20" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item20" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item21" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item21" to="Bag/ScrollContainer/GridContainer/Item21" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item21" to="Bag/ScrollContainer/GridContainer/Item21" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item21" to="Bag/ScrollContainer/GridContainer/Item21" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item21" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item22" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item22" to="Bag/ScrollContainer/GridContainer/Item22" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item22" to="Bag/ScrollContainer/GridContainer/Item22" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item22" to="Bag/ScrollContainer/GridContainer/Item22" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item22" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item23" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item23" to="Bag/ScrollContainer/GridContainer/Item23" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item23" to="Bag/ScrollContainer/GridContainer/Item23" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item23" to="Bag/ScrollContainer/GridContainer/Item23" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item23" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item24" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item24" to="Bag/ScrollContainer/GridContainer/Item24" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item24" to="Bag/ScrollContainer/GridContainer/Item24" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item24" to="Bag/ScrollContainer/GridContainer/Item24" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item24" to="." method="_on_Item_pressed"]
+[connection signal="combined" from="Bag/ScrollContainer/GridContainer/Item25" to="." method="_on_Item_combined"]
+[connection signal="mouse_entered" from="Bag/ScrollContainer/GridContainer/Item25" to="Bag/ScrollContainer/GridContainer/Item25" method="_on_Item0_mouse_entered"]
+[connection signal="mouse_exited" from="Bag/ScrollContainer/GridContainer/Item25" to="Bag/ScrollContainer/GridContainer/Item25" method="_on_Item0_mouse_exited"]
+[connection signal="pressed" from="Bag/ScrollContainer/GridContainer/Item25" to="Bag/ScrollContainer/GridContainer/Item25" method="_on_Item0_pressed"]
+[connection signal="pressed_data" from="Bag/ScrollContainer/GridContainer/Item25" to="." method="_on_Item_pressed"]
+[connection signal="pressed" from="Bag/close" to="." method="_on_close_pressed"]

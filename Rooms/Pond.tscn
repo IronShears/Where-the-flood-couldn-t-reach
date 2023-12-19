@@ -1,0 +1,2418 @@
+[gd_scene load_steps=223 format=2]
+
+[ext_resource path="res://Art/Backgrounds/water.png" type="Texture" id=1]
+[ext_resource path="res://Source/Water.tres" type="Material" id=2]
+[ext_resource path="res://Source/RoomButtons.tres" type="Theme" id=3]
+[ext_resource path="res://Source/roomHighlight.gd" type="Script" id=4]
+[ext_resource path="res://Art/Sprites/placement.png" type="Texture" id=5]
+[ext_resource path="res://Art/Sprites/driftWormCageBait.png" type="Texture" id=6]
+[ext_resource path="res://Art/Sprites/driftWorm1stg1.png" type="Texture" id=7]
+[ext_resource path="res://Art/Sprites/isopodRadiodontBait3stg1.png" type="Texture" id=8]
+[ext_resource path="res://Art/Sprites/isopodRadiodontBait3stg2.png" type="Texture" id=9]
+[ext_resource path="res://Source/crabTrapCrinoid.gd" type="Script" id=10]
+[ext_resource path="res://Art/Sprites/lacemouthSwim.png" type="Texture" id=11]
+[ext_resource path="res://Source/lacemouth.gd" type="Script" id=12]
+[ext_resource path="res://Source/lacemouthhighlight.tres" type="Material" id=13]
+[ext_resource path="res://Art/Sprites/GlitchyEel/lacemouthTrapped6.png" type="Texture" id=14]
+[ext_resource path="res://Art/Sprites/GlitchyEel/lacemouthTrapped9.png" type="Texture" id=15]
+[ext_resource path="res://Art/Sprites/GlitchyEel/lacemouthTrapped3.png" type="Texture" id=16]
+[ext_resource path="res://Source/crinoidReplace1.tres" type="Material" id=17]
+[ext_resource path="res://Art/Sprites/basketCrinoidSmall.png" type="Texture" id=18]
+[ext_resource path="res://Art/Sprites/GlitchyEel/lacemouthTrapped7.png" type="Texture" id=19]
+[ext_resource path="res://Art/Sprites/GlitchyEel/lacemouthTrapped4.png" type="Texture" id=20]
+[ext_resource path="res://Art/Sprites/GlitchyEel/lacemouthTrapped5.png" type="Texture" id=21]
+[ext_resource path="res://Art/Sprites/GlitchyEel/lacemouthTrapped8.png" type="Texture" id=22]
+[ext_resource path="res://Art/Sprites/GlitchyEel/lacemouthTrapped2.png" type="Texture" id=23]
+[ext_resource path="res://Art/Sprites/GlitchyEel/lacemouthTrapped1.png" type="Texture" id=24]
+[ext_resource path="res://Art/Sprites/GlitchyEel/lacemouthTrapped10.png" type="Texture" id=25]
+[ext_resource path="res://Source/lacemouthHighlightTop.tres" type="Material" id=26]
+[ext_resource path="res://Art/Sprites/graptolite.png" type="Texture" id=27]
+[ext_resource path="res://Source/graptolite.gd" type="Script" id=28]
+[ext_resource path="res://Art/Sprites/driftWormJet.png" type="Texture" id=29]
+[ext_resource path="res://Art/Sprites/lacemouthBait2Stg1.png" type="Texture" id=30]
+[ext_resource path="res://Source/DriftWorm.gd" type="Script" id=31]
+[ext_resource path="res://Art/Sprites/driftWormJet2png.png" type="Texture" id=32]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae1NoSprites2.png" type="Texture" id=33]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae1NoSprites7.png" type="Texture" id=34]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae1NoSprites5.png" type="Texture" id=35]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae1NoSprites11.png" type="Texture" id=36]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae1NoSprites10.png" type="Texture" id=37]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae1NoSprites9.png" type="Texture" id=38]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae1NoSprites12.png" type="Texture" id=39]
+[ext_resource path="res://Art/Sprites/lacemouthBait2stg2.png" type="Texture" id=40]
+[ext_resource path="res://Art/Sprites/driftWormJet1.png" type="Texture" id=41]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae1NoSprites4.png" type="Texture" id=42]
+[ext_resource path="res://Art/Sprites/giantPikaiid.png" type="Texture" id=43]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae1NoSprites8.png" type="Texture" id=44]
+[ext_resource path="res://Components/Textures/TextBox2.png" type="Texture" id=45]
+[ext_resource path="res://Source/DialogueTheme.tres" type="Theme" id=46]
+[ext_resource path="res://Source/knifePikaiid.gd" type="Script" id=47]
+[ext_resource path="res://Rooms/Contemplate.gd" type="Script" id=48]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae1NoSprites3.png" type="Texture" id=49]
+[ext_resource path="res://Art/Sprites/slugPikaiid.png" type="Texture" id=50]
+[ext_resource path="res://Art/Backgrounds/Animations/pond1.png" type="Texture" id=56]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae1NoSprites6.png" type="Texture" id=58]
+[ext_resource path="res://Source/algae1.tres" type="Material" id=60]
+[ext_resource path="res://Art/Sprites/KnifePikaiidSwim.png" type="Texture" id=61]
+[ext_resource path="res://Art/Sprites/KnifePikaiidScrape.png" type="Texture" id=62]
+[ext_resource path="res://Art/Backgrounds/Filter.png" type="Texture" id=63]
+[ext_resource path="res://Source/CRT.tres" type="Material" id=64]
+[ext_resource path="res://Source/Algae1Highlight.gd" type="Script" id=66]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae29NoSprites7.png" type="Texture" id=299]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae29NoSprites4.png" type="Texture" id=307]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae29NoSprites6.png" type="Texture" id=309]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae29NoSprites11.png" type="Texture" id=313]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae29NoSprites5.png" type="Texture" id=318]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae29NoSprites12.png" type="Texture" id=319]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae29NoSprites10.png" type="Texture" id=322]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae29NoSprites2.png" type="Texture" id=328]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae29NoSprites1.png" type="Texture" id=329]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae29NoSprites9.png" type="Texture" id=330]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae29NoSprites8.png" type="Texture" id=332]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae29NoSprites3.png" type="Texture" id=341]
+[ext_resource path="res://Source/highlight.gd" type="Script" id=343]
+[ext_resource path="res://Components/Bag.tscn" type="PackedScene" id=344]
+[ext_resource path="res://Components/Cursor.tscn" type="PackedScene" id=345]
+[ext_resource path="res://Components/Actions.tscn" type="PackedScene" id=346]
+[ext_resource path="res://Components/Dialogue.tscn" type="PackedScene" id=347]
+[ext_resource path="res://Art/Sprites/Radio.png" type="Texture" id=348]
+[ext_resource path="res://Components/Textures/Bag.png" type="Texture" id=349]
+[ext_resource path="res://Sounds/CaveLoop.wav" type="AudioStream" id=350]
+[ext_resource path="res://Rooms/Pond.gd" type="Script" id=351]
+[ext_resource path="res://Art/Backgrounds/pondhighlight.png" type="Texture" id=352]
+[ext_resource path="res://Art/Backgrounds/pondmidlight.png" type="Texture" id=353]
+[ext_resource path="res://Art/Backgrounds/pondhighlightWhite.png" type="Texture" id=354]
+[ext_resource path="res://Art/Backgrounds/pondmidlightWhite.png" type="Texture" id=355]
+[ext_resource path="res://Art/Backgrounds/Animations/GlitchyAlgae/Algae1NoSprites1.png" type="Texture" id=356]
+[ext_resource path="res://Source/algaeReplace1.tres" type="Material" id=359]
+[ext_resource path="res://Source/AlgaeTopHighlight.tres" type="Material" id=360]
+[ext_resource path="res://Art/Sprites/basketCrinoid.png" type="Texture" id=361]
+
+[sub_resource type="Shader" id=70]
+code = "// original wind shader from https://github.com/Maujoe/godot-simple-wind-shader-2d/tree/master/assets/maujoe.simple_wind_shader_2d
+// original script modified by HungryProton so that the assets are moving differently : https://pastebin.com/VL3AfV8D
+//
+// speed - The speed of the wind movement.
+// minStrength - The minimal strength of the wind movement.
+// maxStrength - The maximal strength of the wind movement.
+// strengthScale - Scalefactor for the wind strength.
+// interval - The time between minimal and maximal strength changes.
+// detail - The detail (number of waves) of the wind movement.
+// distortion - The strength of geometry distortion.
+// heightOffset - The height where the wind begins to move. By default 0.0.
+
+shader_type canvas_item;
+render_mode blend_mix;
+
+// Wind settings.
+uniform float speed = 1.0;
+uniform float minStrength : hint_range(0.0, 1.0) = 0.05;
+uniform float maxStrength : hint_range(0.0, 1.0) = 0.01;
+uniform float strengthScale = 100.0;
+uniform float interval = 3.5;
+uniform float detail = 1.0;
+uniform float distortion : hint_range(0.0, 1.0);
+uniform float heightOffset : hint_range(0.0, 1.0);
+
+// With the offset value, you can if you want different moves for each asset. Just put a random value (1, 2, 3) in the editor. Don't forget to mark the material as unique if you use this
+uniform float offset = 0; 
+
+
+float getWind(vec2 vertex, vec2 uv, float time){
+    float diff = pow(maxStrength - minStrength, 2.0);
+    float strength = clamp(minStrength + diff + sin(time / interval) * diff, minStrength, maxStrength) * strengthScale;
+    float wind = (cos(time) + cos(time * detail)) * strength * max(0.0, (1.0-uv.y) - heightOffset);
+    
+    return wind; 
+}
+
+void vertex() {
+    vec4 pos = WORLD_MATRIX * vec4(0.0, 0.0, 0.0, 1.0);
+    float time = TIME * speed + offset;
+    //float time = TIME * speed + pos.x * pos.y  ; not working when moving...
+    VERTEX.x += getWind(VERTEX.xy, UV, time);
+}"
+
+[sub_resource type="ShaderMaterial" id=71]
+shader = SubResource( 70 )
+shader_param/speed = 1.0
+shader_param/minStrength = 0.05
+shader_param/maxStrength = 0.156
+shader_param/strengthScale = 100.0
+shader_param/interval = 3.5
+shader_param/detail = 1.0
+shader_param/distortion = 0.437
+shader_param/heightOffset = null
+shader_param/offset = 0.0
+
+[sub_resource type="AtlasTexture" id=58]
+atlas = ExtResource( 56 )
+region = Rect2( 0, 0, 300, 130 )
+
+[sub_resource type="AtlasTexture" id=59]
+atlas = ExtResource( 56 )
+region = Rect2( 300, 0, 300, 130 )
+
+[sub_resource type="AtlasTexture" id=60]
+atlas = ExtResource( 56 )
+region = Rect2( 600, 0, 300, 130 )
+
+[sub_resource type="AtlasTexture" id=61]
+atlas = ExtResource( 56 )
+region = Rect2( 900, 0, 300, 130 )
+
+[sub_resource type="AtlasTexture" id=62]
+atlas = ExtResource( 56 )
+region = Rect2( 0, 130, 300, 130 )
+
+[sub_resource type="AtlasTexture" id=63]
+atlas = ExtResource( 56 )
+region = Rect2( 300, 130, 300, 130 )
+
+[sub_resource type="AtlasTexture" id=64]
+atlas = ExtResource( 56 )
+region = Rect2( 600, 130, 300, 130 )
+
+[sub_resource type="AtlasTexture" id=65]
+atlas = ExtResource( 56 )
+region = Rect2( 900, 130, 300, 130 )
+
+[sub_resource type="AtlasTexture" id=66]
+atlas = ExtResource( 56 )
+region = Rect2( 0, 260, 300, 130 )
+
+[sub_resource type="AtlasTexture" id=67]
+atlas = ExtResource( 56 )
+region = Rect2( 300, 260, 300, 130 )
+
+[sub_resource type="AtlasTexture" id=68]
+atlas = ExtResource( 56 )
+region = Rect2( 600, 260, 300, 130 )
+
+[sub_resource type="AtlasTexture" id=69]
+atlas = ExtResource( 56 )
+region = Rect2( 900, 260, 300, 130 )
+
+[sub_resource type="SpriteFrames" id=55]
+animations = [ {
+"frames": [ SubResource( 58 ), SubResource( 59 ), SubResource( 60 ), SubResource( 61 ), SubResource( 62 ), SubResource( 63 ), SubResource( 64 ), SubResource( 65 ), SubResource( 66 ), SubResource( 67 ), SubResource( 68 ), SubResource( 69 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+render_mode blend_mix;
+
+// Wind settings.
+uniform float speed = 1.0;
+uniform float interval = 3.5;
+uniform float detail = 1.0;
+uniform float strength = 1.0;
+uniform float distortion : hint_range(0.0, 1.0);
+uniform float heightOffset = 0.0;
+uniform int sprite_sheet_columns: hint_range(4,2) = 1;
+uniform int sprite_sheet_rows: hint_range(4,3) = 1;
+
+uniform vec4 original_0: hint_color;
+uniform vec4 original_1: hint_color;
+uniform vec4 original_2: hint_color;
+uniform vec4 original_3: hint_color;
+uniform vec4 original_4: hint_color;
+uniform vec4 original_5: hint_color;
+uniform vec4 original_6: hint_color;
+uniform vec4 original_7: hint_color;
+uniform vec4 replace_0: hint_color;
+uniform vec4 replace_1: hint_color;
+uniform vec4 replace_2: hint_color;
+uniform vec4 replace_3: hint_color;
+uniform vec4 replace_4: hint_color;
+uniform vec4 replace_5: hint_color;
+uniform vec4 replace_6: hint_color;
+uniform vec4 replace_7: hint_color;
+
+const float precision = 0.01;
+
+float getWind(vec2 vertex, vec2 uv, float timer){
+	vec2 pos = mix(vec2(1.0), vertex, distortion).xy;
+	float time = timer * speed + pos.x * pos.y;
+	float wind = (cos(time) + cos(detail*time)-1.0) * strength * max(0.0, (1.0-uv.y) - heightOffset);
+	
+	return wind;
+	}
+
+void vertex() {
+	VERTEX.x += getWind(VERTEX.xy, UV, TIME);
+}
+
+vec4 swap_color(vec4 color){
+	vec4 original_colors[8] = vec4[8] (original_0, original_1, original_2, original_3, original_4, original_5, original_6, original_7);
+	vec4 replace_colors[8] = vec4[8] (replace_0, replace_1, replace_2, replace_3, replace_4, replace_5, replace_6, replace_7);
+	for (int i = 0; i < 8; i ++) {
+		if (distance(color, original_colors[i]) <= precision){
+			return replace_colors[i];
+		}
+	}
+	return color;
+}
+
+
+void fragment() {
+	COLOR = swap_color(texture(TEXTURE, UV));
+}"
+
+[sub_resource type="ShaderMaterial" id=72]
+shader = SubResource( 1 )
+shader_param/speed = 3.0
+shader_param/interval = 3.5
+shader_param/detail = 1.0
+shader_param/strength = 1.0
+shader_param/distortion = 0.372
+shader_param/heightOffset = 0.0
+shader_param/sprite_sheet_columns = 1
+shader_param/sprite_sheet_rows = 1
+shader_param/original_0 = Color( 0.513726, 0.556863, 0.580392, 1 )
+shader_param/original_1 = Color( 0.486275, 0.501961, 0.513726, 1 )
+shader_param/original_2 = Color( 0.427451, 0.447059, 0.466667, 1 )
+shader_param/original_3 = Color( 0.27451, 0.290196, 0.333333, 1 )
+shader_param/original_4 = Color( 0.364706, 0.368627, 0.384314, 1 )
+shader_param/original_5 = Color( 0.180392, 0.25098, 0.298039, 1 )
+shader_param/original_6 = Color( 0.309804, 0.360784, 0.392157, 1 )
+shader_param/original_7 = Color( 0.384314, 0.427451, 0.443137, 1 )
+shader_param/replace_0 = Color( 0.431373, 0.45098, 0.501961, 1 )
+shader_param/replace_1 = Color( 0.364706, 0.384314, 0.407843, 1 )
+shader_param/replace_2 = Color( 0.317647, 0.329412, 0.356863, 1 )
+shader_param/replace_3 = Color( 0.388235, 0.392157, 0.415686, 1 )
+shader_param/replace_4 = Color( 0.282353, 0.290196, 0.321569, 1 )
+shader_param/replace_5 = Color( 0.184314, 0.211765, 0.254902, 1 )
+shader_param/replace_6 = Color( 0.208282, 0.233734, 0.273438, 1 )
+shader_param/replace_7 = Color( 0.25098, 0.247059, 0.301961, 1 )
+
+[sub_resource type="SpriteFrames" id=135]
+animations = [ {
+"frames": [ ExtResource( 24 ), ExtResource( 23 ), ExtResource( 16 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 14 ), ExtResource( 19 ), ExtResource( 22 ), ExtResource( 15 ), ExtResource( 25 ) ],
+"loop": false,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="SpriteFrames" id=40]
+animations = [ {
+"frames": [ ExtResource( 329 ), ExtResource( 328 ), ExtResource( 341 ), ExtResource( 307 ), ExtResource( 318 ), ExtResource( 309 ), ExtResource( 299 ), ExtResource( 332 ), ExtResource( 330 ), ExtResource( 322 ), ExtResource( 313 ), ExtResource( 319 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="SpriteFrames" id=13]
+animations = [ {
+"frames": [ ExtResource( 356 ), ExtResource( 33 ), ExtResource( 49 ), ExtResource( 42 ), ExtResource( 35 ), ExtResource( 58 ), ExtResource( 34 ), ExtResource( 44 ), ExtResource( 38 ), ExtResource( 37 ), ExtResource( 36 ), ExtResource( 39 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="SpriteFrames" id=121]
+animations = [ {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "driftWormBait0",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "driftWormBait1",
+"speed": 5.0
+} ]
+
+[sub_resource type="Shader" id=147]
+code = "shader_type canvas_item;
+
+
+uniform vec4 original_0: hint_color;
+uniform vec4 original_1: hint_color;
+uniform vec4 original_2: hint_color;
+uniform vec4 original_3: hint_color;
+uniform vec4 original_4: hint_color;
+uniform vec4 original_5: hint_color;
+uniform vec4 original_6: hint_color;
+uniform vec4 original_7: hint_color;
+uniform vec4 original_8: hint_color;
+uniform vec4 original_9: hint_color;
+uniform vec4 replace_0: hint_color;
+uniform vec4 replace_1: hint_color;
+uniform vec4 replace_2: hint_color;
+uniform vec4 replace_3: hint_color;
+uniform vec4 replace_4: hint_color;
+uniform vec4 replace_5: hint_color;
+uniform vec4 replace_6: hint_color;
+uniform vec4 replace_7: hint_color;
+uniform vec4 replace_8: hint_color;
+uniform vec4 replace_9: hint_color;
+
+const float precision = 0.01;
+
+
+vec4 swap_color(vec4 color){
+	vec4 original_colors[10] = vec4[10] (original_0, original_1, original_2, original_3, original_4, original_5, original_6, original_7, original_8, original_9);
+	vec4 replace_colors[10] = vec4[10] (replace_0, replace_1, replace_2, replace_3, replace_4, replace_5, replace_6, replace_7, replace_8, replace_9);
+	for (int i = 0; i < 10; i ++) {
+		if (distance(color, original_colors[i]) <= precision){
+			return replace_colors[i]; 
+		}
+	}
+	return color;
+}
+
+
+void fragment() {
+	COLOR = swap_color(texture(TEXTURE, UV));
+}"
+
+[sub_resource type="ShaderMaterial" id=148]
+shader = SubResource( 147 )
+shader_param/original_0 = Color( 0.392157, 0.376471, 0.364706, 1 )
+shader_param/original_1 = Color( 0.521569, 0.505882, 0.494118, 1 )
+shader_param/original_2 = Color( 0.662745, 0.647059, 0.643137, 1 )
+shader_param/original_3 = Color( 0.870588, 0.788235, 0.729412, 1 )
+shader_param/original_4 = null
+shader_param/original_5 = null
+shader_param/original_6 = null
+shader_param/original_7 = null
+shader_param/original_8 = null
+shader_param/original_9 = null
+shader_param/replace_0 = Color( 0.364706, 0.368627, 0.384314, 1 )
+shader_param/replace_1 = Color( 0.427451, 0.447059, 0.466667, 1 )
+shader_param/replace_2 = Color( 0.486275, 0.501961, 0.513726, 1 )
+shader_param/replace_3 = Color( 0.545098, 0.580392, 0.584314, 1 )
+shader_param/replace_4 = Color( 0, 0, 0, 1 )
+shader_param/replace_5 = null
+shader_param/replace_6 = null
+shader_param/replace_7 = null
+shader_param/replace_8 = null
+shader_param/replace_9 = null
+
+[sub_resource type="SpriteFrames" id=146]
+animations = [ {
+"frames": [ ExtResource( 30 ) ],
+"loop": true,
+"name": "lacemouthBait0",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 40 ) ],
+"loop": true,
+"name": "lacemouthBait1",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=122]
+animations = [ {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "isopodRadiodontBait1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "isopodRadiodontBait0",
+"speed": 5.0
+} ]
+
+[sub_resource type="Shader" id=183]
+code = "shader_type canvas_item;
+
+
+uniform vec4 original_0: hint_color;
+uniform vec4 original_1: hint_color;
+uniform vec4 original_2: hint_color;
+uniform vec4 original_3: hint_color;
+uniform vec4 original_4: hint_color;
+uniform vec4 original_5: hint_color;
+uniform vec4 original_6: hint_color;
+uniform vec4 original_7: hint_color;
+uniform vec4 original_8: hint_color;
+uniform vec4 original_9: hint_color;
+uniform vec4 replace_0: hint_color;
+uniform vec4 replace_1: hint_color;
+uniform vec4 replace_2: hint_color;
+uniform vec4 replace_3: hint_color;
+uniform vec4 replace_4: hint_color;
+uniform vec4 replace_5: hint_color;
+uniform vec4 replace_6: hint_color;
+uniform vec4 replace_7: hint_color;
+uniform vec4 replace_8: hint_color;
+uniform vec4 replace_9: hint_color;
+
+const float precision = 0.01;
+
+
+vec4 swap_color(vec4 color){
+	vec4 original_colors[10] = vec4[10] (original_0, original_1, original_2, original_3, original_4, original_5, original_6, original_7, original_8, original_9);
+	vec4 replace_colors[10] = vec4[10] (replace_0, replace_1, replace_2, replace_3, replace_4, replace_5, replace_6, replace_7, replace_8, replace_9);
+	for (int i = 0; i < 10; i ++) {
+		if (distance(color, original_colors[i]) <= precision){
+			return replace_colors[i]; 
+		}
+	}
+	return color;
+}
+
+
+void fragment() {
+	COLOR = swap_color(texture(TEXTURE, UV));
+}"
+
+[sub_resource type="ShaderMaterial" id=184]
+shader = SubResource( 183 )
+shader_param/original_0 = Color( 0.180392, 0.25098, 0.298039, 1 )
+shader_param/original_1 = Color( 0.513726, 0.556863, 0.580392, 1 )
+shader_param/original_2 = Color( 0.470588, 0.466667, 0.45098, 1 )
+shader_param/original_3 = Color( 0.439216, 0.478431, 0.513726, 1 )
+shader_param/original_4 = Color( 0.607843, 0.623529, 0.670588, 1 )
+shader_param/original_5 = Color( 0.376471, 0.364706, 0.384314, 1 )
+shader_param/original_6 = null
+shader_param/original_7 = null
+shader_param/original_8 = null
+shader_param/original_9 = null
+shader_param/replace_0 = Color( 0.384314, 0.427451, 0.443137, 1 )
+shader_param/replace_1 = Color( 0.796078, 0.835294, 0.843137, 1 )
+shader_param/replace_2 = Color( 0.870588, 0.788235, 0.729412, 1 )
+shader_param/replace_3 = Color( 0.607843, 0.623529, 0.670588, 1 )
+shader_param/replace_4 = Color( 1, 1, 1, 1 )
+shader_param/replace_5 = Color( 0.694118, 0.678431, 0.682353, 1 )
+shader_param/replace_6 = null
+shader_param/replace_7 = null
+shader_param/replace_8 = null
+shader_param/replace_9 = null
+
+[sub_resource type="AtlasTexture" id=185]
+atlas = ExtResource( 50 )
+region = Rect2( 0, 0, 25, 15 )
+
+[sub_resource type="AtlasTexture" id=186]
+atlas = ExtResource( 50 )
+region = Rect2( 25, 0, 25, 15 )
+
+[sub_resource type="AtlasTexture" id=187]
+atlas = ExtResource( 50 )
+region = Rect2( 50, 0, 25, 15 )
+
+[sub_resource type="AtlasTexture" id=188]
+atlas = ExtResource( 50 )
+region = Rect2( 75, 0, 25, 15 )
+
+[sub_resource type="AtlasTexture" id=189]
+atlas = ExtResource( 50 )
+region = Rect2( 0, 15, 25, 15 )
+
+[sub_resource type="AtlasTexture" id=190]
+atlas = ExtResource( 50 )
+region = Rect2( 25, 15, 25, 15 )
+
+[sub_resource type="AtlasTexture" id=191]
+atlas = ExtResource( 50 )
+region = Rect2( 50, 15, 25, 15 )
+
+[sub_resource type="AtlasTexture" id=192]
+atlas = ExtResource( 50 )
+region = Rect2( 75, 15, 25, 15 )
+
+[sub_resource type="AtlasTexture" id=193]
+atlas = ExtResource( 50 )
+region = Rect2( 0, 30, 25, 15 )
+
+[sub_resource type="AtlasTexture" id=194]
+atlas = ExtResource( 50 )
+region = Rect2( 25, 30, 25, 15 )
+
+[sub_resource type="AtlasTexture" id=195]
+atlas = ExtResource( 50 )
+region = Rect2( 50, 30, 25, 15 )
+
+[sub_resource type="AtlasTexture" id=196]
+atlas = ExtResource( 50 )
+region = Rect2( 75, 30, 25, 15 )
+
+[sub_resource type="SpriteFrames" id=197]
+animations = [ {
+"frames": [ SubResource( 185 ), SubResource( 186 ), SubResource( 187 ), SubResource( 188 ), SubResource( 189 ), SubResource( 190 ), SubResource( 191 ), SubResource( 192 ), SubResource( 193 ), SubResource( 194 ), SubResource( 195 ), SubResource( 196 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="ShaderMaterial" id=198]
+shader = SubResource( 183 )
+shader_param/original_0 = Color( 0.180392, 0.25098, 0.298039, 1 )
+shader_param/original_1 = Color( 0.513726, 0.556863, 0.580392, 1 )
+shader_param/original_2 = Color( 0.470588, 0.466667, 0.45098, 1 )
+shader_param/original_3 = Color( 0.439216, 0.478431, 0.513726, 1 )
+shader_param/original_4 = Color( 0.607843, 0.623529, 0.670588, 1 )
+shader_param/original_5 = Color( 0.376471, 0.364706, 0.384314, 1 )
+shader_param/original_6 = null
+shader_param/original_7 = null
+shader_param/original_8 = null
+shader_param/original_9 = null
+shader_param/replace_0 = Color( 0.309804, 0.360784, 0.392157, 1 )
+shader_param/replace_1 = Color( 0.607843, 0.623529, 0.670588, 1 )
+shader_param/replace_2 = Color( 0.521569, 0.521569, 0.509804, 1 )
+shader_param/replace_3 = Color( 0.564706, 0.576471, 0.619608, 1 )
+shader_param/replace_4 = Color( 0.694118, 0.678431, 0.682353, 1 )
+shader_param/replace_5 = Color( 0.564706, 0.52549, 0.521569, 1 )
+shader_param/replace_6 = null
+shader_param/replace_7 = null
+shader_param/replace_8 = null
+shader_param/replace_9 = null
+
+[sub_resource type="AtlasTexture" id=149]
+atlas = ExtResource( 43 )
+region = Rect2( 0, 0, 97, 47 )
+
+[sub_resource type="AtlasTexture" id=150]
+atlas = ExtResource( 43 )
+region = Rect2( 97, 0, 97, 47 )
+
+[sub_resource type="AtlasTexture" id=151]
+atlas = ExtResource( 43 )
+region = Rect2( 194, 0, 97, 47 )
+
+[sub_resource type="AtlasTexture" id=152]
+atlas = ExtResource( 43 )
+region = Rect2( 291, 0, 97, 47 )
+
+[sub_resource type="AtlasTexture" id=153]
+atlas = ExtResource( 43 )
+region = Rect2( 0, 47, 97, 47 )
+
+[sub_resource type="AtlasTexture" id=154]
+atlas = ExtResource( 43 )
+region = Rect2( 97, 47, 97, 47 )
+
+[sub_resource type="AtlasTexture" id=155]
+atlas = ExtResource( 43 )
+region = Rect2( 194, 47, 97, 47 )
+
+[sub_resource type="AtlasTexture" id=156]
+atlas = ExtResource( 43 )
+region = Rect2( 291, 47, 97, 47 )
+
+[sub_resource type="SpriteFrames" id=157]
+animations = [ {
+"frames": [ SubResource( 149 ), SubResource( 150 ), SubResource( 151 ), SubResource( 152 ), SubResource( 153 ), SubResource( 154 ), SubResource( 155 ), SubResource( 156 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="Shader" id=158]
+code = "shader_type canvas_item;
+
+
+uniform vec4 original_0: hint_color;
+uniform vec4 original_1: hint_color;
+uniform vec4 original_2: hint_color;
+uniform vec4 original_3: hint_color;
+uniform vec4 original_4: hint_color;
+uniform vec4 original_5: hint_color;
+uniform vec4 original_6: hint_color;
+uniform vec4 original_7: hint_color;
+uniform vec4 original_8: hint_color;
+uniform vec4 original_9: hint_color;
+uniform vec4 replace_0: hint_color;
+uniform vec4 replace_1: hint_color;
+uniform vec4 replace_2: hint_color;
+uniform vec4 replace_3: hint_color;
+uniform vec4 replace_4: hint_color;
+uniform vec4 replace_5: hint_color;
+uniform vec4 replace_6: hint_color;
+uniform vec4 replace_7: hint_color;
+uniform vec4 replace_8: hint_color;
+uniform vec4 replace_9: hint_color;
+
+const float precision = 0.01;
+
+
+vec4 swap_color(vec4 color){
+	vec4 original_colors[10] = vec4[10] (original_0, original_1, original_2, original_3, original_4, original_5, original_6, original_7, original_8, original_9);
+	vec4 replace_colors[10] = vec4[10] (replace_0, replace_1, replace_2, replace_3, replace_4, replace_5, replace_6, replace_7, replace_8, replace_9);
+	for (int i = 0; i < 10; i ++) {
+		if (distance(color, original_colors[i]) <= precision){
+			return replace_colors[i]; 
+		}
+	}
+	return color;
+}
+
+
+void fragment() {
+	COLOR = swap_color(texture(TEXTURE, UV));
+}"
+
+[sub_resource type="ShaderMaterial" id=159]
+shader = SubResource( 158 )
+shader_param/original_0 = Color( 0.607843, 0.623529, 0.670588, 1 )
+shader_param/original_1 = Color( 0.513726, 0.556863, 0.580392, 1 )
+shader_param/original_2 = Color( 0.439216, 0.478431, 0.513726, 1 )
+shader_param/original_3 = Color( 0.384314, 0.427451, 0.443137, 1 )
+shader_param/original_4 = Color( 0.376471, 0.364706, 0.384314, 1 )
+shader_param/original_5 = Color( 0.313726, 0.27451, 0.313726, 1 )
+shader_param/original_6 = Color( 0.180392, 0.25098, 0.298039, 1 )
+shader_param/original_7 = null
+shader_param/original_8 = null
+shader_param/original_9 = null
+shader_param/replace_0 = Color( 0.694118, 0.678431, 0.682353, 1 )
+shader_param/replace_1 = Color( 0.607843, 0.623529, 0.670588, 1 )
+shader_param/replace_2 = Color( 0.439216, 0.478431, 0.513726, 1 )
+shader_param/replace_3 = Color( 0.439216, 0.478431, 0.513726, 1 )
+shader_param/replace_4 = Color( 0.523438, 0.460238, 0.453918, 1 )
+shader_param/replace_5 = Color( 0.376471, 0.364706, 0.384314, 1 )
+shader_param/replace_6 = Color( 0.309804, 0.360784, 0.392157, 1 )
+shader_param/replace_7 = null
+shader_param/replace_8 = null
+shader_param/replace_9 = null
+
+[sub_resource type="ShaderMaterial" id=160]
+shader = SubResource( 158 )
+shader_param/original_0 = Color( 0.607843, 0.623529, 0.670588, 1 )
+shader_param/original_1 = Color( 0.513726, 0.556863, 0.580392, 1 )
+shader_param/original_2 = Color( 0.439216, 0.478431, 0.513726, 1 )
+shader_param/original_3 = Color( 0.384314, 0.427451, 0.443137, 1 )
+shader_param/original_4 = Color( 0.376471, 0.364706, 0.384314, 1 )
+shader_param/original_5 = Color( 0.313726, 0.27451, 0.313726, 1 )
+shader_param/original_6 = Color( 0.180392, 0.25098, 0.298039, 1 )
+shader_param/original_7 = null
+shader_param/original_8 = null
+shader_param/original_9 = null
+shader_param/replace_0 = Color( 0.796078, 0.835294, 0.843137, 1 )
+shader_param/replace_1 = Color( 0.694118, 0.678431, 0.682353, 1 )
+shader_param/replace_2 = Color( 0.607843, 0.623529, 0.670588, 1 )
+shader_param/replace_3 = Color( 0.513726, 0.556863, 0.580392, 1 )
+shader_param/replace_4 = Color( 0.694118, 0.678431, 0.682353, 1 )
+shader_param/replace_5 = Color( 0.521569, 0.458824, 0.454902, 1 )
+shader_param/replace_6 = Color( 0.309804, 0.360784, 0.392157, 1 )
+shader_param/replace_7 = null
+shader_param/replace_8 = null
+shader_param/replace_9 = null
+
+[sub_resource type="CapsuleShape2D" id=115]
+radius = 4.00003
+height = 27.9999
+
+[sub_resource type="AtlasTexture" id=161]
+atlas = ExtResource( 61 )
+region = Rect2( 0, 0, 38, 17 )
+
+[sub_resource type="AtlasTexture" id=162]
+atlas = ExtResource( 61 )
+region = Rect2( 38, 0, 38, 17 )
+
+[sub_resource type="AtlasTexture" id=163]
+atlas = ExtResource( 61 )
+region = Rect2( 76, 0, 38, 17 )
+
+[sub_resource type="AtlasTexture" id=164]
+atlas = ExtResource( 61 )
+region = Rect2( 114, 0, 38, 17 )
+
+[sub_resource type="AtlasTexture" id=165]
+atlas = ExtResource( 62 )
+region = Rect2( 0, 0, 38, 14 )
+
+[sub_resource type="AtlasTexture" id=166]
+atlas = ExtResource( 62 )
+region = Rect2( 38, 0, 38, 14 )
+
+[sub_resource type="AtlasTexture" id=167]
+atlas = ExtResource( 62 )
+region = Rect2( 76, 0, 38, 14 )
+
+[sub_resource type="AtlasTexture" id=168]
+atlas = ExtResource( 62 )
+region = Rect2( 114, 0, 38, 14 )
+
+[sub_resource type="AtlasTexture" id=169]
+atlas = ExtResource( 62 )
+region = Rect2( 0, 14, 38, 14 )
+
+[sub_resource type="AtlasTexture" id=170]
+atlas = ExtResource( 62 )
+region = Rect2( 38, 14, 38, 14 )
+
+[sub_resource type="AtlasTexture" id=171]
+atlas = ExtResource( 62 )
+region = Rect2( 76, 14, 38, 14 )
+
+[sub_resource type="AtlasTexture" id=172]
+atlas = ExtResource( 62 )
+region = Rect2( 114, 14, 38, 14 )
+
+[sub_resource type="AtlasTexture" id=173]
+atlas = ExtResource( 62 )
+region = Rect2( 0, 28, 38, 14 )
+
+[sub_resource type="AtlasTexture" id=174]
+atlas = ExtResource( 62 )
+region = Rect2( 38, 28, 38, 14 )
+
+[sub_resource type="AtlasTexture" id=175]
+atlas = ExtResource( 62 )
+region = Rect2( 76, 28, 38, 14 )
+
+[sub_resource type="AtlasTexture" id=176]
+atlas = ExtResource( 62 )
+region = Rect2( 114, 28, 38, 14 )
+
+[sub_resource type="AtlasTexture" id=177]
+atlas = ExtResource( 62 )
+region = Rect2( 0, 42, 38, 14 )
+
+[sub_resource type="AtlasTexture" id=178]
+atlas = ExtResource( 62 )
+region = Rect2( 38, 42, 38, 14 )
+
+[sub_resource type="AtlasTexture" id=179]
+atlas = ExtResource( 62 )
+region = Rect2( 76, 42, 38, 14 )
+
+[sub_resource type="AtlasTexture" id=180]
+atlas = ExtResource( 62 )
+region = Rect2( 114, 42, 38, 14 )
+
+[sub_resource type="AtlasTexture" id=181]
+atlas = ExtResource( 62 )
+region = Rect2( 0, 56, 38, 14 )
+
+[sub_resource type="AtlasTexture" id=182]
+atlas = ExtResource( 62 )
+region = Rect2( 38, 56, 38, 14 )
+
+[sub_resource type="SpriteFrames" id=114]
+animations = [ {
+"frames": [ SubResource( 161 ), SubResource( 162 ), SubResource( 163 ), SubResource( 164 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 165 ), SubResource( 166 ), SubResource( 167 ), SubResource( 168 ), SubResource( 169 ), SubResource( 170 ), SubResource( 171 ), SubResource( 172 ), SubResource( 173 ), SubResource( 174 ), SubResource( 175 ), SubResource( 176 ), SubResource( 177 ), SubResource( 178 ), SubResource( 179 ), SubResource( 180 ), SubResource( 181 ), SubResource( 182 ) ],
+"loop": false,
+"name": "scrape",
+"speed": 8.0
+} ]
+
+[sub_resource type="ParticlesMaterial" id=116]
+emission_shape = 1
+emission_sphere_radius = 2.19
+flag_disable_z = true
+direction = Vector3( -1, 1, 1 )
+gravity = Vector3( 0, 40, 0 )
+initial_velocity = 0.33
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+color = Color( 0.513726, 0.556863, 0.580392, 1 )
+
+[sub_resource type="Shader" id=117]
+code = "shader_type canvas_item;
+
+
+uniform vec4 original_0: hint_color;
+uniform vec4 original_1: hint_color;
+uniform vec4 original_2: hint_color;
+uniform vec4 original_3: hint_color;
+uniform vec4 original_4: hint_color;
+uniform vec4 original_5: hint_color;
+uniform vec4 original_6: hint_color;
+uniform vec4 original_7: hint_color;
+uniform vec4 original_8: hint_color;
+uniform vec4 replace_0: hint_color;
+uniform vec4 replace_1: hint_color;
+uniform vec4 replace_2: hint_color;
+uniform vec4 replace_3: hint_color;
+uniform vec4 replace_4: hint_color;
+uniform vec4 replace_5: hint_color;
+uniform vec4 replace_6: hint_color;
+uniform vec4 replace_7: hint_color;
+uniform vec4 replace_8: hint_color;
+
+const float precision = 0.01;
+
+
+vec4 swap_color(vec4 color){
+	vec4 original_colors[9] = vec4[9] (original_0, original_1, original_2, original_3, original_4, original_5, original_6, original_7, original_8);
+	vec4 replace_colors[9] = vec4[9] (replace_0, replace_1, replace_2, replace_3, replace_4, replace_5, replace_6, replace_7, replace_8);
+	for (int i = 0; i < 9; i ++) {
+		if (distance(color, original_colors[i]) <= precision){
+			return replace_colors[i];
+		}
+	}
+	return color;
+}
+
+
+void fragment() {
+	COLOR = swap_color(texture(TEXTURE, UV));
+}"
+
+[sub_resource type="ShaderMaterial" id=118]
+shader = SubResource( 117 )
+shader_param/original_0 = Color( 0.623529, 0.635294, 0.603922, 1 )
+shader_param/original_1 = Color( 0.54902, 0.560784, 0.52549, 1 )
+shader_param/original_2 = Color( 0.470588, 0.466667, 0.45098, 1 )
+shader_param/original_3 = Color( 0.427451, 0.411765, 0.431373, 1 )
+shader_param/original_4 = Color( 0.376471, 0.364706, 0.384314, 1 )
+shader_param/original_5 = Color( 0.27451, 0.290196, 0.333333, 1 )
+shader_param/original_6 = Color( 0.313726, 0.27451, 0.313726, 1 )
+shader_param/original_7 = Color( 0.180392, 0.25098, 0.298039, 1 )
+shader_param/original_8 = Color( 0.309804, 0.231373, 0.258824, 1 )
+shader_param/replace_0 = Color( 0.74902, 0.756863, 0.72549, 1 )
+shader_param/replace_1 = Color( 0.623529, 0.635294, 0.603922, 1 )
+shader_param/replace_2 = Color( 0.470588, 0.466667, 0.45098, 1 )
+shader_param/replace_3 = Color( 0.513726, 0.498039, 0.513726, 1 )
+shader_param/replace_4 = Color( 0.427451, 0.411765, 0.431373, 1 )
+shader_param/replace_5 = Color( 0.376471, 0.364706, 0.384314, 1 )
+shader_param/replace_6 = Color( 0.27451, 0.290196, 0.333333, 1 )
+shader_param/replace_7 = Color( 0.206024, 0.283972, 0.335938, 1 )
+shader_param/replace_8 = Color( 0.313726, 0.27451, 0.313726, 1 )
+
+[sub_resource type="Shader" id=119]
+code = "shader_type canvas_item;
+
+
+uniform vec4 original_0: hint_color;
+uniform vec4 original_1: hint_color;
+uniform vec4 original_2: hint_color;
+uniform vec4 original_3: hint_color;
+uniform vec4 original_4: hint_color;
+uniform vec4 original_5: hint_color;
+uniform vec4 original_6: hint_color;
+uniform vec4 original_7: hint_color;
+uniform vec4 original_8: hint_color;
+uniform vec4 replace_0: hint_color;
+uniform vec4 replace_1: hint_color;
+uniform vec4 replace_2: hint_color;
+uniform vec4 replace_3: hint_color;
+uniform vec4 replace_4: hint_color;
+uniform vec4 replace_5: hint_color;
+uniform vec4 replace_6: hint_color;
+uniform vec4 replace_7: hint_color;
+uniform vec4 replace_8: hint_color;
+
+const float precision = 0.01;
+
+
+vec4 swap_color(vec4 color){
+	vec4 original_colors[9] = vec4[9] (original_0, original_1, original_2, original_3, original_4, original_5, original_6, original_7, original_8);
+	vec4 replace_colors[9] = vec4[9] (replace_0, replace_1, replace_2, replace_3, replace_4, replace_5, replace_6, replace_7, replace_8);
+	for (int i = 0; i < 9; i ++) {
+		if (distance(color, original_colors[i]) <= precision){
+			return replace_colors[i];
+		}
+	}
+	return color;
+}
+
+
+void fragment() {
+	COLOR = swap_color(texture(TEXTURE, UV));
+}"
+
+[sub_resource type="ShaderMaterial" id=120]
+shader = SubResource( 119 )
+shader_param/original_0 = Color( 0.623529, 0.635294, 0.603922, 1 )
+shader_param/original_1 = Color( 0.54902, 0.560784, 0.52549, 1 )
+shader_param/original_2 = Color( 0.470588, 0.466667, 0.45098, 1 )
+shader_param/original_3 = Color( 0.427451, 0.411765, 0.431373, 1 )
+shader_param/original_4 = Color( 0.376471, 0.364706, 0.384314, 1 )
+shader_param/original_5 = Color( 0.27451, 0.290196, 0.333333, 1 )
+shader_param/original_6 = Color( 0.313726, 0.27451, 0.313726, 1 )
+shader_param/original_7 = Color( 0.180392, 0.25098, 0.298039, 1 )
+shader_param/original_8 = Color( 0.309804, 0.231373, 0.258824, 1 )
+shader_param/replace_0 = Color( 0.956863, 0.933333, 0.858824, 1 )
+shader_param/replace_1 = Color( 0.74902, 0.756863, 0.72549, 1 )
+shader_param/replace_2 = Color( 0.623529, 0.635294, 0.603922, 1 )
+shader_param/replace_3 = Color( 0.584314, 0.556863, 0.6, 1 )
+shader_param/replace_4 = Color( 0.513726, 0.498039, 0.513726, 1 )
+shader_param/replace_5 = Color( 0.439216, 0.427451, 0.447059, 1 )
+shader_param/replace_6 = Color( 0.439216, 0.4, 0.439216, 1 )
+shader_param/replace_7 = Color( 0.332291, 0.411822, 0.464844, 1 )
+shader_param/replace_8 = Color( 0.313726, 0.27451, 0.313726, 1 )
+
+[sub_resource type="CircleShape2D" id=73]
+radius = 13.0096
+
+[sub_resource type="AtlasTexture" id=85]
+atlas = ExtResource( 29 )
+region = Rect2( 72, 25, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=77]
+atlas = ExtResource( 29 )
+region = Rect2( 0, 0, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=78]
+atlas = ExtResource( 29 )
+region = Rect2( 24, 0, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=79]
+atlas = ExtResource( 29 )
+region = Rect2( 48, 0, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=80]
+atlas = ExtResource( 29 )
+region = Rect2( 72, 0, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=81]
+atlas = ExtResource( 29 )
+region = Rect2( 0, 25, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=82]
+atlas = ExtResource( 29 )
+region = Rect2( 24, 25, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=83]
+atlas = ExtResource( 29 )
+region = Rect2( 48, 25, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=84]
+atlas = ExtResource( 29 )
+region = Rect2( 72, 25, 24, 25 )
+
+[sub_resource type="SpriteFrames" id=76]
+animations = [ {
+"frames": [ SubResource( 85 ) ],
+"loop": true,
+"name": "default",
+"speed": 1.0
+}, {
+"frames": [ SubResource( 77 ), SubResource( 78 ), SubResource( 79 ), SubResource( 80 ), SubResource( 81 ), SubResource( 82 ), SubResource( 83 ), SubResource( 84 ) ],
+"loop": false,
+"name": "jet",
+"speed": 8.0
+} ]
+
+[sub_resource type="AtlasTexture" id=86]
+atlas = ExtResource( 41 )
+region = Rect2( 72, 25, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=87]
+atlas = ExtResource( 41 )
+region = Rect2( 0, 0, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=88]
+atlas = ExtResource( 41 )
+region = Rect2( 24, 0, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=89]
+atlas = ExtResource( 41 )
+region = Rect2( 48, 0, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=90]
+atlas = ExtResource( 41 )
+region = Rect2( 72, 0, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=91]
+atlas = ExtResource( 41 )
+region = Rect2( 0, 25, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=92]
+atlas = ExtResource( 41 )
+region = Rect2( 24, 25, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=93]
+atlas = ExtResource( 41 )
+region = Rect2( 48, 25, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=94]
+atlas = ExtResource( 41 )
+region = Rect2( 72, 25, 24, 25 )
+
+[sub_resource type="SpriteFrames" id=95]
+animations = [ {
+"frames": [ SubResource( 86 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 87 ), SubResource( 88 ), SubResource( 89 ), SubResource( 90 ), SubResource( 91 ), SubResource( 92 ), SubResource( 93 ), SubResource( 94 ) ],
+"loop": true,
+"name": "jet",
+"speed": 8.0
+} ]
+
+[sub_resource type="AtlasTexture" id=96]
+atlas = ExtResource( 32 )
+region = Rect2( 72, 25, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=97]
+atlas = ExtResource( 32 )
+region = Rect2( 0, 0, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=98]
+atlas = ExtResource( 32 )
+region = Rect2( 24, 0, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=99]
+atlas = ExtResource( 32 )
+region = Rect2( 48, 0, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=100]
+atlas = ExtResource( 32 )
+region = Rect2( 72, 0, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=101]
+atlas = ExtResource( 32 )
+region = Rect2( 0, 25, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=102]
+atlas = ExtResource( 32 )
+region = Rect2( 24, 25, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=103]
+atlas = ExtResource( 32 )
+region = Rect2( 48, 25, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=104]
+atlas = ExtResource( 32 )
+region = Rect2( 72, 25, 24, 25 )
+
+[sub_resource type="SpriteFrames" id=105]
+animations = [ {
+"frames": [ SubResource( 96 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 97 ), SubResource( 98 ), SubResource( 99 ), SubResource( 100 ), SubResource( 101 ), SubResource( 102 ), SubResource( 103 ), SubResource( 104 ) ],
+"loop": true,
+"name": "jet",
+"speed": 8.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=132]
+radius = 13.0
+height = 47.9999
+
+[sub_resource type="AtlasTexture" id=123]
+atlas = ExtResource( 11 )
+region = Rect2( 0, 0, 94, 37 )
+
+[sub_resource type="AtlasTexture" id=124]
+atlas = ExtResource( 11 )
+region = Rect2( 94, 0, 94, 37 )
+
+[sub_resource type="AtlasTexture" id=125]
+atlas = ExtResource( 11 )
+region = Rect2( 188, 0, 94, 37 )
+
+[sub_resource type="AtlasTexture" id=126]
+atlas = ExtResource( 11 )
+region = Rect2( 282, 0, 94, 37 )
+
+[sub_resource type="AtlasTexture" id=127]
+atlas = ExtResource( 11 )
+region = Rect2( 0, 37, 94, 37 )
+
+[sub_resource type="AtlasTexture" id=128]
+atlas = ExtResource( 11 )
+region = Rect2( 94, 37, 94, 37 )
+
+[sub_resource type="AtlasTexture" id=129]
+atlas = ExtResource( 11 )
+region = Rect2( 188, 37, 94, 37 )
+
+[sub_resource type="AtlasTexture" id=130]
+atlas = ExtResource( 11 )
+region = Rect2( 282, 37, 94, 37 )
+
+[sub_resource type="SpriteFrames" id=131]
+animations = [ {
+"frames": [ SubResource( 123 ), SubResource( 124 ), SubResource( 125 ), SubResource( 126 ), SubResource( 127 ), SubResource( 128 ), SubResource( 129 ), SubResource( 130 ) ],
+"loop": true,
+"name": "swim",
+"speed": 8.0
+} ]
+
+[sub_resource type="AtlasTexture" id=136]
+atlas = ExtResource( 27 )
+region = Rect2( 0, 0, 53, 48 )
+
+[sub_resource type="AtlasTexture" id=137]
+atlas = ExtResource( 27 )
+region = Rect2( 53, 0, 53, 48 )
+
+[sub_resource type="AtlasTexture" id=138]
+atlas = ExtResource( 27 )
+region = Rect2( 106, 0, 53, 48 )
+
+[sub_resource type="AtlasTexture" id=139]
+atlas = ExtResource( 27 )
+region = Rect2( 159, 0, 53, 48 )
+
+[sub_resource type="AtlasTexture" id=140]
+atlas = ExtResource( 27 )
+region = Rect2( 0, 48, 53, 48 )
+
+[sub_resource type="AtlasTexture" id=141]
+atlas = ExtResource( 27 )
+region = Rect2( 53, 48, 53, 48 )
+
+[sub_resource type="AtlasTexture" id=142]
+atlas = ExtResource( 27 )
+region = Rect2( 106, 48, 53, 48 )
+
+[sub_resource type="AtlasTexture" id=143]
+atlas = ExtResource( 27 )
+region = Rect2( 159, 48, 53, 48 )
+
+[sub_resource type="SpriteFrames" id=144]
+animations = [ {
+"frames": [ SubResource( 136 ), SubResource( 137 ), SubResource( 138 ), SubResource( 139 ), SubResource( 140 ), SubResource( 141 ), SubResource( 142 ), SubResource( 143 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="CircleShape2D" id=145]
+radius = 24.0208
+
+[sub_resource type="Animation" id=41]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ColorRect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ambience:volume_db")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -80.0 ]
+}
+
+[sub_resource type="Animation" id=42]
+resource_name = "load"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 1, 2.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ColorRect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1, 2.9, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ true, true, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ambience:volume_db")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1, 1.7, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ -80.0, -80.0, -10.0, 0.0 ]
+}
+
+[node name="world" type="Node2D"]
+script = ExtResource( 351 )
+
+[node name="Water" type="ViewportContainer" parent="."]
+margin_right = 301.0
+margin_bottom = 201.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Viewport" type="Viewport" parent="Water"]
+size = Vector2( 300, 200 )
+transparent_bg = true
+handle_input_locally = false
+render_target_update_mode = 3
+
+[node name="Water2" type="Sprite" parent="Water/Viewport"]
+material = ExtResource( 2 )
+position = Vector2( -5, 0 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Pondmidlight" type="Sprite" parent="Water/Viewport"]
+material = SubResource( 71 )
+texture = ExtResource( 353 )
+centered = false
+
+[node name="Pondhighlight" type="Sprite" parent="Water/Viewport"]
+material = ExtResource( 2 )
+texture = ExtResource( 352 )
+centered = false
+
+[node name="pond" type="AnimatedSprite" parent="."]
+frames = SubResource( 55 )
+frame = 9
+playing = true
+centered = false
+
+[node name="ViewportContainer" type="ViewportContainer" parent="."]
+margin_right = 301.0
+margin_bottom = 201.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Viewport" type="Viewport" parent="ViewportContainer"]
+size = Vector2( 300, 200 )
+transparent_bg = true
+handle_input_locally = false
+render_target_update_mode = 3
+
+[node name="YSort2" type="YSort" parent="ViewportContainer/Viewport"]
+position = Vector2( -1, 0 )
+
+[node name="crabTrapCrinoid" type="Sprite" parent="ViewportContainer/Viewport/YSort2"]
+material = SubResource( 72 )
+position = Vector2( 28, 71 )
+texture = ExtResource( 361 )
+centered = false
+script = ExtResource( 10 )
+
+[node name="Trapped" type="AnimatedSprite" parent="ViewportContainer/Viewport/YSort2/crabTrapCrinoid"]
+visible = false
+use_parent_material = true
+frames = SubResource( 135 )
+centered = false
+
+[node name="Algae2" type="AnimatedSprite" parent="ViewportContainer/Viewport/YSort2"]
+light_mask = 2
+material = ExtResource( 60 )
+position = Vector2( 1, 0 )
+frames = SubResource( 40 )
+frame = 1
+playing = true
+centered = false
+script = ExtResource( 66 )
+
+[node name="Algae1" type="AnimatedSprite" parent="ViewportContainer/Viewport/YSort2"]
+light_mask = 2
+material = ExtResource( 60 )
+position = Vector2( 203, 167 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+centered = false
+script = ExtResource( 66 )
+
+[node name="crabTrapCrinoid2" type="Sprite" parent="ViewportContainer/Viewport/YSort2"]
+material = SubResource( 72 )
+position = Vector2( 236, 85 )
+texture = ExtResource( 18 )
+centered = false
+script = ExtResource( 10 )
+
+[node name="Midlight" type="ViewportContainer" parent="."]
+light_mask = 2
+margin_right = 301.0
+margin_bottom = 201.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Viewport" type="Viewport" parent="Midlight"]
+size = Vector2( 300, 200 )
+transparent_bg = true
+handle_input_locally = false
+render_target_update_mode = 3
+
+[node name="YSort" type="YSort" parent="Midlight/Viewport"]
+position = Vector2( -1, 0 )
+
+[node name="crabTrapCrinoid" type="Sprite" parent="Midlight/Viewport/YSort"]
+material = ExtResource( 60 )
+position = Vector2( 28, 71 )
+texture = ExtResource( 361 )
+centered = false
+
+[node name="DriftWormCageBait" type="Sprite" parent="Midlight/Viewport/YSort/crabTrapCrinoid"]
+visible = false
+use_parent_material = true
+texture = ExtResource( 6 )
+centered = false
+
+[node name="Trapped" type="AnimatedSprite" parent="Midlight/Viewport/YSort/crabTrapCrinoid"]
+visible = false
+light_mask = 2
+material = ExtResource( 13 )
+use_parent_material = true
+frames = SubResource( 135 )
+centered = false
+
+[node name="Algae29" type="AnimatedSprite" parent="Midlight/Viewport/YSort"]
+light_mask = 2
+material = ExtResource( 359 )
+position = Vector2( 1, 0 )
+frames = SubResource( 40 )
+frame = 1
+playing = true
+centered = false
+
+[node name="Algae1" type="AnimatedSprite" parent="Midlight/Viewport/YSort"]
+light_mask = 2
+material = ExtResource( 359 )
+position = Vector2( 203, 167 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+centered = false
+
+[node name="crabTrapCrinoid2" type="Sprite" parent="Midlight/Viewport/YSort"]
+material = ExtResource( 60 )
+position = Vector2( 236, 85 )
+texture = ExtResource( 18 )
+centered = false
+
+[node name="Highlight" type="ViewportContainer" parent="."]
+light_mask = 4
+margin_right = 301.0
+margin_bottom = 201.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Viewport" type="Viewport" parent="Highlight"]
+size = Vector2( 300, 200 )
+transparent_bg = true
+handle_input_locally = false
+render_target_update_mode = 3
+
+[node name="YSort" type="YSort" parent="Highlight/Viewport"]
+position = Vector2( -1, 0 )
+
+[node name="crabTrapCrinoid" type="Sprite" parent="Highlight/Viewport/YSort"]
+material = ExtResource( 17 )
+position = Vector2( 28, 71 )
+texture = ExtResource( 361 )
+centered = false
+
+[node name="Trapped" type="AnimatedSprite" parent="Highlight/Viewport/YSort/crabTrapCrinoid"]
+visible = false
+light_mask = 4
+material = ExtResource( 26 )
+use_parent_material = true
+frames = SubResource( 135 )
+centered = false
+
+[node name="crabTrapCrinoid2" type="Sprite" parent="Highlight/Viewport/YSort"]
+material = ExtResource( 60 )
+position = Vector2( 236, 85 )
+texture = ExtResource( 18 )
+centered = false
+
+[node name="Algae1" type="AnimatedSprite" parent="Highlight/Viewport/YSort"]
+light_mask = 2
+material = ExtResource( 360 )
+position = Vector2( 203, 167 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+centered = false
+
+[node name="Algae2" type="TextureButton" parent="."]
+margin_left = -12.0
+margin_top = 31.0
+margin_right = 114.0
+margin_bottom = 106.0
+rect_rotation = -22.7783
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Algae" type="TextureButton" parent="."]
+margin_left = 205.0
+margin_top = 193.0
+margin_right = 304.0
+margin_bottom = 225.0
+rect_rotation = -15.3336
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="crabTrapCrinoid" type="TextureButton" parent="."]
+margin_left = 74.0
+margin_top = 85.0
+margin_right = 123.0
+margin_bottom = 137.0
+rect_rotation = 51.4175
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="crabTrapCrinoid2" type="TextureButton" parent="."]
+margin_left = 235.0
+margin_top = 85.0
+margin_right = 275.0
+margin_bottom = 125.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Slot1" type="Node2D" parent="."]
+position = Vector2( 95, 143 )
+
+[node name="slotButon" type="TextureButton" parent="Slot1"]
+margin_left = 4.0
+margin_top = -1.0
+margin_right = 101.0
+margin_bottom = 39.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="highlight" type="Sprite" parent="Slot1/slotButon"]
+visible = false
+texture = ExtResource( 5 )
+centered = false
+
+[node name="driftWormBait" type="AnimatedSprite" parent="Slot1"]
+visible = false
+position = Vector2( 36, 14 )
+frames = SubResource( 121 )
+animation = "driftWormBait0"
+centered = false
+
+[node name="lacemouthBait" type="AnimatedSprite" parent="Slot1"]
+visible = false
+material = SubResource( 148 )
+position = Vector2( 18, 0 )
+frames = SubResource( 146 )
+animation = "lacemouthBait0"
+centered = false
+
+[node name="isopodRadiodontBait" type="AnimatedSprite" parent="Slot1"]
+visible = false
+position = Vector2( 36, 10 )
+frames = SubResource( 122 )
+animation = "isopodRadiodontBait1"
+centered = false
+
+[node name="Slot2" type="Node2D" parent="."]
+position = Vector2( 118, 92 )
+
+[node name="slotButon" type="TextureButton" parent="Slot2"]
+margin_left = 19.0
+margin_top = 1.0
+margin_right = 116.0
+margin_bottom = 41.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="highlight" type="Sprite" parent="Slot2/slotButon"]
+visible = false
+texture = ExtResource( 5 )
+centered = false
+
+[node name="driftWormBait" type="AnimatedSprite" parent="Slot2"]
+visible = false
+position = Vector2( 54, 14 )
+frames = SubResource( 121 )
+animation = "driftWormBait0"
+centered = false
+
+[node name="lacemouthBait" type="AnimatedSprite" parent="Slot2"]
+visible = false
+material = SubResource( 148 )
+position = Vector2( 36, -1 )
+frames = SubResource( 146 )
+animation = "lacemouthBait0"
+centered = false
+
+[node name="isopodRadiodontBait" type="AnimatedSprite" parent="Slot2"]
+visible = false
+position = Vector2( 54, 10 )
+frames = SubResource( 122 )
+animation = "isopodRadiodontBait1"
+centered = false
+
+[node name="Slot3" type="Node2D" parent="."]
+position = Vector2( 119, 43 )
+
+[node name="slotButon" type="TextureButton" parent="Slot3"]
+margin_right = 97.0
+margin_bottom = 40.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="highlight" type="Sprite" parent="Slot3/slotButon"]
+visible = false
+texture = ExtResource( 5 )
+centered = false
+
+[node name="driftWormBait" type="AnimatedSprite" parent="Slot3"]
+visible = false
+position = Vector2( 36, 14 )
+frames = SubResource( 121 )
+animation = "driftWormBait0"
+centered = false
+
+[node name="lacemouthBait" type="AnimatedSprite" parent="Slot3"]
+visible = false
+material = SubResource( 148 )
+position = Vector2( 19, 0 )
+frames = SubResource( 146 )
+animation = "lacemouthBait0"
+centered = false
+
+[node name="isopodRadiodontBait" type="AnimatedSprite" parent="Slot3"]
+visible = false
+position = Vector2( 36, 10 )
+frames = SubResource( 122 )
+animation = "isopodRadiodontBait1"
+centered = false
+
+[node name="slugPikaiid" type="AnimatedSprite" parent="."]
+visible = false
+material = SubResource( 184 )
+position = Vector2( 142, 149 )
+frames = SubResource( 197 )
+frame = 3
+playing = true
+centered = false
+script = ExtResource( 343 )
+
+[node name="slugPikaiid" type="AnimatedSprite" parent="slugPikaiid"]
+use_parent_material = true
+position = Vector2( -22, 2 )
+frames = SubResource( 197 )
+frame = 2
+playing = true
+centered = false
+flip_h = true
+script = ExtResource( 343 )
+
+[node name="item" type="TextureButton" parent="slugPikaiid"]
+margin_left = -20.0
+margin_top = 2.0
+margin_right = 23.0
+margin_bottom = 15.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slugPikaiid2" type="AnimatedSprite" parent="."]
+visible = false
+material = SubResource( 198 )
+position = Vector2( 180, 101 )
+frames = SubResource( 197 )
+frame = 9
+playing = true
+centered = false
+script = ExtResource( 343 )
+
+[node name="slugPikaiid" type="AnimatedSprite" parent="slugPikaiid2"]
+use_parent_material = true
+position = Vector2( -25, 0 )
+frames = SubResource( 197 )
+frame = 1
+playing = true
+centered = false
+flip_h = true
+script = ExtResource( 343 )
+
+[node name="item" type="TextureButton" parent="slugPikaiid2"]
+margin_left = -23.0
+margin_top = 2.0
+margin_right = 23.0
+margin_bottom = 13.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slugPikaiid3" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 166, 53 )
+frames = SubResource( 197 )
+frame = 11
+playing = true
+centered = false
+script = ExtResource( 343 )
+
+[node name="slugPikaiid" type="AnimatedSprite" parent="slugPikaiid3"]
+show_behind_parent = true
+position = Vector2( -18, -3 )
+frames = SubResource( 197 )
+frame = 9
+playing = true
+centered = false
+flip_h = true
+script = ExtResource( 343 )
+
+[node name="item" type="TextureButton" parent="slugPikaiid3"]
+margin_left = -16.0
+margin_top = -1.0
+margin_right = 24.0
+margin_bottom = 13.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bigBoyPikaiid" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 143, 125 )
+frames = SubResource( 157 )
+frame = 4
+playing = true
+centered = false
+flip_h = true
+script = ExtResource( 343 )
+
+[node name="item" type="TextureButton" parent="bigBoyPikaiid"]
+margin_left = 6.0
+margin_top = 1.0
+margin_right = 95.0
+margin_bottom = 45.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bigBoyPikaiidMidlight" type="AnimatedSprite" parent="."]
+visible = false
+light_mask = 2
+material = SubResource( 159 )
+position = Vector2( 143, 125 )
+frames = SubResource( 157 )
+frame = 4
+playing = true
+centered = false
+flip_h = true
+script = ExtResource( 343 )
+
+[node name="bigBoyPikaiidHighlight" type="AnimatedSprite" parent="."]
+visible = false
+light_mask = 4
+material = SubResource( 160 )
+position = Vector2( 143, 125 )
+frames = SubResource( 157 )
+frame = 4
+playing = true
+centered = false
+flip_h = true
+script = ExtResource( 343 )
+
+[node name="bigBoyPikaiid2" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 90, 62 )
+frames = SubResource( 157 )
+frame = 7
+playing = true
+centered = false
+script = ExtResource( 343 )
+
+[node name="item" type="TextureButton" parent="bigBoyPikaiid2"]
+margin_left = 6.0
+margin_top = 1.0
+margin_right = 95.0
+margin_bottom = 45.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bigBoyPikaiid2Midlight" type="AnimatedSprite" parent="."]
+visible = false
+light_mask = 2
+material = SubResource( 159 )
+position = Vector2( 90, 62 )
+frames = SubResource( 157 )
+frame = 7
+playing = true
+centered = false
+script = ExtResource( 343 )
+
+[node name="bigBoyPikaiid2Highlight" type="AnimatedSprite" parent="."]
+visible = false
+light_mask = 4
+material = SubResource( 160 )
+position = Vector2( 90, 62 )
+frames = SubResource( 157 )
+frame = 7
+playing = true
+centered = false
+script = ExtResource( 343 )
+
+[node name="bigBoyPikaiid3" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 162, 23 )
+frames = SubResource( 157 )
+playing = true
+centered = false
+flip_h = true
+script = ExtResource( 343 )
+
+[node name="item" type="TextureButton" parent="bigBoyPikaiid3"]
+margin_left = 6.0
+margin_top = 1.0
+margin_right = 95.0
+margin_bottom = 45.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bigBoyPikaiid3Midlight" type="AnimatedSprite" parent="."]
+visible = false
+light_mask = 2
+material = SubResource( 159 )
+position = Vector2( 162, 23 )
+frames = SubResource( 157 )
+playing = true
+centered = false
+flip_h = true
+script = ExtResource( 343 )
+
+[node name="bigBoyPikaiid3Highlight" type="AnimatedSprite" parent="."]
+visible = false
+light_mask = 4
+material = SubResource( 160 )
+position = Vector2( 166, 24 )
+frames = SubResource( 157 )
+playing = true
+centered = false
+flip_h = true
+script = ExtResource( 343 )
+
+[node name="knifePikaiid" type="KinematicBody2D" parent="."]
+position = Vector2( 17, 95 )
+collision_layer = 0
+script = ExtResource( 47 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="knifePikaiid"]
+position = Vector2( 16, 6 )
+rotation = 1.57079
+shape = SubResource( 115 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="knifePikaiid"]
+frames = SubResource( 114 )
+frame = 2
+playing = true
+centered = false
+flip_h = true
+script = ExtResource( 343 )
+
+[node name="item" type="TextureButton" parent="knifePikaiid/AnimatedSprite"]
+margin_left = -3.0
+margin_top = -4.0
+margin_right = 40.0
+margin_bottom = 15.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="scrapings" type="Particles2D" parent="knifePikaiid"]
+position = Vector2( 34, 5 )
+emitting = false
+amount = 2
+process_material = SubResource( 116 )
+
+[node name="Timer" type="Timer" parent="knifePikaiid"]
+one_shot = true
+
+[node name="knifePikaiidMidlight" type="AnimatedSprite" parent="."]
+light_mask = 2
+material = SubResource( 118 )
+position = Vector2( 17, 95 )
+frames = SubResource( 114 )
+frame = 2
+playing = true
+centered = false
+flip_h = true
+
+[node name="knifePikaiidHighlight" type="AnimatedSprite" parent="."]
+light_mask = 4
+material = SubResource( 120 )
+position = Vector2( 17, 95 )
+frames = SubResource( 114 )
+frame = 2
+playing = true
+centered = false
+flip_h = true
+
+[node name="knifePikaiid2" type="KinematicBody2D" parent="."]
+position = Vector2( 261, 108 )
+collision_layer = 0
+script = ExtResource( 47 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="knifePikaiid2"]
+position = Vector2( 16, 6 )
+rotation = 1.57079
+shape = SubResource( 115 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="knifePikaiid2"]
+frames = SubResource( 114 )
+frame = 1
+playing = true
+centered = false
+script = ExtResource( 343 )
+
+[node name="item" type="TextureButton" parent="knifePikaiid2/AnimatedSprite"]
+margin_left = -3.0
+margin_top = -4.0
+margin_right = 40.0
+margin_bottom = 15.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="scrapings" type="Particles2D" parent="knifePikaiid2"]
+position = Vector2( 34, 5 )
+emitting = false
+amount = 2
+process_material = SubResource( 116 )
+
+[node name="Timer" type="Timer" parent="knifePikaiid2"]
+one_shot = true
+
+[node name="knifePikaiid2Midlight" type="AnimatedSprite" parent="."]
+light_mask = 2
+material = SubResource( 118 )
+position = Vector2( 261, 108 )
+frames = SubResource( 114 )
+frame = 1
+playing = true
+centered = false
+
+[node name="knifePikaiid2Highlight" type="AnimatedSprite" parent="."]
+light_mask = 4
+material = SubResource( 120 )
+position = Vector2( 261, 108 )
+frames = SubResource( 114 )
+frame = 1
+playing = true
+centered = false
+
+[node name="DriftWorm" type="KinematicBody2D" parent="."]
+position = Vector2( 126, 89 )
+collision_layer = 2
+script = ExtResource( 31 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DriftWorm"]
+position = Vector2( -1, -0.5 )
+shape = SubResource( 73 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="DriftWorm"]
+position = Vector2( -10, -11 )
+frames = SubResource( 76 )
+playing = true
+centered = false
+script = ExtResource( 343 )
+
+[node name="item" type="TextureButton" parent="DriftWorm/AnimatedSprite"]
+margin_top = 1.0
+margin_right = 24.0
+margin_bottom = 26.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DriftWormMidlight" type="AnimatedSprite" parent="."]
+light_mask = 2
+position = Vector2( 116, 78 )
+frames = SubResource( 95 )
+centered = false
+
+[node name="DriftWormHighlight" type="AnimatedSprite" parent="."]
+light_mask = 4
+position = Vector2( 116, 78 )
+frames = SubResource( 105 )
+centered = false
+
+[node name="DriftWorm2" type="KinematicBody2D" parent="."]
+position = Vector2( 162, 169 )
+collision_layer = 2
+script = ExtResource( 31 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DriftWorm2"]
+position = Vector2( -1, -0.5 )
+shape = SubResource( 73 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="DriftWorm2"]
+position = Vector2( -10, -11 )
+frames = SubResource( 76 )
+playing = true
+centered = false
+script = ExtResource( 343 )
+
+[node name="item" type="TextureButton" parent="DriftWorm2/AnimatedSprite"]
+margin_top = 1.0
+margin_right = 24.0
+margin_bottom = 26.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DriftWorm2Midlight" type="AnimatedSprite" parent="."]
+light_mask = 2
+position = Vector2( 152, 158 )
+frames = SubResource( 95 )
+centered = false
+
+[node name="DriftWorm2Highlight" type="AnimatedSprite" parent="."]
+light_mask = 4
+position = Vector2( 152, 158 )
+frames = SubResource( 105 )
+centered = false
+
+[node name="DriftWorm3" type="KinematicBody2D" parent="."]
+position = Vector2( 215, 63 )
+collision_layer = 2
+script = ExtResource( 31 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DriftWorm3"]
+position = Vector2( -1, -0.5 )
+shape = SubResource( 73 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="DriftWorm3"]
+position = Vector2( -10, -11 )
+frames = SubResource( 76 )
+playing = true
+centered = false
+script = ExtResource( 343 )
+
+[node name="item" type="TextureButton" parent="DriftWorm3/AnimatedSprite"]
+margin_top = 1.0
+margin_right = 24.0
+margin_bottom = 26.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DriftWorm3Midlight" type="AnimatedSprite" parent="."]
+light_mask = 2
+position = Vector2( 205, 52 )
+frames = SubResource( 95 )
+centered = false
+
+[node name="DriftWorm3Highlight" type="AnimatedSprite" parent="."]
+light_mask = 4
+position = Vector2( 205, 52 )
+frames = SubResource( 105 )
+centered = false
+
+[node name="lacemouth" type="KinematicBody2D" parent="."]
+visible = false
+position = Vector2( 240, 139 )
+collision_layer = 2
+script = ExtResource( 12 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="lacemouth"]
+rotation = 1.57079
+shape = SubResource( 132 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="lacemouth"]
+position = Vector2( -48, -16 )
+frames = SubResource( 131 )
+animation = "swim"
+frame = 4
+playing = true
+centered = false
+script = ExtResource( 343 )
+
+[node name="item" type="TextureButton" parent="lacemouth/AnimatedSprite"]
+margin_left = 5.0
+margin_top = 4.0
+margin_right = 91.0
+margin_bottom = 28.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lacemouthMidlight" type="AnimatedSprite" parent="."]
+visible = false
+light_mask = 2
+material = ExtResource( 13 )
+position = Vector2( 192, 123 )
+frames = SubResource( 131 )
+animation = "swim"
+frame = 4
+playing = true
+centered = false
+
+[node name="lacemouthHighlight" type="AnimatedSprite" parent="."]
+visible = false
+light_mask = 4
+material = ExtResource( 26 )
+position = Vector2( 192, 123 )
+frames = SubResource( 131 )
+animation = "swim"
+frame = 4
+playing = true
+centered = false
+
+[node name="lacemouth2" type="KinematicBody2D" parent="."]
+visible = false
+position = Vector2( 84, 105 )
+collision_layer = 2
+script = ExtResource( 12 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="lacemouth2"]
+rotation = 1.57079
+shape = SubResource( 132 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="lacemouth2"]
+position = Vector2( -48, -16 )
+frames = SubResource( 131 )
+animation = "swim"
+frame = 1
+playing = true
+centered = false
+flip_h = true
+script = ExtResource( 343 )
+
+[node name="item" type="TextureButton" parent="lacemouth2/AnimatedSprite"]
+margin_left = 5.0
+margin_top = 4.0
+margin_right = 91.0
+margin_bottom = 28.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lacemouth2Midlight" type="AnimatedSprite" parent="."]
+visible = false
+light_mask = 2
+material = ExtResource( 13 )
+position = Vector2( 36, 89 )
+frames = SubResource( 131 )
+animation = "swim"
+frame = 1
+playing = true
+centered = false
+flip_h = true
+
+[node name="lacemouth2Highlight" type="AnimatedSprite" parent="."]
+visible = false
+light_mask = 4
+material = ExtResource( 26 )
+position = Vector2( 36, 89 )
+frames = SubResource( 131 )
+animation = "swim"
+frame = 1
+playing = true
+centered = false
+flip_h = true
+
+[node name="graptolite" type="KinematicBody2D" parent="."]
+visible = false
+position = Vector2( 164, 104 )
+script = ExtResource( 28 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="graptolite"]
+position = Vector2( -26, -17 )
+frames = SubResource( 144 )
+frame = 6
+playing = true
+centered = false
+script = ExtResource( 343 )
+
+[node name="item" type="TextureButton" parent="graptolite/AnimatedSprite"]
+margin_left = 6.0
+margin_top = 3.0
+margin_right = 46.0
+margin_bottom = 43.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="graptolite"]
+position = Vector2( 0, 12 )
+shape = SubResource( 145 )
+
+[node name="graptoliteMidlight" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 138, 87 )
+frames = SubResource( 144 )
+frame = 6
+playing = true
+centered = false
+
+[node name="graptoliteHighlight" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 138, 87 )
+frames = SubResource( 144 )
+frame = 6
+playing = true
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( 83, 117 )
+polygon = PoolVector2Array( 68, -98, 55, -92, 39, -72, 21, -56, 5, -45, -14, -36, -44, -31, -71, -26, -73, -13, -74, 6, -69, 27, -47, 52, -35, 87, 5, 97, 66, 103, 103, 95, 126, 74, 136, 122, 49, 132, -10, 121, -86, 101, -98, 85, -97, -2, -94, -112, -77, -126, -20, -126, 140, -124, 212, -126, 231, -112, 224, -51, 249, 10, 234, 88, 215, 102, 186, 114, 136, 122, 126, 74, 163, 52, 217, 48, 230, 18, 217, -24, 195, -35, 187, -48, 179, -65, 169, -77, 127, -94 )
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( 150, 100 )
+texture = ExtResource( 355 )
+mode = 3
+range_item_cull_mask = 2
+
+[node name="Light2D2" type="Light2D" parent="."]
+position = Vector2( 150, 100 )
+texture = ExtResource( 354 )
+mode = 3
+range_item_cull_mask = 4
+
+[node name="Exit" type="Button" parent="."]
+margin_left = 130.0
+margin_top = 182.0
+margin_right = 180.0
+margin_bottom = 193.0
+focus_mode = 0
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "> Exit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 300.0
+margin_bottom = 200.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Radio" type="Sprite" parent="."]
+texture = ExtResource( 348 )
+centered = false
+
+[node name="BagIcon" type="Sprite" parent="."]
+position = Vector2( 266, 1 )
+texture = ExtResource( 349 )
+centered = false
+script = ExtResource( 343 )
+
+[node name="item" type="TextureButton" parent="BagIcon"]
+margin_top = 1.0
+margin_right = 32.0
+margin_bottom = 44.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dialogue" parent="." instance=ExtResource( 347 )]
+visible = false
+
+[node name="Actions" parent="." instance=ExtResource( 346 )]
+visible = false
+position = Vector2( 52, 49 )
+
+[node name="Bag" parent="." instance=ExtResource( 344 )]
+visible = false
+
+[node name="Contemplate" type="Sprite" parent="."]
+visible = false
+position = Vector2( 19, 46 )
+texture = ExtResource( 45 )
+centered = false
+script = ExtResource( 48 )
+
+[node name="text" type="RichTextLabel" parent="Contemplate"]
+margin_left = 74.0
+margin_top = 12.0
+margin_right = 199.0
+margin_bottom = 52.0
+theme = ExtResource( 46 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Enter the Anomaly?[/center]"
+text = "Enter the Anomaly?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Yes" type="Button" parent="Contemplate"]
+margin_left = 81.0
+margin_top = 62.0
+margin_right = 131.0
+margin_bottom = 73.0
+focus_mode = 0
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "> Yes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="No" type="Button" parent="Contemplate"]
+margin_left = 140.0
+margin_top = 62.0
+margin_right = 190.0
+margin_bottom = 73.0
+focus_mode = 0
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "> No"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cursor" parent="." instance=ExtResource( 345 )]
+
+[node name="Filter" type="Sprite" parent="."]
+visible = false
+material = ExtResource( 64 )
+texture = ExtResource( 63 )
+centered = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 41 )
+anims/load = SubResource( 42 )
+
+[node name="Ambience" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 350 )
+volume_db = -80.0
+autoplay = true
+
+[node name="SoundEffects" type="AudioStreamPlayer" parent="."]
+
+[connection signal="mouse_entered" from="Algae2" to="ViewportContainer/Viewport/YSort2/Algae2" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="Algae2" to="ViewportContainer/Viewport/YSort2/Algae2" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="Algae2" to="." method="_on_Algae_pressed"]
+[connection signal="mouse_entered" from="Algae" to="ViewportContainer/Viewport/YSort2/Algae1" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="Algae" to="ViewportContainer/Viewport/YSort2/Algae1" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="Algae" to="." method="_on_Algae_pressed"]
+[connection signal="mouse_entered" from="crabTrapCrinoid" to="ViewportContainer/Viewport/YSort2/crabTrapCrinoid" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="crabTrapCrinoid" to="ViewportContainer/Viewport/YSort2/crabTrapCrinoid" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="crabTrapCrinoid" to="." method="_on_crabTrapCrinoid_pressed"]
+[connection signal="mouse_entered" from="crabTrapCrinoid2" to="ViewportContainer/Viewport/YSort2/crabTrapCrinoid2" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="crabTrapCrinoid2" to="ViewportContainer/Viewport/YSort2/crabTrapCrinoid2" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="crabTrapCrinoid2" to="." method="_on_crabTrapCrinoid2_pressed"]
+[connection signal="mouse_entered" from="Slot1/slotButon" to="Slot1/slotButon" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Slot1/slotButon" to="Slot1/slotButon" method="_on_mouse_exited"]
+[connection signal="pressed" from="Slot1/slotButon" to="." method="_on_Slot1_pressed"]
+[connection signal="mouse_entered" from="Slot2/slotButon" to="Slot2/slotButon" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Slot2/slotButon" to="Slot2/slotButon" method="_on_mouse_exited"]
+[connection signal="pressed" from="Slot2/slotButon" to="." method="_on_Slot2_pressed"]
+[connection signal="mouse_entered" from="Slot3/slotButon" to="Slot3/slotButon" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Slot3/slotButon" to="Slot3/slotButon" method="_on_mouse_exited"]
+[connection signal="pressed" from="Slot3/slotButon" to="." method="_on_Slot3_pressed"]
+[connection signal="pressed_data" from="slugPikaiid" to="." method="_on_slugPikaiid_pressed_data"]
+[connection signal="mouse_entered" from="slugPikaiid/item" to="slugPikaiid" method="_on_item_mouse_entered"]
+[connection signal="mouse_entered" from="slugPikaiid/item" to="slugPikaiid/slugPikaiid" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="slugPikaiid/item" to="slugPikaiid" method="_on_item_mouse_exited"]
+[connection signal="mouse_exited" from="slugPikaiid/item" to="slugPikaiid/slugPikaiid" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="slugPikaiid/item" to="slugPikaiid" method="_on_item_pressed"]
+[connection signal="pressed_data" from="slugPikaiid2" to="." method="_on_slugPikaiid_pressed_data"]
+[connection signal="mouse_entered" from="slugPikaiid2/item" to="slugPikaiid2" method="_on_item_mouse_entered"]
+[connection signal="mouse_entered" from="slugPikaiid2/item" to="slugPikaiid2/slugPikaiid" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="slugPikaiid2/item" to="slugPikaiid2" method="_on_item_mouse_exited"]
+[connection signal="mouse_exited" from="slugPikaiid2/item" to="slugPikaiid2/slugPikaiid" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="slugPikaiid2/item" to="slugPikaiid2" method="_on_item_pressed"]
+[connection signal="pressed_data" from="slugPikaiid3" to="." method="_on_slugPikaiid_pressed_data"]
+[connection signal="mouse_entered" from="slugPikaiid3/item" to="slugPikaiid3" method="_on_item_mouse_entered"]
+[connection signal="mouse_entered" from="slugPikaiid3/item" to="slugPikaiid3/slugPikaiid" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="slugPikaiid3/item" to="slugPikaiid3" method="_on_item_mouse_exited"]
+[connection signal="mouse_exited" from="slugPikaiid3/item" to="slugPikaiid3/slugPikaiid" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="slugPikaiid3/item" to="slugPikaiid3" method="_on_item_pressed"]
+[connection signal="pressed_data" from="bigBoyPikaiid" to="." method="_on_giantPikaiid_pressed_data"]
+[connection signal="mouse_entered" from="bigBoyPikaiid/item" to="bigBoyPikaiid" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="bigBoyPikaiid/item" to="bigBoyPikaiid" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="bigBoyPikaiid/item" to="bigBoyPikaiid" method="_on_item_pressed"]
+[connection signal="pressed_data" from="bigBoyPikaiid2" to="." method="_on_giantPikaiid_pressed_data"]
+[connection signal="mouse_entered" from="bigBoyPikaiid2/item" to="bigBoyPikaiid2" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="bigBoyPikaiid2/item" to="bigBoyPikaiid2" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="bigBoyPikaiid2/item" to="bigBoyPikaiid2" method="_on_item_pressed"]
+[connection signal="pressed_data" from="bigBoyPikaiid3" to="." method="_on_giantPikaiid_pressed_data"]
+[connection signal="mouse_entered" from="bigBoyPikaiid3/item" to="bigBoyPikaiid3" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="bigBoyPikaiid3/item" to="bigBoyPikaiid3" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="bigBoyPikaiid3/item" to="bigBoyPikaiid3" method="_on_item_pressed"]
+[connection signal="pressed_data" from="knifePikaiid" to="." method="_on_knifePikaiid_pressed"]
+[connection signal="animation_finished" from="knifePikaiid/AnimatedSprite" to="knifePikaiid" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="mouse_entered" from="knifePikaiid/AnimatedSprite/item" to="knifePikaiid/AnimatedSprite" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="knifePikaiid/AnimatedSprite/item" to="knifePikaiid/AnimatedSprite" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="knifePikaiid/AnimatedSprite/item" to="knifePikaiid" method="_on_item_pressed"]
+[connection signal="timeout" from="knifePikaiid/Timer" to="knifePikaiid" method="_on_Timer_timeout"]
+[connection signal="animation_finished" from="knifePikaiidMidlight" to="knifePikaiid" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="animation_finished" from="knifePikaiidHighlight" to="knifePikaiid" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="pressed_data" from="knifePikaiid2" to="." method="_on_knifePikaiid_pressed"]
+[connection signal="animation_finished" from="knifePikaiid2/AnimatedSprite" to="knifePikaiid2" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="mouse_entered" from="knifePikaiid2/AnimatedSprite/item" to="knifePikaiid2/AnimatedSprite" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="knifePikaiid2/AnimatedSprite/item" to="knifePikaiid2/AnimatedSprite" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="knifePikaiid2/AnimatedSprite/item" to="knifePikaiid2" method="_on_item_pressed"]
+[connection signal="timeout" from="knifePikaiid2/Timer" to="knifePikaiid2" method="_on_Timer_timeout"]
+[connection signal="animation_finished" from="knifePikaiid2Midlight" to="knifePikaiid" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="animation_finished" from="knifePikaiid2Highlight" to="knifePikaiid" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="pressed_data" from="DriftWorm" to="." method="_on_DriftWorm_pressed"]
+[connection signal="animation_finished" from="DriftWorm/AnimatedSprite" to="DriftWorm" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="mouse_entered" from="DriftWorm/AnimatedSprite/item" to="DriftWorm/AnimatedSprite" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="DriftWorm/AnimatedSprite/item" to="DriftWorm/AnimatedSprite" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="DriftWorm/AnimatedSprite/item" to="DriftWorm" method="_on_item_pressed"]
+[connection signal="pressed_data" from="DriftWorm2" to="." method="_on_DriftWorm_pressed"]
+[connection signal="animation_finished" from="DriftWorm2/AnimatedSprite" to="DriftWorm2" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="mouse_entered" from="DriftWorm2/AnimatedSprite/item" to="DriftWorm2/AnimatedSprite" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="DriftWorm2/AnimatedSprite/item" to="DriftWorm2/AnimatedSprite" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="DriftWorm2/AnimatedSprite/item" to="DriftWorm2" method="_on_item_pressed"]
+[connection signal="pressed_data" from="DriftWorm3" to="." method="_on_DriftWorm_pressed"]
+[connection signal="animation_finished" from="DriftWorm3/AnimatedSprite" to="DriftWorm3" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="mouse_entered" from="DriftWorm3/AnimatedSprite/item" to="DriftWorm3/AnimatedSprite" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="DriftWorm3/AnimatedSprite/item" to="DriftWorm3/AnimatedSprite" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="DriftWorm3/AnimatedSprite/item" to="DriftWorm3" method="_on_item_pressed"]
+[connection signal="enter_trap" from="lacemouth" to="." method="_on_lacemouth_enter_trap"]
+[connection signal="pressed_data" from="lacemouth" to="." method="_on_lacemouth_pressed_data"]
+[connection signal="mouse_entered" from="lacemouth/AnimatedSprite/item" to="lacemouth/AnimatedSprite" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="lacemouth/AnimatedSprite/item" to="lacemouth/AnimatedSprite" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="lacemouth/AnimatedSprite/item" to="lacemouth" method="_on_item_pressed"]
+[connection signal="pressed_data" from="lacemouth2" to="." method="_on_lacemouth_pressed_data"]
+[connection signal="mouse_entered" from="lacemouth2/AnimatedSprite/item" to="lacemouth2/AnimatedSprite" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="lacemouth2/AnimatedSprite/item" to="lacemouth2/AnimatedSprite" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="lacemouth2/AnimatedSprite/item" to="lacemouth2" method="_on_item_pressed"]
+[connection signal="pressed_data" from="graptolite" to="." method="_on_graptolite_pressed_data"]
+[connection signal="mouse_entered" from="graptolite/AnimatedSprite/item" to="graptolite/AnimatedSprite" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="graptolite/AnimatedSprite/item" to="graptolite/AnimatedSprite" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="graptolite/AnimatedSprite/item" to="graptolite" method="_on_item_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]
+[connection signal="mouse_entered" from="BagIcon/item" to="BagIcon" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="BagIcon/item" to="BagIcon" method="_on_item_mouse_exited"]
+[connection signal="pressed" from="BagIcon/item" to="." method="_on_bagicon_pressed"]
+[connection signal="pressed" from="Contemplate/Yes" to="Contemplate" method="_on_Yes_pressed"]
+[connection signal="pressed" from="Contemplate/No" to="Contemplate" method="_on_No_pressed"]

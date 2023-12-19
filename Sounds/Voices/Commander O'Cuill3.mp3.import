@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Commander O'Cuill3.mp3-4b3ae660ec6546e7e173fb33f2b17422.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Voices/Commander O'Cuill3.mp3"
+dest_files=[ "res://.import/Commander O'Cuill3.mp3-4b3ae660ec6546e7e173fb33f2b17422.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

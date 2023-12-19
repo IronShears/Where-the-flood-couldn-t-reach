@@ -1,0 +1,51 @@
+[gd_resource type="Theme" load_steps=7 format=2]
+
+[ext_resource path="res://Components/Fonts/dogica.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=11]
+size = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.8, 0.792157, 0.796078, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.309804, 0.360784, 0.392157, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+expand_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.8, 0.792157, 0.796078, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 0.8, 0.792157, 0.796078, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0.101961, 0.0980392, 0.0980392, 1 )
+
+[resource]
+Button/colors/font_color = Color( 0.101961, 0.0980392, 0.0980392, 1 )
+Button/colors/font_color_focus = Color( 0.101961, 0.0980392, 0.0980392, 1 )
+Button/colors/font_color_hover = Color( 0.8, 0.792157, 0.796078, 1 )
+Button/colors/font_color_pressed = Color( 0.101961, 0.0980392, 0.0980392, 1 )
+Button/fonts/font = SubResource( 11 )
+Button/styles/focus = SubResource( 12 )
+Button/styles/hover = SubResource( 13 )
+Button/styles/normal = SubResource( 14 )
+Button/styles/pressed = SubResource( 16 )

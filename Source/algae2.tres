@@ -1,0 +1,38 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+render_mode blend_mix;
+
+// Wind settings.
+uniform float speed = 1.0;
+uniform float interval = 3.5;
+uniform float detail = 1.0;
+uniform float strength = 1.0;
+uniform float distortion : hint_range(0.0, 1.0);
+uniform float heightOffset = 0.0;
+uniform int sprite_sheet_columns: hint_range(4,2) = 1;
+uniform int sprite_sheet_rows: hint_range(4,3) = 1;
+
+float getWind(vec2 vertex, vec2 uv, float timer){
+	vec2 pos = mix(vec2(1.0), vertex, distortion).xy;
+	float time = timer * speed + pos.x * pos.y;
+	float wind = (cos(time) + sin(time * detail)-1.0) * strength * max(0.0, (1.0-uv.y) - heightOffset);
+	
+	return wind;
+	}
+
+void vertex() {
+	VERTEX.x += getWind(VERTEX.xy, UV, TIME);
+}"
+
+[resource]
+shader = SubResource( 1 )
+shader_param/speed = 3.0
+shader_param/interval = 3.5
+shader_param/detail = 1.0
+shader_param/strength = 1.0
+shader_param/distortion = 0.372
+shader_param/heightOffset = 0.0
+shader_param/sprite_sheet_columns = 1
+shader_param/sprite_sheet_rows = 1

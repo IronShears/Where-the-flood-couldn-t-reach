@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Components/FlavorText.gd" type="Script" id=1]
+[ext_resource path="res://Source/DialogueTheme.tres" type="Theme" id=2]
+[ext_resource path="res://Components/Textures/TextBox1.png" type="Texture" id=3]
+[ext_resource path="res://Components/Textures/TextBox2.png" type="Texture" id=4]
+[ext_resource path="res://Sounds/47648__readeonly__noiseshort.wav" type="AudioStream" id=5]
+
+[node name="Dialogue" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Dialoguebox" type="Sprite" parent="."]
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Dialoguebox2" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Name" type="RichTextLabel" parent="."]
+margin_left = 40.0
+margin_top = 141.0
+margin_right = 159.0
+margin_bottom = 155.0
+theme = ExtResource( 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text" type="RichTextLabel" parent="."]
+margin_left = 8.0
+margin_top = 7.0
+margin_right = 266.0
+margin_bottom = 49.0
+theme = ExtResource( 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_constants/table_vseparation = 0
+bbcode_enabled = true
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.05
+autostart = true
+
+[node name="AutoCloseTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Voice" type="AudioStreamPlayer2D" parent="."]
+
+[node name="Static" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="AutoCloseTimer" to="." method="_on_AutoCloseTimer_timeout"]

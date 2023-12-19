@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Agent Hale2.mp3-a1c4340d0db1267d3ce6aef38996f7a2.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Voices/Agent Hale2.mp3"
+dest_files=[ "res://.import/Agent Hale2.mp3-a1c4340d0db1267d3ce6aef38996f7a2.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

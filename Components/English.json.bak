@@ -1,0 +1,292 @@
+{
+	
+"TUTORIAL FOR TRANSLATORS": "SEE BELOW, anything besides text in the Dialogue Dictionaries.(INCLUDING the name. Names are changed seperately all at once in the title section below).", 
+
+"Do not change any of the BBCODE": "Don't touch anything that looks like this: [color=#xxxxxx][/color]",
+
+"Do not change Any variables in brackets":"Don't touch anything that looks like this: {item1}",
+
+"Do not change any dictionary keys":[
+{"doNotChangeThis":"change THIS"}
+],
+
+"Do not change anything besides text in the Dialogue Dictionaries.":[
+{"name":"DO NOT CHANGE","text":"CHANGE","tickSpeed":"DO NOT CHANGE","type":"DO NOT CHANGE"},
+],
+
+"Names are changed all at once right here below instead" : "The name in dialogue dictionaries also controls the voices characters have so it's important the ones in the dialogue dictionaries stays the same."
+
+"Dr. Sanghera": "Dr. Sanghera",
+"Commander O'Cuill": "Commander O'Cuill",
+
+"With all of that mentioned, the rest of this is all the text in the entire game.": "Good luck! If you need additional assistance, DM me on wikidot(IronShears, slower) or Discord(ironshears, faster)",
+
+"scpTitle":"Item #: SCP-7784",
+"scpText":"[color=#4f80a0]Provisional Object Class:[/color] Safe
+
+[color=#4f80a0]Pre-containment Procedures:[/color] A drilled entry point near the top of the cave will be used for entry and exit into the anomaly and the ecosystem that surrounds it while research takes place. Potential anomalous properties of the cave SCP-7784 resides within are currently being researched. No life support equipment is required within the cavern for healthy individuals. [i]Due_to_minimal_risk_and_the_breathability of_the_atmosphere, only_small_teams_with minimal_equipment_are_necessary.[/i] [color=#4f80a0]So much for that.[/color]
+
+[color=#4f80a0]Description:[/color] SCP-7784 is a black wool-like alga that grows at the bottom of the saltwater pools in a sealed cave intercepted at approximately 29 meters beneath the surface in the Yunnan province, China.
+
+SCP-7784’s primary source of energy is hypothesized to be a form of anomalous thermosynthesis that produces ketones, methane, and oxygen. Due to this, the oxygen and methane content of the cave is elevated compared to the broader atmosphere of Earth, but it remains safely breathable. 
+
+SCP-7784 has adapted to completely remove the need for glucose and instead relies on several ketones for respiration. Its cells resemble algae in the Oedogonium genus but do not contain chloroplasts. The specimen contains an autapomorphic organelle that shares some key resemblances to fungal spores.
+
+SCP-7784, and all life in the ecosystem it supports, are endemic to the cavern. Currently, [color=#4f80a0]{species} species[/color](including SCP-7784) have been described within the ecosystem and none besides SCP-7784 have been observed to be anomalous. The majority of the supported species rely exclusively on dietary ketones but do produce glucose via gluconeogenesis.
+
+All are descended from marine species that have split somewhere from 485-462 mya. It is currently estimated the cave was sealed off sometime between the early to mid-Ordovician period.	
+",
+
+"teaLilyName":"\"Tea Lily\"",
+"teaLilyNameLong":"\"Tea Lily\"
+[color=grey](Canistrumcorona caverna)[/color]",
+"teaLilyText0":"A species of
+land-adapted crinoid.
+The bracia of its crown
+has fused to a tightly
+knit cup adapted to
+collect water that
+drips off stalactites above and consume the waste from the symbiotic lancelets that live in their cups.
+
+They reproduce asexually through spores that grow into larvae and collect in humidity in the air. Once the water collects as dew on the surface, the larvae drip down and fix themselves on the floor to grow.",
+"teaLilyText1":"A species of
+land-adapted crinoid.
+The bracia of its crown
+has fused to a tightly
+knit [color=#4f80a0]basket-like[/color] cup
+adapted to collect
+water that drips off stalactites above and consume[color=#4f80a0] both the microbes living in the water and[/color] the waste from the symbiotic lancelets that live in their cups.
+
+
+They reproduce asexually through spores that grow into larvae and collect in humidity in the air. Once the water collects as dew on the surface, the larvae drip down and fix themselves on the floor to grow.
+",
+
+"teaCupLanceletName":"\"Tea Cup Lancelet\"",
+"teaCupLanceletNameLong":"\"Tea Cup Lancelet\"
+[color=grey](LilliumDdmus stagnans)[/color]",
+"teaCupLanceletText0":"A small stem-chordate
+that lives
+symbiotically within a
+terrestrial crinoid
+species’s cup. It lives exclusively in the cups
+of this species but
+it is currently unknown
+what the species gets out of the relationship.
+
+Each cup can support up to 3 specimens.",
+"teaCupLanceletText1":"A small stem-chordate
+that lives
+symbiotically within a
+terrestrial crinoid
+species’s cup. It lives exclusively in the cups
+of this species and
+[color=#4f80a0]subsists upon condensed
+microbes filtered by the crinoid it lives within[/color]. 
+
+Each cup can support up to 3 specimens.",
+
+"veinerWormName":"\"Veiner Worm\"",
+"veinerWormNameLong":"\"Veiner Worm\"
+[color=grey](Nocividolors trichinsis)[/color]",
+"veinerWormText0":"A parasitic hemichordate invertebrate related to acorn worms. The majority of its body has shrunk and become vestigial, only housing internal organs. Its thin proboscis has a V-shaped tip on the end it uses to burrow into the host crinoid’s stalk and its cup. Crinoid hosts appear unable to support their usual symbionts if infected. It is unknown why.",
+"veinerWormText1":"A parasitic hemichordate invertebrate related to acorn worms. The majority of its body has shrunk and become vestigial, only housing internal organs. Its thin proboscis has a V-shaped tip it uses to burrow into the host’s stalk and into its cup [color=#4f80a0]to feed on the microbes condensed within it.[/color] Crinoid hosts appear unable to support their usual symbionts if infected [color=#4f80a0]due to the siphon of nutrition.[/color]",
+"tablet":"A tablet used to record prelimary data on the anomaly and ecosystem.",
+"tabletNo":"Tablet cannot be combined with any other objects.",
+
+
+"baitName":"Bait",
+"baitInvDesc":"A pack of neatly packed and sterilized fish heads for use as bait.",
+
+"baitBoxName":"Bait Box",
+"baitBoxInvDesc":"A Box full of neatly packed and sterilized fish heads for use as bait.",
+
+"waterBottleFullName":"Water Bottle",
+"waterBottleFullInvDesc":"A full water bottle. No greater evil than single use plastic.",
+"waterBottleHalfName":"Water Bottle",
+"waterBottleHalfInvDesc":"A half full water bottle. No greater evil than single use plastic.",
+"waterBottleEmptyName":"Water Bottle",
+"waterBottleEmptyInvDesc":"An empty water bottle. No greater evil than single use plastic.",
+
+"lampName":"Lamp",
+"lampInvDesc":"A floor lamp. Could be used to set up camp.",
+
+"combineItem":["[center]Combine [color=#4f80a0] {item} [/color]?"],
+"combineTwoItems":["[center]Combine [color=#4f80a0] {item1}[/color] and[color=#4f80a0] {item2}[/color]?"],
+
+"cannotCombine":[
+{"name":"null","text":"Nothing to do with these two items.","tickSpeed":0.04,"type":"Dialogue"}
+],
+
+
+"intro":[
+{"name":"nullCommander","text":"Hello hello, do you copy?","tickSpeed":0.02,"type":"Dialogue"},
+{"name":"nullCommander","text":"Agent Chen, Dr. Sangera respond!","tickSpeed":0.02,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"What... Ughh... My head...","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"nullCommander","text":"Are either of you able to access your radios?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"Dr. Sanghera fumbles for her radio.","tickSpeed":0.04,"type":"Dialogue"}
+],
+
+"intro2":[
+{"name":"Dr. Sanghera","text":"I... I'm here...","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Are you trapped? Can you get up?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"No... no... I'm... I'm fine... What... What happened... ","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"There was a collapse on your way into to cave.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"We're not sure what happened but we're working on it.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"Fuck... Chen are you...","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"...Chen?","tickSpeed":0.04,"closeSpeed":0.01,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"Oh god...","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Is Chen trapped?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"He's... he's dead...","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"I need you to check his pulse. If you can revive him we'll be able to get you both out in the hour.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"...His... His head is...","tickSpeed":0.08,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"...Crushed...","tickSpeed":0.08,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"...","tickSpeed":0.2,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Fuck.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Okay.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"Commander O'Cuill sighs.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Indira, I need you to move Chen away from the cave entrance.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Do NOT stand underneath it. The team is arriving soon to excavate.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"We do not want the rubble falling on you.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"...Okay... okay.","tickSpeed":0.08,"type":"Dialogue"}
+],
+
+"intro3":[
+{"name":"Dr. Sanghera","text":"Ugh... He's heavier than I was expecting.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"I told you we shouldn't have gotten comfortable yet.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"It's only the second expedition.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"The ground must be more unstable than expected.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"Is that all you have to say?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Now is not the time to assign blame.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"We need start excavating.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"What about Chen?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Leave the body where its at. We'll retrieve it when we get down there.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Find some place to camp out and try and keep yourself occupied.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"Great.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"We should get you out within the hour.","tickSpeed":0.04,"type":"Dialogue"}
+],
+
+"intro4":[
+{"name":"Dr. Sanghera","text":"Dry. Relatively secluded. Flat.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"This looks like a good enough place.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"I'll set up camp here.","tickSpeed":0.04,"type":"Dialogue"}
+],
+
+"intro5":[
+{"name":"Dr. Sanghera","text":"Any word on how long this is going to take?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Find some place to rest?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"Yes.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"You're gonna be down there a bit longer than expected.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"The excavation team wants to make sure the whole cave doesn't collapse on you.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"Okay. How long?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Do you still have the bait?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"I wish you'd just answer my questions. Yes.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Keep it away from the wildlife.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"It won't taste good but it's edible.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"What do you expect me to do for water?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Isn't there a lake down there?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"It's SALT water.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"Did you read nothing I'd written before lessening safety measures on this expedition?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Calm down. You have a water bottle.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"It won't be more than a few days.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"Fuck.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"I'll be on the other end of the radio the whole time.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"The battery should last a week.","tickSpeed":0.04,"type":"Dialogue"}
+],
+
+
+
+"ropeTake":[
+{"name":"null","text":"Rope added to inventory.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"The rope looks like it's been cut.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"There's something oily on the end.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"O'Cuill do you have the other half of the rope?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Yes.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"Check the end of it for me.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"...Okay...","tickSpeed":0.08,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"...","tickSpeed":0.2,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Huh. Oil. Could be the lubricant from some supplies.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"No. Keep it as uncontaminated as possible.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"I want to send it for protein and DNA testing when I get up there.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"I don't think it's organic.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"The wildlife itself hasn't really shown any anomalous properties.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"Animals can produce oil, Riain.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Sure but, wouldn't we have found it already?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"The cave's relatively small.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"If an animal did that, I'd be pretty big.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"Just bag it.","tickSpeed":0.04,"type":"Dialogue"}
+],
+
+"ropeLook":[
+{"name":"null","text":"The nylon climbing rope used to descend into the cavern.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"It looks like it snapped.","tickSpeed":0.04,"type":"Dialogue"}
+],
+
+"body0":[
+{"name":"null","text":"...","tickSpeed":0.1,"type":"Dialogue"}
+],
+
+"firstLook" : [
+{"name":"Commander O'Cuill","text":"Well, at least you found something to keep yourself occupied.","tickSpeed":0.04,"type":"Dialogue"}
+],
+
+"teaLilyLook" : [
+{"name":"null","text":"\"[color=#245372]Tea Lily[/color]\". Cup shaped crinoid that collects water to feed on the waste of their symbiotic lancelet.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"This species was initially described on the first expedition.","tickSpeed":0.04,"type":"Dialogue"}
+],
+
+"teaLilyLook0" : [
+{"name":"null","text":"\"[color=#245372]Tea Lily[/color]\". Cup shaped crinoid that collects water to feed on the waste of a symbi","tickSpeed":0.04,"type":"DialogueAuto"},
+{"name":"null","text":"...The water from it's cup is dripping from the bottom.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"Is that...","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"Dr. Sanghera tastes the water from the bottom of the crinoid.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"Ohhh... of course!","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"O'Cuill, The Tea lilies. They're not completly... water tight.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Okay?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"I can't believe I missed this before. I think they're filtering the water.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"They're concentrating microbes from the ceiling for the lancelets to eat. THAT'S what the lancelets get out of the arrangement!","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"Huh. Okay. Cool.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"New data added to files.","tickSpeed":0.04,"type":"Dialogue"}
+],
+
+"teaLilyLook1" : [
+{"name":"null","text":"\"[color=#245372]Tea Lily[/color]\". Cup shaped crinoid that slowly condenses microbes in water.","tickSpeed":0.04,"type":"Dialogue"}
+],
+
+"teaLilyCupTake":[
+{"name":"null","text":"The head snaps off while being pulled up from the rocks.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"Tea lily Cup added to inventory.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"The liquid remains in the cup but the young parasite is slowly pulled from the bottom.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"Uggh... disgusting.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"Veiner Worm discarded.","tickSpeed":0.04,"type":"Dialogue"}
+],
+
+"teaCupLanceletLook0":[
+{"name":"null","text":"\"[color=#245372]Tea Cup Lancelet[/color]\". A small stem-chordate that lives symbiotically within a crinoid.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"It's unclear what it's getting out of it.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"This species was initially described on the first expedition.","tickSpeed":0.04,"type":"Dialogue"}
+],
+
+"teaCupLanceletLook1":[
+{"name":"null","text":"\"[color=#245372]Tea Cup Lancelet[/color]\". A small stem-chordate that lives symbiotically within a crinoid.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"It feeds on the microbes condensed in the cup.","tickSpeed":0.04,"type":"Dialogue"}
+],
+
+"veinerWormLook0":[
+{"name":"null","text":"\"[color=#245372]Veiner Worm[/color]\". A parasitic hemichordate invertebrate related to acorn worms.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"It's unclear what it's getting out of it.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"This species was initially described on the first expedition.","tickSpeed":0.04,"type":"Dialogue"}
+],
+
+"veinerWormLook1":[
+{"name":"null","text":"\"[color=#245372]Veiner Worm[/color]\". A parasitic hemichordate invertebrate related to acorn worms.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"It siphons the microbes condensed in the cup.","tickSpeed":0.04,"type":"Dialogue"}
+],
+
+"veinerWormDropped0":[
+{"name":"null","text":"It's writhing.","tickSpeed":0.04,"type":"Dialogue"}
+],
+
+"veinerWormDropped1":[
+{"name":"null","text":"Looks like it's attracted some wildlife.","tickSpeed":0.04,"type":"Dialogue"}
+]
+}
