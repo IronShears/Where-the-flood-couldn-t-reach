@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Source/RoomButtons.tres" type="Theme" id=1]
 [ext_resource path="res://Source/Title.gd" type="Script" id=2]
 [ext_resource path="res://Source/CRT.tres" type="Material" id=3]
 [ext_resource path="res://Art/Backgrounds/Filter.png" type="Texture" id=4]
 [ext_resource path="res://Sounds/cavein.wav" type="AudioStream" id=5]
+[ext_resource path="res://Components/Cursor.tscn" type="PackedScene" id=6]
 
 [node name="world" type="Node2D"]
 script = ExtResource( 2 )
@@ -60,6 +61,8 @@ stream = ExtResource( 5 )
 material = ExtResource( 3 )
 texture = ExtResource( 4 )
 centered = false
+
+[node name="Cursor" parent="." instance=ExtResource( 6 )]
 
 [connection signal="pressed" from="wakeUp" to="." method="_on_wakeUp_pressed"]
 [connection signal="pressed" from="KeepOn" to="." method="_on_KeepOn_pressed"]
