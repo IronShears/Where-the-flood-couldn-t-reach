@@ -36,7 +36,7 @@ const float precision = 0.01;
 float getWind(vec2 vertex, vec2 uv, float timer){
 	vec2 pos = mix(vec2(1.0), vertex, distortion).xy;
 	float time = timer * speed + pos.x * pos.y;
-	float wind = (cos(time) + cos(detail*time)-1.0) * strength * max(0.0, (1.0-uv.y) - heightOffset);
+	float wind = (sin(time) + sin(detail*time)-1.0) * strength * max(0.0, (1.0-uv.y) - heightOffset);
 	
 	return wind;
 	}

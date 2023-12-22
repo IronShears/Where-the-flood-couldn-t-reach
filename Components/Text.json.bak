@@ -10,14 +10,14 @@
 {"name":"DO NOT CHANGE","text":"CHANGE","tickSpeed":"DO NOT CHANGE","type":"DO NOT CHANGE"},
 ],
 
-"Names for name boxes are changed all at once right here below instead" : "The name in dialogue dictionaries also controls the voices characters have so it's important the ones in the dialogue dictionaries stays the same.",
+"Names for name boxes are changed all at once right here below instead" : "The name in dialogue dictionaries also controls the voices characters have so it's important they are not changed.",
 
 "Dr. Sanghera": "Dr. Sanghera",
 "Commander O'Cuill": "Commander O'Cuill",
 "Agent Guerrero": "Agent Guerrero",
 "Agent Hale": "Agent Hale",
 
-"Don't have to change these ones, though" :"these ones don't even show up in the game.",
+"Don't have to change these ones below, though" :"these ones don't even show up in the game.",
 
 "null": "null",
 "nullCommander": "nullCommander",
@@ -25,12 +25,22 @@
 "EXPORTING OPTION 1":"Download Godot and open the project file, place your edited .json file in res://Components, test it with the play button on the top right to make sure it runs correctly.",
 "If some letters aren't showing up, you may need to find new fonts and edit them." : "Font can be changed in the DialogueTheme.tres, Tablet.tres, and Room Buttons.tres. You'll probably need 2-3 fonts. I used 3, but you can get away with a Standard font and a Strikethrough font. If you can't find a strikthrough font and you don't want to make one, just reword anything with [i][/i] borders to make sense without a strikethrough and remove the [i][/i].",
 "Click project>export>add...>HTML5>Resources": "add *.json to Filters to export into a new folder", 
-"Export the project, and finally," : "edit the .html file's name to index.html and upload to a site like Itch.io or github pages. You may need to zip the folder depending on where you upload it.",
+"Export the project, and finally," : "edit the .html file's name to index.html and upload to a site of your choosing like Itch.io or github pages. You may need to zip the folder depending on where you upload it.",
 
-"EXPORTING ALTERNATIVE" : "If you're uncomfortable with code or Godot, you COULD skip all that and just send the translated file to me. I would be happy to add the language support to the main game file with a selection screen.",
-"It'd be much easier on you, but it wouldn't be it's own file." : "You can still upload your own scp-wiki translation page and you'd be credited in the main game as a translator and on the page as a co-author, but you couldn't make your own itch.io page for the translation.",
+"EXPORTING ALTERNATIVE" : "If you're uncomfortable with code or Godot, you COULD skip all that and just send the translated file to me. I would be happy to add the language support natively to the main game file with a selection screen at the start",
+"It'd be much easier on you, but it wouldn't be its own file." : "You can still upload your own scp-wiki translation page and you'd be credited in the main game as a translator and on the page as a co-author, but you couldn't make your own itch.io page for the translation if you were planning on that.",
 
 "With all of that mentioned, the rest of this file is all the text in the entire game.": "Good luck! If you need additional assistance, DM me on wikidot(IronShears, slower) or Discord(ironshears, faster)",
+
+
+
+
+
+
+
+
+"dialogueError":{"name":"null","text":"DIALOGUE MISSING","tickSpeed":0.04,"type":"Dialogue"},
+
 
 "scpTitle":"Item #: SCP-XXXX",
 "scpText":"[color=#4f80a0]Provisional Object Class:[/color] Euclid
@@ -64,18 +74,18 @@ SCP-XXXX, and all life in the ecosystem it supports, are endemic to the cavern. 
 
 All are descended from marine species that have split somewhere from 485-462 mya. It is currently estimated the cave was sealed off sometime between the early to mid-Ordovician period.{cavesDiscovered}
 
-[color=#4f80a0]Addendum:[/color] Two expeditions into Miánhua cave have taken place. The first expedition was completed without complication by a team of 5, Dr. Sanghera and four MTF operatives stationed in the Yunnan province–on December 20th, 2023. 7/{species} of the known species, including SCP-XXXX, were described during this expedition. Due to the success of the first expedition and the low perceived risk, a second expedition with a two-person team, Dr. Sanghera and Agent Chen, was approved and carried out on December 23rd 2023. On entry into the cavern, a cave-in occurred. Agent Chen was killed immediately{ending}
+[color=#4f80a0]Addendum:[/color] Two expeditions into Miánhua cave have taken place. The first expedition was completed without complication by a team of 5, Dr. Sanghera and four MTF operatives stationed in the Yunnan province on December 20th, 2023. 7/{species} of the known species, including SCP-XXXX, were described during this expedition. Due to the success of the first expedition and the low perceived risk, a second expedition with a two-person team, Dr. Sanghera and Agent Chen, was approved and carried out on December 23rd 2023. On entry into the cavern, a cave-in occurred. Agent Chen was killed immediately{ending}
 ",
 
 "cavesDiscovered":"
 
-[color=#4f80a0]SCP-XXXX-1[/color] was not initially noted during the first expedition. This space ie extensive and has obscured the diversity and scale of the ecosystem. The entire system has yet to be mapped.
+[color=#4f80a0]SCP-XXXX-1 was not initially noted during the first expedition. This space ie extensive and has obscured the diversity and scale of the ecosystem. The entire system has yet to be mapped.[/color]
 ",
 "caveEndTrue":"and SCP-XXXX-1",
 "caveEndFalse":"",
 
 "energySource0":"SCP-XXXX’s primary source of energy is currently unknown but results in the production of ketones, methane, and oxygen. The oxygen and methane content of the cave is elevated compared to the broader atmosphere of Earth but remains safely breathable. ",
-"energySource1":"SCP-XXXX’s primary source of energy is a form of [color=#4f80a0]anomalotrophy[/color] that produces ketones, methane, and oxygen. This form of autotrophy is powered by fauna moving between Miánhua cave and the extra-dimensional space, [color=#4f80a0]SCP-XXXX-1[/color], located within SCP-XXXX. The oxygen and methane content of the cave is elevated compared to the broader atmosphere of Earth but remains safely breathable. ",
+"energySource1":"SCP-XXXX’s primary source of energy is a form of [color=#4f80a0]anomalotrophy[/color] that produces ketones, methane, and oxygen. [color=#4f80a0]This form of autotrophy is powered by fauna moving between Miánhua cave and the extra-dimensional space, SCP-XXXX-1, located within SCP-XXXX.[/color] The oxygen and methane content of the cave is elevated compared to the broader atmosphere of Earth but remains safely breathable. ",
 
 
 "endingText1":" and Dr. Sanghera was trapped in the cave for 71 hours without water. Following recovery Dr. Sanghera was discovered unresponsive in a small branch of the cavern and admitted to the medical ward to receive intravenous fluids. She is expected to make a full recovery.",
@@ -87,7 +97,7 @@ All are descended from marine species that have split somewhere from 485-462 mya
 "endingName1":"Speedrun Killer",
 "endingName2":"I Survived 71 Hours Trapped In A Cave And All I Got Was This Stupid T-Shirt",
 "endingName3":"Making the best of it",
-"endingName3":"Rookie Mistake",
+"endingName4":"Rookie Mistake",
 
 
 "describedSpecies":"[color=#4f80a0]Described Species:[/color]",
@@ -183,7 +193,7 @@ of cephalochordates.
 This species has a 
 sharp knife-like 
 proboscis it uses to 
-pick remnants of food out of the [color=#4f80a0]Crab Trap Crinoid[/color]’s arms. This species’s cephalocaudal length is longer than most other currently living cephalochordates, reaching 7cm not including the bone.
+pick remnants of food out of the [color=#4f80a0]Crab Pot Crinoid[/color]’s arms. This species’s cephalocaudal length is longer than most other currently living cephalochordates, reaching 7cm not including the bone.
 
 All stem-chordates endemic to Miánhua cave belong to the order [color=#4f80a0]Pikaiiformes[/color], a taxon that also includes the Middle Cambrian species [color=#4f80a0]Pikaia gracilens[/color]. Species within this order are referred to as “[color=#4f80a0]pikaiids[/color]”.
 ",
@@ -193,7 +203,7 @@ of cephalochordates.
 This species has a
 sharp knife-like
 proboscis it uses to 
-pick remnants of food out of  [color=#4f80a0]and to slice up prey within[/color] the [color=#4f80a0]Crab Trap Crinoid[/color]’s arms. This species’s cephalocaudal length is longer than most other currently living cephalochordates, reaching 7cm not including the bone.
+pick remnants of food out of  [color=#4f80a0]and to slice up prey within[/color] the [color=#4f80a0]Crab Pot Crinoid[/color]’s arms. This species’s cephalocaudal length is longer than most other currently living cephalochordates, reaching 7cm not including the bone.
 
 All stem-chordates endemic to Miánhua cave belong to the order [color=#4f80a0]Pikaiiformes[/color], a taxon that also includes the Middle Cambrian species [color=#4f80a0]Pikaia gracilens[/color]. Species within this order are referred to as “[color=#4f80a0]pikaiids[/color]”.
 ",
@@ -234,7 +244,7 @@ convergent with
 cnidarians, most
 notably the
 free-floating
-lifestyle and the presence of [color=#4f80a0]stinging cells.[/color] Unlike cnidarians, these stinging cells require the species to be alive to function. Drift Worms have evolved a siphon on the bottom of their bodies which they use to move around their environment.
+lifestyle and the presence of [color=#4f80a0]stinging cells[/color]. [color=#4f80a0]Unlike cnidarians, these stinging cells require the species to be alive to function.[/color] Drift Worms have evolved a siphon on the bottom of their bodies which they use to move around their environment.
 ",
 
 "isopodRadiodontName":"\"Pillbug Radiodont\"",
@@ -277,7 +287,7 @@ sediment to reach
 soft-bodied
 invertebrates and decomposing algae. It shreds its meals into pieces and uses suction to consume them.
 
-This species belongs to the class [color=#4f80a0]Conodonta[/color], jawless fish commonly used as an index fossil and formerly believed to be extinct. It is currently the only ertebrate species class recorded within Miánhua cave.
+This species belongs to the class [color=#4f80a0]Conodonta[/color], jawless fish commonly used as an index fossil and formerly believed to be extinct. It is currently the only vertebrate species class recorded within Miánhua cave.
 ",
 "lacemouthText1":"A jawless fish
 characterized by its
@@ -287,7 +297,7 @@ It uses these teeth to
 rake through the
 sediment to reach
 soft-bodied
-invertebrates and decomposing algae. It shreds its meals into pieces and uses suction to consume them. This species is also preyed upon by the carnivorous-plant like [color=#4f80a0]Crab Trap Crinoid[/color] where it is broken down by [color=#4f80a0]Letter Bone Pikaiids[/color]
+invertebrates and decomposing algae. It shreds its meals into pieces and uses suction to consume them. [color=#4f80a0]This species is also preyed upon by the carnivorous-plant like Crab Pot Crinoid.[/color]
 
 This species belongs to the class [color=#4f80a0]Conodonta[/color], jawless fish commonly used as an index fossil and formerly believed to be extinct. It is currently the only vertebrate species class recorded within Miánhua cave.
 ",
@@ -337,7 +347,7 @@ pneumatophore and
 bulbous torus-shaped
 gonagium. However, its stipes more closely resemble [color=#4f80a0]Didymograptus[/color] or “Tuning Fork Graptolites”. This is suspected to be a superficial resemblence.
 
-Like all Graptolites, this species is a colonial organism made up of small hemichordates pterobranchs. This species’s appearance within the pond is hypothesized to have been coincidental drifting from SCP-7784-1 and not brought about by any specific bait.
+Like all Graptolites, this species is a colonial organism made up of small hemichordates pterobranchs. This species’s appearance within the pond is hypothesized to have been coincidental [color=#4f80a0]drifting from SCP-XXXX-1 and not brought about by any specific bait[/color]. [i]Exactly where within the cave system this species originated from is as of yet unknown.[/i]
 ",
 
 "slugPikaiidName":"\"Slug Pikaiid\"",
@@ -352,9 +362,9 @@ a benthic lifestyle
 similar to sea slugs.
 It has evolved a “foot”
 akin to gastropods and
-it’s gills have
+its gills have
 migrated up the sides
-of it’s body and branched resembling salamander or marine gastropod gills. 
+of its body.
 
 All stem-chordates endemic to Miánhua cave belong to the order [color=#4f80a0]Pikaiiformes[/color], a taxon that also includes the Middle Cambrian species [color=#4f80a0]Pikaia gracilens[/color]. Species within this order are referred to as “[color=#4f80a0]pikaiids[/color]”.
 ",
@@ -364,9 +374,9 @@ a benthic lifestyle
 similar to sea slugs.
 It has evolved a “foot”
 akin to gastropods and
-it’s gills have
+its gills have
 migrated up the sides
-of it’s body and branched resembling salamander or marine gastropod gills. It shares a genus with the [color=#4f80a0]Greater Slug Pikaiid[/color], though is much smaller and has less red coloration along it’s notochord.
+of its body. [color=#4f80a0]It shares a genus with the [color=#4f80a0]Greater Slug Pikaiid[/color], though is much smaller and has less red coloration along it’s notochord.[/color]
 
 All stem-chordates endemic to Miánhua cave belong to the order [color=#4f80a0]Pikaiiformes[/color], a taxon that also includes the Middle Cambrian species [color=#4f80a0]Pikaia gracilens[/color]. Species within this order are referred to as “[color=#4f80a0]pikaiids[/color]”.
 ",
@@ -374,35 +384,34 @@ All stem-chordates endemic to Miánhua cave belong to the order [color=#4f80a0]P
 "bigBoySlugPikaiidName":"\"Giant Slug Pikaiid\"",
 "bigBoySlugPikaiidNameLong":"\"Giant Slug Pikaiid\"
 [color=grey](Nectohabitavitae limax)[/color]",
+"bigBoyPikaiidName":"\"Greater Slug Pikaiid\"",
+"bigBoyPikaiidNameLong":"\"Greater Slug Pikaiid\"
+[color=grey](Nectohabitavitae majora)[/color]",
 "bigBoySlugPikaiidText0":"A stem-chordate
 that has evolved
 a benthic lifestyle
 similar to sea slugs.
 It has evolved a “foot”
 akin to gastropods and
-it’s gills have
+its gills have
 migrated up the sides
-of it’s body and branched resembling salamander or marine gastropod gills. This species is massive and resembles a Sea Hare in appearance and lifestyle.
+of its body. This species is massive and resembles a Sea Hare in appearance and lifestyle.
 
 It is nearly constantly eating or simply scraping it’s teeth along anything in front of it.
 
 All stem-chordates endemic to Miánhua cave belong to the order [color=#4f80a0]Pikaiiformes[/color], a taxon that also includes the Middle Cambrian species [color=#4f80a0]Pikaia gracilens[/color]. Species within this order are referred to as “[color=#4f80a0]pikaiids[/color]”.
 ",
-
-"bigBoyPikaiidName":"\"Greater Slug Pikaiid\"",
-"bigBoyPikaiidNameLong":"\"Greater Slug Pikaiid\"
-[color=grey](Nectohabitavitae majora)[/color]",
 "bigBoyPikaiidText0":"A stem-chordate
 that has evolved
 a benthic lifestyle
 similar to sea slugs.
 It has evolved a “foot”
 akin to gastropods and
-it’s gills have
+its gills have
 migrated up the sides
-of it’s body and branched resembling salamander or marine gastropod gills. This species is massive and resembles a Sea Hare in appearance and lifestyle.
+of its body. This species is massive and resembles a Sea Hare in appearance and lifestyle.
 
-It is nearly constantly eating or simply scraping it’s teeth along anything in front of it. It shares a genus with the [color=#4f80a0]Lesser Slug Pikaiid[/color], though is much larger and has more red coloration along it’s notochord.
+It is nearly constantly eating or simply scraping it’s teeth along anything in front of it. [color=#4f80a0]It shares a genus with the Lesser Slug Pikaiid, though is much larger and has more red coloration along it’s notochord.[/color]
 
 All stem-chordates endemic to Miánhua cave belong to the order [color=#4f80a0]Pikaiiformes[/color], a taxon that also includes the Middle Cambrian species [color=#4f80a0]Pikaia gracilens[/color]. Species within this order are referred to as “[color=#4f80a0]pikaiids[/color]”.
 ",
@@ -413,7 +422,7 @@ All stem-chordates endemic to Miánhua cave belong to the order [color=#4f80a0]P
 "wiggleTrilobiteText0":"A species of  [color=#4f80a0]Trilobite[/color]
 that has developed
 additional appendages
-on the tops of it’s 
+on the tops of its 
 body and tail. These
 appendages were at one 
 point fixed in place 
@@ -425,7 +434,33 @@ The exact purpose of this adaptation is unknown, but the trilobite appears to us
 "arthrocarisName":"\"Arthrocaris\"",
 "arthrocarisNameLong":"\"Arthrocaris\"
 [color=grey](Arthrocaris gigantia)[/color]",
-"arthrocarisText0":"test",
+"arthrocarisText0":"An extremely large
+species of [color=#4f80a0]Radiodont[/color]
+found within Miánhua
+cave. It is a slow,
+passive grazer-like
+species. Despite its
+carnivorous diet it
+fills a similar
+ecological niche as a large herbivore. It only feeds on slow moving prey, dead prey, and algae.
+
+ It does not actively hunt or pursue prey. It was observed slowly consuming pieces of a [color=#4f80a0]Slug Pikaid[/color] as it crawled back into the water.
+
+This species had not been observed on the previous expedition. Miánhua cave is a relatively small enclosed space and no offshoots or tunnels were noted on ground penetrating radar scans. How this species was able to grow to its sizes and remain unnoticed is unknown. ",
+"arthrocarisText1":"An extremely large
+species of [color=#4f80a0]Radiodont[/color]
+found within Miánhua
+cave. It is a slow,
+passive grazer-like
+species. Despite its
+carnivorous diet it
+fills a similar
+ecological niche as a large herbivore. It only feeds on slow moving prey, dead prey, and algae.
+
+
+ It does not actively hunt or pursue prey. It was observed slowly consuming pieces of a [color=#4f80a0]Slug Pikaid[/color] as it crawled back into the water.
+
+This species presumably spends the majority of its time within SCP-XXXX-1, only entering Miánhua cave to scavenge for food.",
 
 
 "tablet":"A tablet used to record prelimary data on the anomaly and ecosystem.",
@@ -457,7 +492,7 @@ The exact purpose of this adaptation is unknown, but the trilobite appears to us
 "lacemouthBaitName":"Lacemouth Filet",
 "lacemouthBaitInvDesc":"A [color=#4f80a0]Lacemouth[/color] split in half down the middle. Would make good bait.",
 "bigBoyPikaiidBaitName":"Greater Slug Pikaiid",
-"bigBoyPikaiidBaitInvDesc":"A Greater Slug Pikaiid. It's trying to eat its way out of the bag. Might work as bait.",
+"bigBoyPikaiidBaitInvDesc":"A Greater Slug Pikaiid. Its trying to eat its way out of the bag. Might work as bait.",
 
 "lampName":"Lamp",
 "lampInvDesc":"A floor lamp. Could be used to set up camp.",
@@ -467,11 +502,13 @@ The exact purpose of this adaptation is unknown, but the trilobite appears to us
 
 "combineItem":"[center]Combine [color=#4f80a0]{item}[/color]?",
 "combineTwoItems":"[center]Combine [color=#4f80a0]{item1}[/color] and[color=#4f80a0] {item2}[/color]?",
+"combineBagPrompt":"[center]Click on the tablet to view the file open or any two items to combine.",
+"useBagPrompt":"[center]Place an item as bait?",
 
 "teaLilyWaterBottleCombine":[
 {"name":"null","text":"Combined [color=#4f80a0]Tea Lily Cup[/color] and [color=#4f80a0]Water Bottle[/color].","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"Well that solves that problem. No more worrying about water","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Commander O'Cuill","text":"What happening?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"What's happening?","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"I'm using one of the [color=#4f80a0]Tea Lily Cups[/color] as a filter.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Commander O'Cuill","text":"Sure that's safe?","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"Didn't you tell me to stop being dramatic about safety?","tickSpeed":0.04,"type":"Dialogue"},
@@ -487,12 +524,18 @@ The exact purpose of this adaptation is unknown, but the trilobite appears to us
 "yes" : "Yes",
 "no" : "No",
 "wakeUp" : "Wake Up",
-"keepOn" : "Keep CRT Filter On",
-"turnOff" : "Turn CRT Filter Off",
+"keepOn" : "CRT Filter On",
+"turnOff" : "CRT Filter Off",
+"filterToggleTrue" : "Filter Toggle: ON",
+"filterToggleFalse" : "Filter Toggle: OFF",
+"viewTablet" : "View Previous File",
+"newGame" : "New Game",
+"gameTitle" : "[center]SCP-XXXX:
+where the flood couldn't reach.[/center]",
 
 "intro":[
 {"name":"nullCommander","text":"Hello hello, do you copy?","tickSpeed":0.02,"type":"Dialogue"},
-{"name":"nullCommander","text":"Agent Chen, Dr. Sangera respond!","tickSpeed":0.02,"type":"Dialogue"},
+{"name":"nullCommander","text":"Agent Chen, Dr. Sanghera respond!","tickSpeed":0.02,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"What... Ughh... My head...","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"nullCommander","text":"Are either of you able to access your radios?","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"null","text":"Dr. Sanghera fumbles for her radio and bag.","tickSpeed":0.04,"type":"Dialogue"}
@@ -502,7 +545,7 @@ The exact purpose of this adaptation is unknown, but the trilobite appears to us
 {"name":"Dr. Sanghera","text":"I... I'm here...","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Commander O'Cuill","text":"Are you trapped? Can you get up?","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"No... no... I'm... I'm fine... What... What happened... ","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Commander O'Cuill","text":"There was a collapse on your way into to cave.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"There was a collapse on your way into the cave.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Commander O'Cuill","text":"We're not sure what happened but we're working on it.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"Fuck... Chen are you...","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"...Chen?","tickSpeed":0.04,"closeSpeed":0.01,"type":"Dialogue"},
@@ -530,7 +573,7 @@ The exact purpose of this adaptation is unknown, but the trilobite appears to us
 {"name":"Dr. Sanghera","text":"Is that all you have to say?","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Commander O'Cuill","text":"Now is not the time to assign blame.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"...Right.","tickSpeed":0.08,"type":"Dialogue"},
-{"name":"Commander O'Cuill","text":"We need start excavating.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"We need to start excavating.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"What about Chen?","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Commander O'Cuill","text":"Leave the body where its at. We'll retrieve it when we get down there.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Commander O'Cuill","text":"Find some place to camp out and try and keep yourself occupied.","tickSpeed":0.04,"type":"Dialogue"},
@@ -579,7 +622,6 @@ The exact purpose of this adaptation is unknown, but the trilobite appears to us
 "restTitle1":"Day 1, 14:00",
 
 "restIntro1":[
-{"name":"Dr. Sanghera","text":"I'm getting restless.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"Riain, any progress?","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Commander O'Cuill","text":"Still surveying. We're bringing out the ground penetrating radar.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"Ugh... Okay.","tickSpeed":0.08,"type":"Dialogue"},
@@ -745,83 +787,6 @@ The exact purpose of this adaptation is unknown, but the trilobite appears to us
 {"name":"Agent Guerrero","text":"Glad to see you're alright.","tickSpeed":0.04,"type":"Dialogue"}
 ],
 
-"credits":"[center]
-{species}/8 new species discovered
-
-Ending {ending}/4:
-{endingTitle}
-
-
-
-
-
-
-
-
-
-AUDIO
-
-Rockslide: DenseCrunchRe-rated_CaveIn.wav  by zimbot(CC-BY 4.0)
-
-Tinnitus: Tinnitus sound by Breviceps (CC0)
- 
-Heartbeat: Heartbeat. by urupin(CC-BY 4.0)
-
-Commander O'Cuill voice: Simulated Spanish radio commercial by OneiroidState(CC0)
-
-Radio Static: NOISEshort.wav by ReadeOnly(CC0)
-
-Dr. Sanghera voice: French Canadian Woman Giving Instructions 03.wav by vero.marengere(CC0)
-
-Pick Up Item: Pickup_item1.mp3 by Defaultv(CC0)
-
-Place Down Item: Rustling fabric by NachtmahrTV
-
-Waterfall Sounds: Small waterfall in mountain forest.WAV by BonnyOrbit(CC0)
-
-Cave Sounds: Cave .mp3 by Beussa(CC0)
-
-Splash: water splash 2 by swordofkings128 (CC0)
-
-Agent Hale: The Wine is Quite Delightful - Posh Woman by MadamVicious(CC0)
-(This one's only in the game cause it made me lose my shit when I was looking for voices)
-
-Agent Guerrero: Male voice and sounds trying to explain himself unsure embarrassed.wav by khenshom(CC0)
-
-FONTS
-
-Tablet Font: Dogica by Roberto Mocci(Open Font License)
-
-Strikethrough font:  Dogica by Roberto Mocci, edited by        	(Open Font License)
-   
-Dialogue Font: Basis33 by Manchson(MIT)
-
- 
-CODE
-
-Filter: VHS and CRT monitor effect by pend00(CC0)
-
-Foliage Shader: 2D wind sway by godotshaders(CC0)
-
-Highlight Palatteswap: Palette Swap (no recolor / recolor) by Exuin(CC0)
-
-All other code by     	 
-
-
-ART
-
-All art by    	 
-
-
-
-
-
-
-Happy Holidays 2023,
-
-For Guaire :)
-[/center]
-",
 
 
 "newData":[
@@ -855,7 +820,7 @@ For Guaire :)
 
 "teaLilyLook0" : [
 {"name":"null","text":"\"[color=#4f80a0]Tea Lily[/color]\". Cup shaped crinoid that collects water to feed on the waste of a symbi","tickSpeed":0.04, "closeSpeed":0.01, "type":"DialogueAuto"},
-{"name":"null","text":"...The water from it's cup is dripping from the bottom.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"...The water from its cup is dripping from the bottom.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"Is that...","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"null","text":"Dr. Sanghera tastes the water from the bottom of the crinoid.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"Ohhh... of course!","tickSpeed":0.04,"type":"Dialogue"},
@@ -932,12 +897,12 @@ For Guaire :)
 ],
 
 "isopodRadiodontLook0":[
-{"name":"null","text":"Looks like a new species of [color=#4f80a0]Radiodont[/color].","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Dr. Sanghera","text":"O'Cuill. We didn't find any radiodonts on our last look did we?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"Looks like a new species.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"O'Cuill. We didn't find any arthropods on our last look did we?","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Commander O'Cuill","text":"No.","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Dr. Sanghera","text":"Well, I found one. Small. It's... terrestrial.","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Commander O'Cuill","text":"You sure it's a radiodont?","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Dr. Sanghera","text":"It's got the mandibles and lobes. Looks like a huriid.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"Well, I found one. Small. It's... terrestrial. I think it's a [color=#4f80a0]Radiodont[/color].","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Commander O'Cuill","text":"A radiodont?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"Its got the mandibles and lobes. Looks like a huriid.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"Looks almost like an [color=#4f80a0]isopod[/color].","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Commander O'Cuill","text":"Huh. Write down what you can about it now.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"null","text":"New data added to file.","tickSpeed":0.04,"type":"Dialogue"}
@@ -980,7 +945,7 @@ For Guaire :)
 
 "algaeLook1":[
 {"name":"null","text":"\"[color=#4f80a0]SCP-XXXX[/color]\". An autotrophic algae that produces ketones, oxygen and methane.","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"null","text":"It's mass contains some form of extradimensional space.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"Its mass contains some form of extradimensional space.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"null","text":"It is the anomaly currently being studied and the keystone of the ecosystem.","tickSpeed":0.04,"type":"Dialogue"}
 ],
 
@@ -1018,24 +983,30 @@ For Guaire :)
 ],
 
 "crabTrapCrinoidLook":[
-{"name":"null","text":"\"[color=#4f80a0]Crab Trap Crinoid[/color]\". A crinoid species that has evolved the shape of a fishtrap.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"\"[color=#4f80a0]Crab Pot Crinoid[/color]\". A crinoid species that has evolved the shape of a fishtrap.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"null","text":"Ocassionally, a [color=#4f80a0]Drift Worm[/color] will become trapped within it and be consumed.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"null","text":"This species was initially described on the first expedition.","tickSpeed":0.04,"type":"Dialogue"}
 ],
 
 "crabTrapCrinoid1Look":[
-{"name":"null","text":"\"[color=#4f80a0]Crab Trap Crinoid[/color]\". A crinoid species that has evolved the shape of a fishtrap.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"\"[color=#4f80a0]Crab Pot Crinoid[/color]\". A crinoid species that has evolved the shape of a fishtrap.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"null","text":"This one looks pretty big.","tickSpeed":0.04,"type":"Dialogue"}
 ],
 
 "crabTrapCrinoid1Use":[
-{"name":"null","text":"Placed the [color=#4f80a0]Drift Worm[/color] in the [color=#4f80a0]Crab Trap Crinoid[/color].","tickSpeed":0.04,"closeSpeed":1,"type":"DialogueAuto"}
+{"name":"null","text":"Placed the [color=#4f80a0]Drift Worm[/color] in the [color=#4f80a0]Crab Pot Crinoid[/color].","tickSpeed":0.04,"closeSpeed":1,"type":"DialogueAuto"}
 ],
 
 "crabTrapCrinoid2Look":[
-{"name":"null","text":"\"[color=#4f80a0]Crab Trap Crinoid[/color]\". A crinoid species that has evolved the shape of a fishtrap.","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"null","text":"This one's still small.","tickSpeed":0.04,"type":"Dialogue"}
+{"name":"null","text":"\"[color=#4f80a0]Crab Pot Crinoid[/color]\". A crinoid species that has evolved the shape of a fishtrap.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"This one is still small.","tickSpeed":0.04,"type":"Dialogue"}
 ],
+
+
+"crabTrapCrinoid2Use":[
+{"name":"null","text":"Too small to fit bait inside.","tickSpeed":0.04,"closeSpeed":1,"type":"DialogueAuto"}
+],
+
 
 "crabTrapCrinoidTooSmall":[
 {"name":"null","text":"Too small. It would float through the gaps in the arms","tickSpeed":0.04,"type":"Dialogue"}
@@ -1173,8 +1144,8 @@ For Guaire :)
 {"name":"Dr. Sanghera","text":"The waterfall just feeds from condensation. There's no body of water up there.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"This thing looks delicate","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"...","tickSpeed":0.1,"type":"Dialogue"},
-{"name":"Dr. Sanghera","text":"It looks kinda like[color=#4f80a0]Orthograptus[/color]...?","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Dr. Sanghera","text":"Now I'm even more confused. There's no way this was hiding in the algae. It floats.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"It looks kinda like [color=#4f80a0]Orthograptus[/color]...?","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"Now I'm even more confused.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"Did you find anything weird on the ground radar? Extra caves?","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Commander O'Cuill","text":"No... Maybe look around? Might be a secondary anomaly.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"null","text":"New data added to file.","tickSpeed":0.04,"type":"Dialogue"}
@@ -1205,20 +1176,23 @@ For Guaire :)
 {"name":"Dr. Sanghera","text":"It has evolved convergently with [color=#4f80a0]Sea Slugs[/color].","tickSpeed":0.04,"type":"Dialogue"}
 ],
 
+"slugPikaiid1Late":[
+{"name":"null","text":"\"[color=#4f80a0]Lesser Slug Pikaiid[/color]\". A benthic cephalochordate species that feeds on detritus.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"It has evolved convergently with [color=#4f80a0]Sea Slugs[/color].","tickSpeed":0.04,"type":"Dialogue"}
+],
+
+
 "wiggleTrilobiteLook0":[
 {"name":"null","text":"Another new species.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"Huh... a [color=#4f80a0]Trilobite[/color].","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Commander O'Cuill","text":"Where are you finding these things?","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"Around","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Dr. Sanghera","text":"This one's can sort of wiggle it's spines. Typically those are solid in fossils.","tickSpeed":0.04,"type":"Dialogue"}
+{"name":"Dr. Sanghera","text":"This one can sort of wiggle its spines. Typically those are solid in fossils.","tickSpeed":0.04,"type":"Dialogue"}
 ],
 
 "wiggleTrilobiteLook1":[
-{"name":"null","text":"Another new species.","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Dr. Sanghera","text":"Oh you're a big boy.","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Commander O'Cuill","text":"What?","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Dr. Sanghera","text":"Slug thing. Very big. Wait...","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Dr. Sanghera","text":"It has a... notocord. It's an overgrown pikaiid.","tickSpeed":0.04,"type":"Dialogue"}
+{"name":"null","text":"\"[color=#4f80a0]Wiggle Trilobite[/color]\". A species of trilobite with flexible spines.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"It may use them to sense its surroundings.","tickSpeed":0.04,"type":"Dialogue"}
 ],
 
 "wiggleTrilobiteLeaves":[
@@ -1227,10 +1201,8 @@ For Guaire :)
 
 "bigBoyPikaiidLook0":[
 {"name":"null","text":"Another new species.","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Dr. Sanghera","text":"Oh you're a big boy.","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Commander O'Cuill","text":"What?","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Dr. Sanghera","text":"Slug thing. Very big. Wait...","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Dr. Sanghera","text":"It has a... notocord. It's an overgrown pikaiid.","tickSpeed":0.04,"type":"Dialogue"}
+{"name":"Dr. Sanghera","text":"Whoa....","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"That is a big... Slug... Pikaiid?","tickSpeed":0.04,"type":"Dialogue"}
 ],
 
 
@@ -1240,7 +1212,7 @@ For Guaire :)
 ],
 
 "bigBoyPikaiidLook0EndNoDiscovery":[
-{"name":"Dr. Sanghera","text":"Still... way too big to have been hiding here...","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"Dr. Sanghera","text":"Way too big to have been hiding here...","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"null","text":"New data added to file.","tickSpeed":0.04,"type":"Dialogue"}
 ],
 
@@ -1254,31 +1226,36 @@ For Guaire :)
 {"name":"null","text":"It has evolved convergently with [color=#4f80a0]Sea Slugs[/color]. It seems voracious.","tickSpeed":0.04,"type":"Dialogue"}
 ],
 
+"bigBoyPikaiidLook1Unique":[
+{"name":"null","text":"\"[color=#4f80a0]Greater Slug Pikaiid[/color]\". A large species of benthic pikaiid.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"It has evolved convergently with [color=#4f80a0]Sea Slugs[/color]. It seems voracious.","tickSpeed":0.04,"type":"Dialogue"}
+],
+
 "bigBoyPikaiidTake":[
-{"name":"null","text":"Dr. Sanghera struggles to lift the [color=#4f80a0]Greater Slug Pikaiid[/color].","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"Dr. Sanghera struggles to lift the [color=#4f80a0]Slug Pikaiid[/color].","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"Ouagh. Hefty.","tickSpeed":0.06,"type":"Dialogue"},
-{"name":"null","text":"[color=#4f80a0]Greater Slug Pikaiid[/color] added to inventory.","tickSpeed":0.04,"type":"Dialogue"}
+{"name":"null","text":"[color=#4f80a0]Slug Pikaiid[/color] added to inventory.","tickSpeed":0.04,"type":"Dialogue"}
 ],
 
 "bigBoyPikaiidBaitNull":[
-{"name":"null","text":"A [color=#4f80a0]Greater Slug Pikaiid[/color] set out as bait.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"A [color=#4f80a0]Slug Pikaiid[/color] set out as bait.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"null","text":"... It goes back to eating.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"Maybe the water isn't the best location If I'm gonna use this as bait...","tickSpeed":0.06,"type":"Dialogue"}
 ],
 
 "bigBoyPikaiidBaitEscape":[
-{"name":"null","text":"Placed the [color=#4f80a0]Greater Slug Pikaiid[/color] as bait.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"Placed the [color=#4f80a0]Slug Pikaiid[/color] as bait.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"null","text":"... It escapes back into the algae.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"Shit...","tickSpeed":0.06,"type":"Dialogue"}
 ],
 
 "bigBoyPikaiidBaitPlace":[
-{"name":"null","text":"Placed the [color=#4f80a0]Greater Slug Pikaiid[/color] as bait.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"Placed the [color=#4f80a0]Slug Pikaiid[/color] as bait.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"Dr. Sanghera","text":"Hopefully it won't just leave...","tickSpeed":0.06,"type":"Dialogue"}
 ],
 
 "bigBoyPikaiidBait0":[
-{"name":"null","text":"A [color=#4f80a0]Greater Slug Pikaiid[/color] set out as bait.","tickSpeed":0.04,"type":"Dialogue"},
+{"name":"null","text":"A [color=#4f80a0]Slug Pikaiid[/color] set out as bait.","tickSpeed":0.04,"type":"Dialogue"},
 {"name":"null","text":"It's trying to eat the floor...","tickSpeed":0.04,"type":"Dialogue"}
 ],
 
@@ -1314,5 +1291,95 @@ For Guaire :)
 
 "arthrocarisSqueezePast":[
 {"name":"Dr. Sanghera","text":"Lemme just... squeeze past you there, bud.","tickSpeed":0.06,"type":"Dialogue"}
-]
+],
+
+"credits":"[center]
+{species}/8 new species discovered
+
+Ending {ending}/4:
+{endingTitle}
+
+
+
+
+
+
+
+
+
+AUDIO
+
+Rockslide: DenseCrunchRe-rated_CaveIn.wav  by zimbot(CC-BY 4.0)
+
+Tinnitus: Tinnitus sound by Breviceps (CC0)
+ 
+Heartbeat: Heartbeat. by urupin(CC-BY 4.0)
+
+Commander O'Cuill voice: Simulated Spanish radio commercial by OneiroidState(CC0)
+
+Radio Static: NOISEshort.wav by ReadeOnly(CC0)
+
+Dr. Sanghera voice: French Canadian Woman Giving Instructions 03.wav by vero.marengere(CC0)
+
+Pick Up Item: Pickup_item1.mp3 by Defaultv(CC0)
+
+Place Down Item: Rustling fabric by NachtmahrTV
+
+Waterfall Sounds: Small waterfall in mountain forest.WAV by BonnyOrbit(CC0)
+
+Cave Sounds: Cave .mp3 by Beussa(CC0)
+
+Splash: water splash 2 by swordofkings128 (CC0)
+
+Agent Hale: The Wine is Quite Delightful - Posh Woman by MadamVicious(CC0)
+(This one's only in the game cause it made me lose my shit when I was looking for voices)
+
+Agent Guerrero: Male voice and sounds trying to explain himself unsure embarrassed.wav by khenshom(CC0)
+
+FONTS
+
+Tablet Font: Dogica by Roberto Mocci(Open Font License)
+
+Strikethrough font:  Dogica by Roberto Mocci, edited by        	(Open Font License)
+   
+Dialogue Font: Basis33 by Manchson(MIT)
+
+ 
+CODE
+
+Filter: VHS and CRT monitor effect by pend00(CC0)
+
+Foliage Shader: 2D wind sway by godotshaders(CC0)
+
+Highlight Palatteswap: Palette Swap (no recolor / recolor) by Exuin(CC0)
+
+All other code by     	 .
+
+
+CRITIQUE
+
+Helping me figure out if body looks like a body: My friend Koby :), Dr Asteria, Snapdragon, and jackalrelated
+
+Crtique on Writing: Koby Again :) and Snapdragon(allegedly)
+
+Playtesting: Still Koby :), Snapdragon(allegedly), and     	 .
+
+Biochem consultation: Seraphannim
+
+
+ART
+
+All art by     	 .
+
+
+
+
+
+
+
+Happy Holidays 2023,
+
+For Guaire :)
+[/center]
+"
 }

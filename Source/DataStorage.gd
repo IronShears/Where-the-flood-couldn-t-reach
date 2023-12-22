@@ -1,7 +1,7 @@
 extends Node
 
 var language = ""
-var filter = true
+var filter
 var stage = 0
 var inventory : Array = ["baitBox",
 						"waterBottleFull",

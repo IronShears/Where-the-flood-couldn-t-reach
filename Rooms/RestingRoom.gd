@@ -118,6 +118,8 @@ func _on_Rest_pressed():
 				yield($Dialogue, "done")
 			UniversalFunctions.play_dialogue_JSON("goodEnding1")
 			yield($Dialogue, "done")
+		$Timer.start()
+		yield($Timer,"timeout")
 		get_tree().change_scene("res://Components/Credits.tscn")
 		return
 	DataStorage.stage += 1

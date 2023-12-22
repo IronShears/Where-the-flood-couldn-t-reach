@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Components/Textures/back1.png" type="Texture" id=1]
 [ext_resource path="res://Components/Textures/back2.png" type="Texture" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Components/Fonts/dogicaStrikethrough.ttf" type="DynamicFontData" id=11]
 [ext_resource path="res://Components/species.gd" type="Script" id=12]
 [ext_resource path="res://Art/Sprites/veinerWorm2.png" type="Texture" id=13]
+[ext_resource path="res://Components/swype.gd" type="Script" id=14]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 4 )
@@ -86,7 +87,7 @@ script = ExtResource( 9 )
 
 [node name="Screen" type="AnimatedSprite" parent="."]
 frames = SubResource( 5 )
-frame = 1
+frame = 3
 playing = true
 centered = false
 
@@ -104,7 +105,6 @@ __meta__ = {
 }
 
 [node name="MainScreen" type="ScrollContainer" parent="."]
-visible = false
 margin_left = 20.0
 margin_top = 7.0
 margin_right = 292.0
@@ -112,12 +112,13 @@ margin_bottom = 193.0
 rect_min_size = Vector2( 109, 157 )
 theme = ExtResource( 7 )
 scroll_horizontal_enabled = false
+script = ExtResource( 14 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MainScreen"]
-margin_right = 272.0
+margin_right = 271.0
 margin_bottom = 204.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -125,6 +126,7 @@ size_flags_vertical = 3
 [node name="Title" type="RichTextLabel" parent="MainScreen/VBoxContainer"]
 margin_right = 271.0
 margin_bottom = 13.0
+mouse_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -140,6 +142,7 @@ __meta__ = {
 margin_top = 17.0
 margin_right = 271.0
 margin_bottom = 30.0
+mouse_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -155,6 +158,7 @@ __meta__ = {
 margin_top = 34.0
 margin_right = 271.0
 margin_bottom = 47.0
+mouse_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -170,6 +174,7 @@ __meta__ = {
 margin_top = 51.0
 margin_right = 271.0
 margin_bottom = 64.0
+mouse_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -185,6 +190,7 @@ __meta__ = {
 margin_top = 68.0
 margin_bottom = 80.0
 focus_mode = 0
+mouse_filter = 1
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -199,6 +205,7 @@ __meta__ = {
 margin_top = 84.0
 margin_bottom = 96.0
 focus_mode = 0
+mouse_filter = 1
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -213,6 +220,7 @@ __meta__ = {
 margin_top = 100.0
 margin_right = 271.0
 margin_bottom = 113.0
+mouse_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -230,6 +238,7 @@ __meta__ = {
 margin_top = 117.0
 margin_bottom = 129.0
 focus_mode = 0
+mouse_filter = 1
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -244,6 +253,7 @@ __meta__ = {
 margin_top = 133.0
 margin_bottom = 145.0
 focus_mode = 0
+mouse_filter = 1
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -259,6 +269,7 @@ visible = false
 margin_top = 110.0
 margin_bottom = 122.0
 focus_mode = 0
+mouse_filter = 1
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -273,6 +284,7 @@ __meta__ = {
 margin_top = 149.0
 margin_right = 271.0
 margin_bottom = 162.0
+mouse_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -290,6 +302,7 @@ __meta__ = {
 margin_top = 166.0
 margin_bottom = 178.0
 focus_mode = 0
+mouse_filter = 1
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -304,6 +317,7 @@ __meta__ = {
 margin_top = 182.0
 margin_bottom = 194.0
 focus_mode = 0
+mouse_filter = 1
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -319,6 +333,7 @@ visible = false
 margin_top = 146.0
 margin_bottom = 158.0
 focus_mode = 0
+mouse_filter = 1
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -334,6 +349,7 @@ visible = false
 margin_top = 146.0
 margin_bottom = 158.0
 focus_mode = 0
+mouse_filter = 1
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -349,6 +365,7 @@ visible = false
 margin_top = 146.0
 margin_bottom = 158.0
 focus_mode = 0
+mouse_filter = 1
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -364,6 +381,7 @@ visible = false
 margin_top = 178.0
 margin_bottom = 190.0
 focus_mode = 0
+mouse_filter = 1
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -379,6 +397,7 @@ visible = false
 margin_top = 178.0
 margin_bottom = 190.0
 focus_mode = 0
+mouse_filter = 1
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -394,6 +413,7 @@ visible = false
 margin_top = 198.0
 margin_right = 271.0
 margin_bottom = 211.0
+mouse_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -410,6 +430,7 @@ visible = false
 margin_top = 146.0
 margin_bottom = 158.0
 focus_mode = 0
+mouse_filter = 1
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -425,6 +446,23 @@ visible = false
 margin_top = 146.0
 margin_bottom = 158.0
 focus_mode = 0
+mouse_filter = 1
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource( 7 )
+enabled_focus_mode = 0
+align = 0
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="wiggleTrilobite" type="Button" parent="MainScreen/VBoxContainer"]
+visible = false
+margin_top = 146.0
+margin_bottom = 158.0
+focus_mode = 0
+mouse_filter = 1
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -440,6 +478,7 @@ visible = false
 margin_top = 146.0
 margin_bottom = 158.0
 focus_mode = 0
+mouse_filter = 1
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource( 7 )
@@ -454,12 +493,14 @@ __meta__ = {
 margin_top = 198.0
 margin_right = 271.0
 margin_bottom = 204.0
+mouse_filter = 1
 custom_fonts/font = SubResource( 8 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Species" type="ScrollContainer" parent="."]
+visible = false
 margin_left = 20.0
 margin_top = 7.0
 margin_right = 292.0
@@ -554,7 +595,7 @@ texture = ExtResource( 13 )
 [node name="lines" type="AnimatedSprite" parent="."]
 modulate = Color( 1, 1, 1, 0.521569 )
 frames = SubResource( 13 )
-frame = 1
+frame = 3
 playing = true
 centered = false
 
@@ -573,5 +614,6 @@ centered = false
 [connection signal="pressed" from="MainScreen/VBoxContainer/bigBoySlugPikaiid" to="MainScreen/VBoxContainer/bigBoySlugPikaiid" method="_on_species_pressed"]
 [connection signal="pressed" from="MainScreen/VBoxContainer/isopodRadiodont" to="MainScreen/VBoxContainer/isopodRadiodont" method="_on_species_pressed"]
 [connection signal="pressed" from="MainScreen/VBoxContainer/crackerEurypterid" to="MainScreen/VBoxContainer/crackerEurypterid" method="_on_species_pressed"]
+[connection signal="pressed" from="MainScreen/VBoxContainer/wiggleTrilobite" to="MainScreen/VBoxContainer/wiggleTrilobite" method="_on_species_pressed"]
 [connection signal="pressed" from="MainScreen/VBoxContainer/arthrocaris" to="MainScreen/VBoxContainer/arthrocaris" method="_on_species_pressed"]
 [connection signal="pressed" from="Species/VBoxContainer/BackButton" to="." method="_on_BackButton_pressed"]

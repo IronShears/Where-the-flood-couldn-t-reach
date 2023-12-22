@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Source/RoomButtons.tres" type="Theme" id=1]
 [ext_resource path="res://Source/Title.gd" type="Script" id=2]
@@ -6,9 +6,518 @@
 [ext_resource path="res://Art/Backgrounds/Filter.png" type="Texture" id=4]
 [ext_resource path="res://Sounds/cavein.wav" type="AudioStream" id=5]
 [ext_resource path="res://Components/Cursor.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Source/Tablet.tres" type="Theme" id=7]
+[ext_resource path="res://Components/Tablet.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Art/Backgrounds/entrance.png" type="Texture" id=9]
+[ext_resource path="res://Art/Backgrounds/SnowTop.png" type="Texture" id=10]
+[ext_resource path="res://Art/Backgrounds/tree1.png" type="Texture" id=11]
+[ext_resource path="res://Art/Backgrounds/tree2.png" type="Texture" id=12]
+[ext_resource path="res://Art/Backgrounds/tree4.png" type="Texture" id=13]
+[ext_resource path="res://Art/Backgrounds/tree3.png" type="Texture" id=14]
+[ext_resource path="res://Art/Backgrounds/tree6.png" type="Texture" id=15]
+[ext_resource path="res://Art/Backgrounds/snow2.png" type="Texture" id=16]
+[ext_resource path="res://Art/Backgrounds/tree7.png" type="Texture" id=17]
+[ext_resource path="res://Art/Backgrounds/tree8.png" type="Texture" id=18]
+[ext_resource path="res://Art/Backgrounds/backtrees.png" type="Texture" id=19]
+[ext_resource path="res://Art/Backgrounds/farBack.png" type="Texture" id=20]
+[ext_resource path="res://Art/Backgrounds/Animations/snowflake.png" type="Texture" id=21]
+
+[sub_resource type="CanvasItemMaterial" id=9]
+particles_animation = true
+particles_anim_h_frames = 2
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+render_mode blend_mix;
+
+// Wind settings.
+uniform float speed = 1.0;
+uniform float interval = 3.5;
+uniform float detail = 1.0;
+uniform float strength = 1.0;
+uniform float distortion : hint_range(0.0, 1.0);
+uniform float heightOffset = 0.0;
+uniform int sprite_sheet_columns: hint_range(4,2) = 1;
+uniform int sprite_sheet_rows: hint_range(4,3) = 1;
+
+uniform vec4 original_0: hint_color;
+uniform vec4 original_1: hint_color;
+uniform vec4 original_2: hint_color;
+uniform vec4 original_3: hint_color;
+uniform vec4 original_4: hint_color;
+uniform vec4 original_5: hint_color;
+uniform vec4 original_6: hint_color;
+uniform vec4 original_7: hint_color;
+uniform vec4 replace_0: hint_color;
+uniform vec4 replace_1: hint_color;
+uniform vec4 replace_2: hint_color;
+uniform vec4 replace_3: hint_color;
+uniform vec4 replace_4: hint_color;
+uniform vec4 replace_5: hint_color;
+uniform vec4 replace_6: hint_color;
+uniform vec4 replace_7: hint_color;
+
+const float precision = 0.01;
+
+float getWind(vec2 vertex, vec2 uv, float timer){
+	vec2 pos = mix(vec2(1.0), vertex, distortion).xy;
+	float time = timer * speed + pos.x * pos.y;
+	float wind = (sin(time) + sin(detail*time)-1.0) * strength * max(0.0, (1.0-uv.y) - heightOffset);
+	
+	return wind;
+	}
+
+void vertex() {
+	VERTEX.x += getWind(VERTEX.xy, UV, TIME);
+}
+
+vec4 swap_color(vec4 color){
+	vec4 original_colors[8] = vec4[8] (original_0, original_1, original_2, original_3, original_4, original_5, original_6, original_7);
+	vec4 replace_colors[8] = vec4[8] (replace_0, replace_1, replace_2, replace_3, replace_4, replace_5, replace_6, replace_7);
+	for (int i = 0; i < 8; i ++) {
+		if (distance(color, original_colors[i]) <= precision){
+			return replace_colors[i];
+		}
+	}
+	return color;
+}
+
+
+void fragment() {
+	COLOR = swap_color(texture(TEXTURE, UV));
+}"
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = SubResource( 1 )
+shader_param/speed = 3.0
+shader_param/interval = 3.5
+shader_param/detail = 1.0
+shader_param/strength = 2.0
+shader_param/distortion = 0.0
+shader_param/heightOffset = 0.0
+shader_param/sprite_sheet_columns = 1
+shader_param/sprite_sheet_rows = 1
+shader_param/original_0 = null
+shader_param/original_1 = null
+shader_param/original_2 = null
+shader_param/original_3 = null
+shader_param/original_4 = null
+shader_param/original_5 = null
+shader_param/original_6 = null
+shader_param/original_7 = null
+shader_param/replace_0 = null
+shader_param/replace_1 = null
+shader_param/replace_2 = null
+shader_param/replace_3 = null
+shader_param/replace_4 = null
+shader_param/replace_5 = null
+shader_param/replace_6 = null
+shader_param/replace_7 = null
+
+[sub_resource type="Shader" id=5]
+code = "shader_type canvas_item;
+render_mode blend_mix;
+
+// Wind settings.
+uniform float speed = 1.0;
+uniform float interval = 3.5;
+uniform float detail = 1.0;
+uniform float strength = 1.0;
+uniform float distortion : hint_range(0.0, 1.0);
+uniform float heightOffset = 0.0;
+uniform int sprite_sheet_columns: hint_range(4,2) = 1;
+uniform int sprite_sheet_rows: hint_range(4,3) = 1;
+
+uniform vec4 original_0: hint_color;
+uniform vec4 original_1: hint_color;
+uniform vec4 original_2: hint_color;
+uniform vec4 original_3: hint_color;
+uniform vec4 original_4: hint_color;
+uniform vec4 original_5: hint_color;
+uniform vec4 original_6: hint_color;
+uniform vec4 original_7: hint_color;
+uniform vec4 replace_0: hint_color;
+uniform vec4 replace_1: hint_color;
+uniform vec4 replace_2: hint_color;
+uniform vec4 replace_3: hint_color;
+uniform vec4 replace_4: hint_color;
+uniform vec4 replace_5: hint_color;
+uniform vec4 replace_6: hint_color;
+uniform vec4 replace_7: hint_color;
+
+const float precision = 0.01;
+
+float getWind(vec2 vertex, vec2 uv, float timer){
+	vec2 pos = mix(vec2(1.0), vertex, distortion).xy;
+	float time = timer * speed + pos.x * pos.y;
+	float wind = (cos(time) + cos(detail*time)-1.0) * strength * max(0.0, (1.0-uv.y) - heightOffset);
+	
+	return wind;
+	}
+
+void vertex() {
+	VERTEX.x += getWind(VERTEX.xy, UV, TIME);
+}
+
+vec4 swap_color(vec4 color){
+	vec4 original_colors[8] = vec4[8] (original_0, original_1, original_2, original_3, original_4, original_5, original_6, original_7);
+	vec4 replace_colors[8] = vec4[8] (replace_0, replace_1, replace_2, replace_3, replace_4, replace_5, replace_6, replace_7);
+	for (int i = 0; i < 8; i ++) {
+		if (distance(color, original_colors[i]) <= precision){
+			return replace_colors[i];
+		}
+	}
+	return color;
+}
+
+
+void fragment() {
+	COLOR = swap_color(texture(TEXTURE, UV));
+}"
+
+[sub_resource type="ShaderMaterial" id=6]
+shader = SubResource( 5 )
+shader_param/speed = 3.0
+shader_param/interval = 3.5
+shader_param/detail = 1.0
+shader_param/strength = 2.0
+shader_param/distortion = 0.0
+shader_param/heightOffset = 0.0
+shader_param/sprite_sheet_columns = 1
+shader_param/sprite_sheet_rows = 1
+shader_param/original_0 = null
+shader_param/original_1 = null
+shader_param/original_2 = null
+shader_param/original_3 = null
+shader_param/original_4 = null
+shader_param/original_5 = null
+shader_param/original_6 = null
+shader_param/original_7 = null
+shader_param/replace_0 = null
+shader_param/replace_1 = null
+shader_param/replace_2 = null
+shader_param/replace_3 = null
+shader_param/replace_4 = null
+shader_param/replace_5 = null
+shader_param/replace_6 = null
+shader_param/replace_7 = null
+
+[sub_resource type="ParticlesMaterial" id=7]
+emission_shape = 2
+emission_box_extents = Vector3( 150, 1, 1 )
+flag_disable_z = true
+direction = Vector3( 0, 1, 0 )
+spread = 0.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 20.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+
+[sub_resource type="CanvasItemMaterial" id=10]
+particles_animation = true
+particles_anim_h_frames = 2
+particles_anim_v_frames = 1
+particles_anim_loop = true
+
+[sub_resource type="ParticlesMaterial" id=8]
+emission_shape = 2
+emission_box_extents = Vector3( 150, 1, 1 )
+flag_disable_z = true
+direction = Vector3( 0, 1, 0 )
+spread = 0.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 15.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+anim_speed = 3.76
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ColorRect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "load"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 1, 2.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ColorRect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1, 2.9, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ true, true, false ]
+}
 
 [node name="world" type="Node2D"]
+material = SubResource( 9 )
 script = ExtResource( 2 )
+
+[node name="ViewportContainer" type="ViewportContainer" parent="."]
+visible = false
+margin_right = 300.0
+margin_bottom = 200.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Viewport" type="Viewport" parent="ViewportContainer"]
+size = Vector2( 300, 200 )
+handle_input_locally = false
+render_target_update_mode = 0
+
+[node name="FarBack" type="Sprite" parent="ViewportContainer/Viewport"]
+position = Vector2( 142, 105 )
+texture = ExtResource( 20 )
+
+[node name="Tree14" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 3 )
+position = Vector2( 97, 0 )
+texture = ExtResource( 19 )
+centered = false
+
+[node name="Tree15" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 3 )
+position = Vector2( 27, 1 )
+texture = ExtResource( 19 )
+centered = false
+flip_h = true
+
+[node name="Tree16" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 3 )
+position = Vector2( -32, -1 )
+texture = ExtResource( 19 )
+centered = false
+
+[node name="Tree17" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 3 )
+position = Vector2( -102, 0 )
+texture = ExtResource( 19 )
+centered = false
+flip_h = true
+
+[node name="Tree18" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 3 )
+position = Vector2( 265, -1 )
+texture = ExtResource( 19 )
+centered = false
+
+[node name="Tree19" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 3 )
+position = Vector2( 195, 0 )
+texture = ExtResource( 19 )
+centered = false
+flip_h = true
+
+[node name="Tree13" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 3 )
+position = Vector2( 108, -10 )
+texture = ExtResource( 18 )
+centered = false
+
+[node name="Tree10" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 6 )
+position = Vector2( 2, 0 )
+texture = ExtResource( 17 )
+centered = false
+flip_h = true
+
+[node name="Tree12" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 3 )
+position = Vector2( 55, 0 )
+texture = ExtResource( 18 )
+centered = false
+flip_h = true
+
+[node name="Tree8" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 3 )
+texture = ExtResource( 18 )
+centered = false
+flip_h = true
+
+[node name="Tree11" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 3 )
+position = Vector2( -110, -9 )
+texture = ExtResource( 18 )
+centered = false
+flip_h = true
+
+[node name="Tree9" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 6 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Snow2" type="Sprite" parent="ViewportContainer/Viewport"]
+texture = ExtResource( 16 )
+centered = false
+
+[node name="Tree6" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 3 )
+position = Vector2( 88, 64 )
+texture = ExtResource( 15 )
+
+[node name="Tree3" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 6 )
+position = Vector2( 38, 60 )
+texture = ExtResource( 14 )
+
+[node name="Tree7" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 6 )
+position = Vector2( 146, 59 )
+texture = ExtResource( 14 )
+
+[node name="Tree4" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 3 )
+position = Vector2( 272, 59 )
+texture = ExtResource( 14 )
+flip_h = true
+
+[node name="Entrance" type="Sprite" parent="ViewportContainer/Viewport"]
+position = Vector2( 150, 100 )
+texture = ExtResource( 9 )
+
+[node name="Tree5" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 6 )
+position = Vector2( 46, 82 )
+texture = ExtResource( 13 )
+
+[node name="Particles2D" type="Particles2D" parent="ViewportContainer/Viewport"]
+position = Vector2( 149, -1 )
+amount = 20
+lifetime = 10.0
+process_material = SubResource( 7 )
+
+[node name="SnowTop" type="Sprite" parent="ViewportContainer/Viewport"]
+position = Vector2( 150, 100 )
+texture = ExtResource( 10 )
+
+[node name="Tree2" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 6 )
+position = Vector2( 172, 100 )
+texture = ExtResource( 12 )
+
+[node name="Tree1" type="Sprite" parent="ViewportContainer/Viewport"]
+material = SubResource( 3 )
+position = Vector2( 150, 100 )
+texture = ExtResource( 11 )
+
+[node name="Particles2D2" type="Particles2D" parent="ViewportContainer/Viewport"]
+material = SubResource( 10 )
+position = Vector2( 148, -1 )
+amount = 3
+lifetime = 15.0
+process_material = SubResource( 8 )
+texture = ExtResource( 21 )
+
+[node name="ViewTablet" type="Button" parent="ViewportContainer"]
+margin_left = 75.0
+margin_top = 165.0
+margin_right = 229.0
+margin_bottom = 178.0
+focus_mode = 0
+theme = ExtResource( 1 )
+text = ">View Previous File"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ToggleFilter" type="Button" parent="ViewportContainer"]
+margin_left = 76.0
+margin_top = 150.0
+margin_right = 230.0
+margin_bottom = 163.0
+focus_mode = 0
+theme = ExtResource( 1 )
+text = ">Filter Toggle: OFF"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NewGame" type="Button" parent="ViewportContainer"]
+margin_left = 76.0
+margin_top = 180.0
+margin_right = 230.0
+margin_bottom = 193.0
+focus_mode = 0
+theme = ExtResource( 1 )
+text = ">New Game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="RichTextLabel" parent="ViewportContainer"]
+margin_left = 10.0
+margin_top = 8.0
+margin_right = 296.0
+margin_bottom = 34.0
+theme = ExtResource( 7 )
+bbcode_enabled = true
+bbcode_text = "[center]SCP-XXXX:
+where the flood couldn't reach.[/center]"
+text = "SCP-XXXX:
+where the flood couldn't reach."
+fit_content_height = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="ViewportContainer/Title"]
+show_behind_parent = true
+margin_left = 30.0
+margin_top = 13.0
+margin_right = 250.0
+margin_bottom = 26.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="ViewportContainer/Title"]
+show_behind_parent = true
+margin_left = 110.0
+margin_top = 1.0
+margin_right = 173.0
+margin_bottom = 14.0
+color = Color( 0, 0, 0, 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_right = 301.0
@@ -54,16 +563,26 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Tablet" parent="." instance=ExtResource( 8 )]
+visible = false
+
 [node name="tumble" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 4 )
+anims/load = SubResource( 2 )
+
+[node name="Cursor" parent="." instance=ExtResource( 6 )]
 
 [node name="Filter" type="Sprite" parent="."]
 material = ExtResource( 3 )
 texture = ExtResource( 4 )
 centered = false
 
-[node name="Cursor" parent="." instance=ExtResource( 6 )]
-
+[connection signal="pressed" from="ViewportContainer/ViewTablet" to="." method="_on_ViewTablet_pressed"]
+[connection signal="pressed" from="ViewportContainer/ToggleFilter" to="." method="_on_ToggleFilter_pressed"]
+[connection signal="pressed" from="ViewportContainer/NewGame" to="." method="_on_NewGame_pressed"]
 [connection signal="pressed" from="wakeUp" to="." method="_on_wakeUp_pressed"]
 [connection signal="pressed" from="KeepOn" to="." method="_on_KeepOn_pressed"]
 [connection signal="pressed" from="TurnOff" to="." method="_on_TurnOff_pressed"]

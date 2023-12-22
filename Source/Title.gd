@@ -9,17 +9,26 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if DataStorage.filter != null:
+		$ViewportContainer.visible = true
 		$Filter.visible = DataStorage.filter
+		$AnimationPlayer.play("load")
+		$ViewportContainer.visible = true
+		$ViewportContainer/ToggleFilter.set_text(">"+UniversalFunctions.dialogueJson["filterToggle" + str(DataStorage.filter)])
+		$ViewportContainer/ViewTablet.set_text(">"+UniversalFunctions.dialogueJson["viewTablet"])
+		$ViewportContainer/NewGame.set_text(">"+UniversalFunctions.dialogueJson["newGame"])
+		$ViewportContainer/Title.set_bbcode(UniversalFunctions.dialogueJson["gameTitle"])
+		return
+	new_game()
+
+func new_game():
+	DataStorage.reset()
 	$wakeUp.set_text(">"+UniversalFunctions.dialogueJson["wakeUp"])
 	$KeepOn.set_text(">"+UniversalFunctions.dialogueJson["keepOn"])
 	$TurnOff.set_text(">"+UniversalFunctions.dialogueJson["turnOff"])
 	$tumble.play()
 	yield($tumble, "finished")
-	if DataStorage.filter == null:
-		$KeepOn.visible = true
-		$TurnOff.visible = true
-	else:
-		finish()
+	$KeepOn.visible = true
+	$TurnOff.visible = true
 
 
 
@@ -41,3 +50,24 @@ func finish():
 
 func _on_wakeUp_pressed():
 	get_tree().change_scene("res://Rooms/MainRoom.tscn")
+
+
+func _on_ViewTablet_pressed():
+	$Tablet.visible = true
+
+
+func _on_ToggleFilter_pressed():
+	if DataStorage.filter == true:
+		DataStorage.filter = false
+	else:
+		DataStorage.filter = true
+	$ViewportContainer/ToggleFilter.set_text(">"+UniversalFunctions.dialogueJson["filterToggle" + str(DataStorage.filter)])
+	$Filter.visible = DataStorage.filter
+
+
+func _on_NewGame_pressed():
+	$AnimationPlayer.play_backwards("load")
+	yield($AnimationPlayer, "animation_finished")
+	$ViewportContainer.visible = false
+	new_game()
+	

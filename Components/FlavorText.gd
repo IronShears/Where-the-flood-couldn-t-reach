@@ -178,5 +178,6 @@ func _on_AutoCloseTimer_timeout():
 		$Voice.playing = false
 		skip_input()
 	emit_signal("auto_close")
-	radio.set_material(null)
+	if radio != null:
+		radio.set_material(null)
 	

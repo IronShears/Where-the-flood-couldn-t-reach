@@ -4,6 +4,9 @@ signal go
 func _ready():
 	set_text()
 	
+func _unhandled_key_input(_event):
+	if Input.is_action_pressed("ui_cancel"):
+			_on_BackButton_pressed()
 	
 func set_text():
 	$MainScreen/VBoxContainer/Title.set_bbcode(UniversalFunctions.dialogueJson["scpTitle"])
@@ -51,6 +54,9 @@ func set_text():
 	if DataStorage.observedSpecies.has("mochiDonutGraptolite"):
 		$MainScreen/VBoxContainer/mochiDonutGraptolite.set_text(">"+UniversalFunctions.dialogueJson["mochiDonutGraptoliteName"])
 		$MainScreen/VBoxContainer/mochiDonutGraptolite.visible = true
+	if DataStorage.observedSpecies.has("wiggleTrilobite"):
+		$MainScreen/VBoxContainer/wiggleTrilobite.set_text(">"+UniversalFunctions.dialogueJson["wiggleTrilobiteName"])
+		$MainScreen/VBoxContainer/wiggleTrilobite.visible = true
 	if DataStorage.observedSpecies.has("slugPikaiid"):
 		if DataStorage.observedSpecies.has("bigBoyPikaiid"):
 			$MainScreen/VBoxContainer/lesserSlugPikaiid.set_text(">"+UniversalFunctions.dialogueJson["lesserSlugPikaiidName"])

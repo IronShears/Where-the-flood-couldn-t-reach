@@ -36,7 +36,10 @@ func play_dialogue_JSON(dialogue : String):
 	dialogueBox.visible = true
 	dialoguePlaying = true
 	cutscene = true
-	dialogueBox.dialogue = dialogueJson[dialogue]
+	if dialogueJson.has(dialogue) == false:
+		dialogueBox.dialogue = dialogueJson["dialogueError"]
+	else:
+		dialogueBox.dialogue = dialogueJson[dialogue]
 	dialogueBox.page = 0
 	dialogueBox.endpoint = dialogueBox.dialogue.size() - 1
 	dialogueBox.firstline = true
@@ -75,7 +78,8 @@ func use(itemNeeded):
 			inventory.update()
 			DataStorage.inventory.erase(i)
 			return
-	inventory.currentItem = null
+	if inventory.currentItem != "cancel":
+		inventory.currentItem = null
 	inventory.visible = false
 	inventory.update()
 	emit_signal("ran")
@@ -96,13 +100,12 @@ func swap(item1, item2):
 	inventory.update()
 	
 func move(scene):
-	if cutscene == false:
-		animationPlayer.play_backwards("load")
-		yield(animationPlayer,"animation_finished")
-		soundEffects.stream = load("res://Sounds/Move.wav")
-		soundEffects.play()
-		yield(soundEffects,"finished")
-		get_tree().change_scene(scene)
+	animationPlayer.play_backwards("load")
+	yield(animationPlayer,"animation_finished")
+	soundEffects.stream = load("res://Sounds/Move.wav")
+	soundEffects.play()
+	yield(soundEffects,"finished")
+	get_tree().change_scene(scene)
 	
 
 func actions(position, options):

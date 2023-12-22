@@ -84,19 +84,20 @@ func _ready():
 					$wiggleTrilobite1.visible = true
 				elif slotName1 == "bigBoyPikaiidBait":
 					$Background/Arthrocaris.visible = true
-					yield($AnimationPlayer,"animation_finished")
-					UniversalFunctions.play_dialogue_JSON("arthrocarisDiscover0")
-					yield($Dialogue, "done")
-					UniversalFunctions.cutscene = true
-					$Background/Arthrocaris.play("look")
-					yield($Background/Arthrocaris,"animation_finished")
-					$Background/Arthrocaris.play("default")
-					UniversalFunctions.play_dialogue_JSON("arthrocarisDiscover1")
-					yield($Dialogue, "done")
-					if DataStorage.cavesDiscovered == true:
-						DataStorage.observedSpecies["arthrocaris"] = 1
-					else:
-						DataStorage.observedSpecies["arthrocaris"] = 0
+					if DataStorage.observedSpecies.has("arthrocaris"):
+						yield($AnimationPlayer,"animation_finished")
+						UniversalFunctions.play_dialogue_JSON("arthrocarisDiscover0")
+						yield($Dialogue, "done")
+						UniversalFunctions.cutscene = true
+						$Background/Arthrocaris.play("look")
+						yield($Background/Arthrocaris,"animation_finished")
+						$Background/Arthrocaris.play("default")
+						UniversalFunctions.play_dialogue_JSON("arthrocarisDiscover1")
+						yield($Dialogue, "done")
+						if DataStorage.cavesDiscovered == true:
+							DataStorage.observedSpecies["arthrocaris"] = 1
+						else:
+							DataStorage.observedSpecies["arthrocaris"] = 0
 			
 	if slotStage2 != null:
 		if DataStorage.stage-slotStage2 == 0 or DataStorage.stage-slotStage2 == 1:
@@ -115,16 +116,20 @@ func _ready():
 					$wiggleTrilobite2.visible = true
 				elif slotName2 == "bigBoyPikaiidBait":
 					$Background/Arthrocaris.visible = true
-					yield($AnimationPlayer,"animation_finished")
-					UniversalFunctions.play_dialogue_JSON("arthrocarisDiscover0")
-					yield($Dialogue, "done")
-					UniversalFunctions.cutscene = true
-					$Background/Arthrocaris.play("look")
-					yield($Background/Arthrocaris,"animation_finished")
-					$Background/Arthrocaris.play("default")
-					UniversalFunctions.play_dialogue_JSON("arthrocarisDiscover1")
-					yield($Dialogue, "done")
-					DataStorage.observedSpecies["arthrocaris"] = 0
+					if DataStorage.observedSpecies.has("arthrocaris"):
+						yield($AnimationPlayer,"animation_finished")
+						UniversalFunctions.play_dialogue_JSON("arthrocarisDiscover0")
+						yield($Dialogue, "done")
+						UniversalFunctions.cutscene = true
+						$Background/Arthrocaris.play("look")
+						yield($Background/Arthrocaris,"animation_finished")
+						$Background/Arthrocaris.play("default")
+						UniversalFunctions.play_dialogue_JSON("arthrocarisDiscover1")
+						yield($Dialogue, "done")
+						if DataStorage.cavesDiscovered == true:
+							DataStorage.observedSpecies["arthrocaris"] = 1
+						else:
+							DataStorage.observedSpecies["arthrocaris"] = 0
 		
 	yield($AnimationPlayer,"animation_finished")
 	if bodyDiscovered == false and $Corpse.visible == false:
@@ -530,7 +535,6 @@ func _on_wiggleTrilobite_pressed():
 		UniversalFunctions.play_dialogue_JSON("wiggleTrilobiteLook0")
 		yield($Dialogue, "done")
 		DataStorage.observedSpecies["wiggleTrilobite"] = 0
-		return
 	else:
 		UniversalFunctions.play_dialogue_JSON("wiggleTrilobiteLook1")
 		yield($Dialogue, "done")

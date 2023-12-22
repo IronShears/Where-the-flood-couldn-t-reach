@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Components/Tablet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Source/Credits.gd" type="Script" id=2]
@@ -35,13 +35,68 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 40 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 7, 200 ), Vector2( 7, -1183 ) ]
+"values": [ Vector2( 7, 200 ), Vector2( 7, -1520 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ColorRect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "load"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 1, 2.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ColorRect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1, 2.9, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ true, true, false ]
 }
 
 [node name="world" type="Node2D"]
 script = ExtResource( 2 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRectBase" type="ColorRect" parent="."]
 margin_right = 300.0
 margin_bottom = 200.0
 color = Color( 0, 0, 0, 1 )
@@ -53,13 +108,14 @@ __meta__ = {
 margin_left = 7.0
 margin_top = 200.0
 margin_right = 293.0
-margin_bottom = 1383.0
+margin_bottom = 3203.0
 theme = ExtResource( 3 )
 bbcode_enabled = true
 bbcode_text = "[center]
 {species}/8 new species discovered
 
-Ending {ending}/4
+Ending {ending}/4:
+{endingTitle}
 
 
 
@@ -93,6 +149,10 @@ Cave Sounds: Cave .mp3 by Beussa(CC0)
 
 Splash: water splash 2 by swordofkings128 (CC0)
 
+Agent Hale: The Wine is Quite Delightful - Posh Woman by MadamVicious(CC0)
+(This one's only in the game cause it made me lose my shit when I was looking for voices)
+
+Agent Guerrero: Male voice and sounds trying to explain himself unsure embarrassed.wav by khenshom(CC0)
 
 FONTS
 
@@ -111,12 +171,24 @@ Foliage Shader: 2D wind sway by godotshaders(CC0)
 
 Highlight Palatteswap: Palette Swap (no recolor / recolor) by Exuin(CC0)
 
-All other code by     	 
+All other code by     	 .
+
+
+CRITIQUE
+
+Helping me figure out if body looks like a body: My friend Koby :), Dr Asteria, Snapdragon, and jackalrelated
+
+Crtique on Writing: Koby Again :) and Snapdragon(allegedly)
+
+Playtesting: Still Koby :), Snapdragon(allegedly), and     	 .
+
+Biochem consultation: Seraphannim
 
 
 ART
 
-All art by    	 
+All art by     	 .
+
 
 
 
@@ -125,13 +197,13 @@ All art by
 
 Happy Holidays 2023,
 
-Guaire :)
-[/center]
-"
+For Guaire :)
+[/center]"
 text = "
 {species}/8 new species discovered
 
-Ending {ending}/4
+Ending {ending}/4:
+{endingTitle}
 
 
 
@@ -165,6 +237,10 @@ Cave Sounds: Cave .mp3 by Beussa(CC0)
 
 Splash: water splash 2 by swordofkings128 (CC0)
 
+Agent Hale: The Wine is Quite Delightful - Posh Woman by MadamVicious(CC0)
+(This one's only in the game cause it made me lose my shit when I was looking for voices)
+
+Agent Guerrero: Male voice and sounds trying to explain himself unsure embarrassed.wav by khenshom(CC0)
 
 FONTS
 
@@ -183,12 +259,24 @@ Foliage Shader: 2D wind sway by godotshaders(CC0)
 
 Highlight Palatteswap: Palette Swap (no recolor / recolor) by Exuin(CC0)
 
-All other code by     	 
+All other code by     	 .
+
+
+CRITIQUE
+
+Helping me figure out if body looks like a body: My friend Koby :), Dr Asteria, Snapdragon, and jackalrelated
+
+Crtique on Writing: Koby Again :) and Snapdragon(allegedly)
+
+Playtesting: Still Koby :), Snapdragon(allegedly), and     	 .
+
+Biochem consultation: Seraphannim
 
 
 ART
 
-All art by    	 
+All art by     	 .
+
 
 
 
@@ -197,8 +285,7 @@ All art by
 
 Happy Holidays 2023,
 
-Guaire :)
-
+For Guaire :)
 "
 fit_content_height = true
 __meta__ = {
@@ -215,7 +302,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 1 )
 anims/roll = SubResource( 2 )
 
@@ -225,6 +312,18 @@ texture = ExtResource( 5 )
 centered = false
 
 [node name="Cursor" parent="." instance=ExtResource( 6 )]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 300.0
+margin_bottom = 200.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 3 )
+anims/load = SubResource( 4 )
 
 [connection signal="go" from="Tablet" to="." method="_on_Tablet_go"]
 [connection signal="button_down" from="speedup" to="." method="_on_speedup_button_down"]

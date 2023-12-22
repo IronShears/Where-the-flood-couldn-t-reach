@@ -7,7 +7,7 @@ var slotName2
 var slotStage2
 var slotName3
 var slotStage3
-var guyTaken = false
+var guyTaken
 
 
 # Called when the node enters the scene tree for the first time.
@@ -51,11 +51,13 @@ func _ready():
 					$lacemouth2Midlight.visible = true
 				elif slotName1 == "isopodRadiodontBait":
 					$slugPikaiid.visible = true
+					$slugPikaiidMidlight.visible = true
+					$slugPikaiidHighlight.visible = true
 					$graptolite.visible = true
 					$graptoliteHighlight.visible = true
 					$graptoliteMidlight.visible = true
 				elif slotName1 == "lacemouthBait":
-					if guyTaken == false:
+					if guyTaken != true:
 						$bigBoyPikaiid.visible = true
 						$bigBoyPikaiidMidlight.visible = true
 						$bigBoyPikaiidHighlight.visible = true
@@ -80,12 +82,14 @@ func _ready():
 					$lacemouth2Midlight.visible = true
 				elif slotName2 == "isopodRadiodontBait":
 					$slugPikaiid2.visible = true
+					$slugPikaiid2Midlight.visible = true
+					$slugPikaiid2Highlight.visible = true
 					$graptolite.visible = true
 					$graptoliteHighlight.visible = true
 					$graptoliteMidlight.visible = true
 				elif slotName2 == "lacemouthBait":
 					if slotName1 != "lacemouthBait":
-						if guyTaken == false:
+						if guyTaken != true:
 							$bigBoyPikaiid2.visible = true
 							$bigBoyPikaiid2Midlight.visible = true
 							$bigBoyPikaiid2Highlight.visible = true
@@ -110,12 +114,14 @@ func _ready():
 					$lacemouth2Midlight.visible = true
 				elif slotName3 == "isopodRadiodontBait":
 					$slugPikaiid3.visible = true
+					$slugPikaiid3Midlight.visible = true
+					$slugPikaiid3Highlight.visible = true
 					$graptolite.visible = true
 					$graptoliteHighlight.visible = true
 					$graptoliteMidlight.visible = true
 				elif slotName3 == "lacemouthBait":
-					if slotName1 != "lacemouthBait" and  slotName2 != "lacemouthBait":
-						if guyTaken == false:
+					if slotName1 != "lacemouthBait" and slotName2 != "lacemouthBait":
+						if guyTaken != true:
 							$bigBoyPikaiid3.visible = true
 							$bigBoyPikaiid3Midlight.visible = true
 							$bigBoyPikaiid3Highlight.visible = true
@@ -138,6 +144,7 @@ func dataLoad():
 		slotStage2 = data["slotStage2"]
 		slotName3 = data["slotName3"]
 		slotStage3 = data["slotStage3"]
+		guyTaken = data["guyTaken"]
 	$AnimationPlayer.play("load")
 	
 	
@@ -520,7 +527,7 @@ func _on_crabTrapCrinoid2_pressed():
 		return
 	if $AnimationPlayer.is_playing() == true:
 		return
-	if DataStorage.observedSpecies.has("lacemouth"):
+	if DataStorage.observedSpecies.has("lacemouth") and DataStorage.inventory.has("lacemouthBait") == false and $lacemouth.visible == true:
 		UniversalFunctions.actions(Vector2(253, 103),[$Actions/ActionRing/Look, $Actions/ActionRing/Use])
 		yield($Actions,"pressed")
 		if $Actions.selected == "Look":
@@ -650,8 +657,12 @@ func _on_slugPikaiid_pressed_data(node):
 	if $AnimationPlayer.is_playing() == true:
 		return
 	if DataStorage.observedSpecies.has("slugPikaiid") == true:
-		UniversalFunctions.play_dialogue_JSON("slugPikaiid1")
-		yield($Dialogue, "done")
+		if DataStorage.observedSpecies.has("bigBoyPikaiid"):
+			UniversalFunctions.play_dialogue_JSON("slugPikaiid1Late")
+			yield($Dialogue, "done")
+		else:
+			UniversalFunctions.play_dialogue_JSON("slugPikaiid1")
+			yield($Dialogue, "done")
 	else:
 		if DataStorage.observedSpecies.has("bigBoyPikaiid"):
 			UniversalFunctions.play_dialogue_JSON("slugPikaiid0Late")
@@ -659,8 +670,8 @@ func _on_slugPikaiid_pressed_data(node):
 		else:
 			UniversalFunctions.play_dialogue_JSON("slugPikaiid0")
 			yield($Dialogue, "done")
-		DataStorage.observedSpecies["slugPikaiid"] = 0
 		DataStorage.observedSpecies["lesserSlugPikaiid"] = 0
+		DataStorage.observedSpecies["slugPikaiid"] = 0
 
 func _on_giantPikaiid_pressed_data(node):
 	if UniversalFunctions.cutscene == true:
@@ -673,16 +684,24 @@ func _on_giantPikaiid_pressed_data(node):
 			UniversalFunctions.actions(Vector2(node.position.x+46, node.position.y+24),[$Actions/ActionRing/Look, $Actions/ActionRing/Take])
 			yield($Actions,"pressed")
 			if $Actions.selected == "Look":
-				UniversalFunctions.play_dialogue_JSON("bigBoyPikaiidLook1")
-				yield($Dialogue, "done")
+				if DataStorage.observedSpecies.has("slugPikaiid") == true:
+					UniversalFunctions.play_dialogue_JSON("bigBoyPikaiidLook1")
+					yield($Dialogue, "done")
+				else:
+					UniversalFunctions.play_dialogue_JSON("bigBoyPikaiidLook1Unique")
+					yield($Dialogue, "done")
 			elif $Actions.selected == "Take":
 				guyTaken = true
 				UniversalFunctions.pick_up([node, get_tree().get_root().get_node_or_null("/root/world/"+node.name+"Midlight"), get_tree().get_root().get_node_or_null("/root/world/"+node.name+"Highlight")], "bigBoyPikaiidBait")
 				UniversalFunctions.play_dialogue_JSON("bigBoyPikaiidTake")
 				yield($Dialogue, "done")
 		else:
-			UniversalFunctions.play_dialogue_JSON("bigBoyPikaiidLook1")
-			yield($Dialogue, "done")
+			if DataStorage.observedSpecies.has("slugPikaiid") == true:
+				UniversalFunctions.play_dialogue_JSON("bigBoyPikaiidLook1")
+				yield($Dialogue, "done")
+			else:
+				UniversalFunctions.play_dialogue_JSON("bigBoyPikaiidLook1Unique")
+				yield($Dialogue, "done")
 	else:
 		UniversalFunctions.play_dialogue_JSON("bigBoyPikaiidLook0")
 		yield($Dialogue, "done")

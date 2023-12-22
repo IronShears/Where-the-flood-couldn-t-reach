@@ -10,11 +10,18 @@ func _ready():
 	currentItem = null
 	combined = null
 	
+
+func _unhandled_key_input(_event):
+	if Input.is_action_pressed("ui_cancel"):
+			_on_close_pressed()
+	
 func update():
 	if mode == 1:
 		$Bag/ScrollContainer/GridContainer/Tablet.visible = false
+		$Bag/FlavorText.set_bbcode(UniversalFunctions.dialogueJson["useBagPrompt"])
 	else:
 		$Bag/ScrollContainer/GridContainer/Tablet.visible = true
+		$Bag/FlavorText.set_bbcode(UniversalFunctions.dialogueJson["combineBagPrompt"])
 	for i in items:
 		get_tree().get_root().get_node_or_null("/root/world/Bag/Bag/ScrollContainer/GridContainer/Item"+str(i)).visible = false
 	var num = 0

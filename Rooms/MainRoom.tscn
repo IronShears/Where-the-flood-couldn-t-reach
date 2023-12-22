@@ -354,15 +354,15 @@ region = Rect2( 15, 14, 15, 14 )
 
 [sub_resource type="SpriteFrames" id=160]
 animations = [ {
-"frames": [ ExtResource( 24 ) ],
-"loop": true,
-"name": "veinerWorm1",
-"speed": 5.0
-}, {
 "frames": [ SubResource( 455 ), SubResource( 456 ), SubResource( 457 ), SubResource( 458 ), SubResource( 459 ), SubResource( 460 ) ],
 "loop": true,
 "name": "veinerWorm0",
 "speed": 8.0
+}, {
+"frames": [ ExtResource( 24 ) ],
+"loop": true,
+"name": "veinerWorm1",
+"speed": 5.0
 } ]
 
 [sub_resource type="AtlasTexture" id=252]
@@ -476,27 +476,27 @@ region = Rect2( 204, 58, 68, 29 )
 
 [sub_resource type="SpriteFrames" id=413]
 animations = [ {
-"frames": [ SubResource( 401 ), SubResource( 402 ), SubResource( 403 ), SubResource( 404 ), SubResource( 405 ), SubResource( 406 ), SubResource( 407 ), SubResource( 408 ), SubResource( 409 ), SubResource( 410 ), SubResource( 411 ), SubResource( 412 ) ],
-"loop": true,
-"name": "bigBoyPikaiidBait0",
-"speed": 5.0
-}, {
 "frames": [  ],
 "loop": true,
 "name": "bigBoyPikaiidBait1",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 401 ), SubResource( 402 ), SubResource( 403 ), SubResource( 404 ), SubResource( 405 ), SubResource( 406 ), SubResource( 407 ), SubResource( 408 ), SubResource( 409 ), SubResource( 410 ), SubResource( 411 ), SubResource( 412 ) ],
+"loop": true,
+"name": "bigBoyPikaiidBait0",
 "speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=414]
 animations = [ {
-"frames": [ ExtResource( 50 ) ],
-"loop": true,
-"name": "lacemouthBait0",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 51 ) ],
 "loop": true,
 "name": "lacemouthBait1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 50 ) ],
+"loop": true,
+"name": "lacemouthBait0",
 "speed": 5.0
 } ]
 
@@ -624,14 +624,14 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=415]
 animations = [ {
-"frames": [ ExtResource( 49 ) ],
-"loop": true,
-"name": "lacemouthBait0",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 48 ) ],
 "loop": true,
 "name": "lacemouthBait1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 49 ) ],
+"loop": true,
+"name": "lacemouthBait0",
 "speed": 5.0
 } ]
 
@@ -685,15 +685,15 @@ region = Rect2( 309, 82, 103, 41 )
 
 [sub_resource type="SpriteFrames" id=428]
 animations = [ {
-"frames": [ SubResource( 416 ), SubResource( 417 ), SubResource( 418 ), SubResource( 419 ), SubResource( 420 ), SubResource( 421 ), SubResource( 422 ), SubResource( 423 ), SubResource( 424 ), SubResource( 425 ), SubResource( 426 ), SubResource( 427 ) ],
-"loop": true,
-"name": "bigBoyPikaiidBait0",
-"speed": 8.0
-}, {
 "frames": [  ],
 "loop": true,
 "name": "bigBoyPikaiidBait1",
 "speed": 5.0
+}, {
+"frames": [ SubResource( 416 ), SubResource( 417 ), SubResource( 418 ), SubResource( 419 ), SubResource( 420 ), SubResource( 421 ), SubResource( 422 ), SubResource( 423 ), SubResource( 424 ), SubResource( 425 ), SubResource( 426 ), SubResource( 427 ) ],
+"loop": true,
+"name": "bigBoyPikaiidBait0",
+"speed": 8.0
 } ]
 
 [sub_resource type="AtlasTexture" id=278]
@@ -1815,7 +1815,6 @@ script = ExtResource( 9 )
 
 [node name="Background" type="AnimatedSprite" parent="."]
 frames = SubResource( 75 )
-frame = 10
 playing = true
 centered = false
 
@@ -1853,7 +1852,7 @@ centered = false
 visible = false
 position = Vector2( 45, 89 )
 frames = SubResource( 388 )
-frame = 8
+frame = 9
 playing = true
 centered = false
 script = ExtResource( 11 )
@@ -1895,7 +1894,7 @@ visible = false
 position = Vector2( 39, 9 )
 frames = SubResource( 160 )
 animation = "veinerWorm0"
-frame = 2
+frame = 4
 playing = true
 centered = false
 script = ExtResource( 11 )
@@ -1921,7 +1920,8 @@ centered = false
 visible = false
 position = Vector2( 10, 0 )
 frames = SubResource( 413 )
-animation = "bigBoyPikaiidBait1"
+animation = "bigBoyPikaiidBait0"
+frame = 9
 playing = true
 centered = false
 
@@ -1974,7 +1974,8 @@ centered = false
 visible = false
 position = Vector2( -7, -10 )
 frames = SubResource( 428 )
-animation = "bigBoyPikaiidBait1"
+animation = "bigBoyPikaiidBait0"
+frame = 10
 playing = true
 centered = false
 
@@ -2006,14 +2007,14 @@ __meta__ = {
 visible = false
 position = Vector2( 190, 153 )
 frames = SubResource( 173 )
-frame = 8
+frame = 10
 playing = true
 script = ExtResource( 11 )
 
 [node name="isopodRadiodont" type="AnimatedSprite" parent="isopodRadiodont1"]
 position = Vector2( 13, -14 )
 frames = SubResource( 198 )
-frame = 2
+frame = 4
 playing = true
 script = ExtResource( 11 )
 
@@ -2029,7 +2030,7 @@ __meta__ = {
 [node name="isopodRadiodont1" type="AnimatedSprite" parent="isopodRadiodont1"]
 position = Vector2( 21, -2 )
 frames = SubResource( 173 )
-frame = 1
+frame = 3
 playing = true
 flip_h = true
 script = ExtResource( 11 )
@@ -2056,7 +2057,7 @@ __meta__ = {
 visible = false
 position = Vector2( 131, 170.5 )
 frames = SubResource( 441 )
-frame = 4
+frame = 6
 playing = true
 script = ExtResource( 11 )
 
@@ -2073,7 +2074,7 @@ __meta__ = {
 visible = false
 position = Vector2( 204, 139 )
 frames = SubResource( 454 )
-frame = 2
+frame = 4
 playing = true
 script = ExtResource( 11 )
 
@@ -2087,7 +2088,7 @@ margin_bottom = 9.0
 visible = false
 position = Vector2( 114, 181 )
 frames = SubResource( 338 )
-frame = 10
+frame = 11
 playing = true
 script = ExtResource( 11 )
 
@@ -2103,7 +2104,6 @@ __meta__ = {
 [node name="isopodRadiodont" type="AnimatedSprite" parent="isopodRadiodont2"]
 position = Vector2( 31, 2 )
 frames = SubResource( 351 )
-frame = 11
 playing = true
 flip_h = true
 script = ExtResource( 11 )
@@ -2121,7 +2121,7 @@ __meta__ = {
 visible = false
 position = Vector2( 145, 137 )
 frames = SubResource( 277 )
-frame = 3
+frame = 5
 playing = true
 centered = false
 script = ExtResource( 11 )
@@ -2139,7 +2139,7 @@ __meta__ = {
 visible = false
 position = Vector2( 126, 165 )
 frames = SubResource( 251 )
-frame = 21
+frame = 11
 playing = true
 centered = false
 script = ExtResource( 43 )
@@ -2218,14 +2218,13 @@ script = ExtResource( 11 )
 [node name="Water" type="AnimatedSprite" parent="TopRockLayer/TeaLily1"]
 show_behind_parent = true
 frames = SubResource( 100 )
-frame = 10
 playing = true
 centered = false
 
 [node name="TadpolePikaia" type="AnimatedSprite" parent="TopRockLayer/TeaLily1"]
 show_behind_parent = true
 frames = SubResource( 50 )
-frame = 14
+frame = 15
 playing = true
 centered = false
 script = ExtResource( 11 )
