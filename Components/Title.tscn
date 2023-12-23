@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=47 format=2]
 
 [ext_resource path="res://Source/RoomButtons.tres" type="Theme" id=1]
 [ext_resource path="res://Source/Title.gd" type="Script" id=2]
@@ -21,6 +21,9 @@
 [ext_resource path="res://Art/Backgrounds/backtrees.png" type="Texture" id=19]
 [ext_resource path="res://Art/Backgrounds/farBack.png" type="Texture" id=20]
 [ext_resource path="res://Art/Backgrounds/Animations/snowflake.png" type="Texture" id=21]
+[ext_resource path="res://Sounds/wind.mp3" type="AudioStream" id=22]
+[ext_resource path="res://Art/Backgrounds/Animations/candle.png" type="Texture" id=23]
+[ext_resource path="res://Art/Backgrounds/Animations/goodEnd.png" type="Texture" id=24]
 
 [sub_resource type="CanvasItemMaterial" id=9]
 particles_animation = true
@@ -233,6 +236,62 @@ orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 anim_speed = 3.76
 
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 23 )
+region = Rect2( 0, 0, 14, 21 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 23 )
+region = Rect2( 14, 0, 14, 21 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 23 )
+region = Rect2( 28, 0, 14, 21 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 23 )
+region = Rect2( 42, 0, 14, 21 )
+
+[sub_resource type="SpriteFrames" id=15]
+animations = [ {
+"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 24 )
+region = Rect2( 0, 0, 52, 48 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 24 )
+region = Rect2( 52, 0, 52, 48 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 24 )
+region = Rect2( 104, 0, 52, 48 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 24 )
+region = Rect2( 156, 0, 52, 48 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 24 )
+region = Rect2( 0, 48, 52, 48 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 24 )
+region = Rect2( 52, 48, 52, 48 )
+
+[sub_resource type="SpriteFrames" id=22]
+animations = [ {
+"frames": [ SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
 [sub_resource type="Animation" id=4]
 length = 0.001
 tracks/0/type = "value"
@@ -258,6 +317,18 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ambience:volume_db")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -80.0 ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -287,13 +358,24 @@ tracks/1/keys = {
 "update": 0,
 "values": [ true, true, false ]
 }
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ambience:volume_db")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1, 2.1, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ -80.0, -80.0, -20.0, 0.0 ]
+}
 
 [node name="world" type="Node2D"]
 material = SubResource( 9 )
 script = ExtResource( 2 )
 
 [node name="ViewportContainer" type="ViewportContainer" parent="."]
-visible = false
 margin_right = 300.0
 margin_bottom = 200.0
 __meta__ = {
@@ -303,7 +385,7 @@ __meta__ = {
 [node name="Viewport" type="Viewport" parent="ViewportContainer"]
 size = Vector2( 300, 200 )
 handle_input_locally = false
-render_target_update_mode = 0
+render_target_update_mode = 3
 
 [node name="FarBack" type="Sprite" parent="ViewportContainer/Viewport"]
 position = Vector2( 142, 105 )
@@ -484,6 +566,26 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="candle" type="AnimatedSprite" parent="ViewportContainer"]
+position = Vector2( 91, 85 )
+frames = SubResource( 15 )
+frame = 3
+playing = true
+
+[node name="candle2" type="AnimatedSprite" parent="ViewportContainer"]
+visible = false
+position = Vector2( 100, 88 )
+frames = SubResource( 15 )
+frame = 1
+playing = true
+
+[node name="goodEnd" type="AnimatedSprite" parent="ViewportContainer"]
+visible = false
+position = Vector2( 118, 84 )
+frames = SubResource( 22 )
+frame = 2
+playing = true
+
 [node name="Title" type="RichTextLabel" parent="ViewportContainer"]
 margin_left = 10.0
 margin_top = 8.0
@@ -520,6 +622,7 @@ margin_bottom = 14.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 margin_right = 301.0
 margin_bottom = 201.0
 color = Color( 0, 0, 0, 1 )
@@ -576,9 +679,15 @@ anims/load = SubResource( 2 )
 [node name="Cursor" parent="." instance=ExtResource( 6 )]
 
 [node name="Filter" type="Sprite" parent="."]
+visible = false
 material = ExtResource( 3 )
 texture = ExtResource( 4 )
 centered = false
+
+[node name="Ambience" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 22 )
+volume_db = -80.0
+autoplay = true
 
 [connection signal="pressed" from="ViewportContainer/ViewTablet" to="." method="_on_ViewTablet_pressed"]
 [connection signal="pressed" from="ViewportContainer/ToggleFilter" to="." method="_on_ToggleFilter_pressed"]

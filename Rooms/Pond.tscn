@@ -228,14 +228,14 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=121]
 animations = [ {
-"frames": [  ],
-"loop": true,
-"name": "driftWormBait1",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 7 ) ],
 "loop": true,
 "name": "driftWormBait0",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "driftWormBait1",
 "speed": 5.0
 } ]
 
@@ -321,14 +321,14 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=122]
 animations = [ {
-"frames": [ ExtResource( 9 ) ],
-"loop": true,
-"name": "isopodRadiodontBait1",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
 "name": "isopodRadiodontBait0",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "isopodRadiodontBait1",
 "speed": 5.0
 } ]
 
@@ -2327,9 +2327,9 @@ autoplay = true
 [connection signal="mouse_exited" from="Algae" to="ViewportContainer/Viewport/YSort2/Algae1" method="_on_item_mouse_exited"]
 [connection signal="pressed" from="Algae" to="." method="_on_Algae_pressed"]
 [connection signal="mouse_entered" from="crabTrapCrinoid" to="ViewportContainer/Viewport/YSort2/crabTrapCrinoid" method="_on_item_mouse_entered"]
-[connection signal="mouse_exited" from="crabTrapCrinoid" to="ViewportContainer/Viewport/YSort2/crabTrapCrinoid" method="_on_item_mouse_exited"]
+[connection signal="mouse_exited" from="crabTrapCrinoid" to="Midlight/Viewport/YSort/crabTrapCrinoid" method="_on_item_mouse_exited"]
 [connection signal="pressed" from="crabTrapCrinoid" to="." method="_on_crabTrapCrinoid_pressed"]
-[connection signal="mouse_entered" from="crabTrapCrinoid2" to="ViewportContainer/Viewport/YSort2/crabTrapCrinoid2" method="_on_item_mouse_entered"]
+[connection signal="mouse_entered" from="crabTrapCrinoid2" to="Midlight/Viewport/YSort/crabTrapCrinoid2" method="_on_item_mouse_entered"]
 [connection signal="mouse_exited" from="crabTrapCrinoid2" to="ViewportContainer/Viewport/YSort2/crabTrapCrinoid2" method="_on_item_mouse_exited"]
 [connection signal="pressed" from="crabTrapCrinoid2" to="." method="_on_crabTrapCrinoid2_pressed"]
 [connection signal="mouse_entered" from="Slot1/slotButon" to="Slot1/slotButon" method="_on_mouse_entered"]

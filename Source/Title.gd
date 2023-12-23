@@ -11,12 +11,15 @@ func _ready():
 	if DataStorage.filter != null:
 		$ViewportContainer.visible = true
 		$Filter.visible = DataStorage.filter
-		$AnimationPlayer.play("load")
-		$ViewportContainer.visible = true
 		$ViewportContainer/ToggleFilter.set_text(">"+UniversalFunctions.dialogueJson["filterToggle" + str(DataStorage.filter)])
 		$ViewportContainer/ViewTablet.set_text(">"+UniversalFunctions.dialogueJson["viewTablet"])
 		$ViewportContainer/NewGame.set_text(">"+UniversalFunctions.dialogueJson["newGame"])
 		$ViewportContainer/Title.set_bbcode(UniversalFunctions.dialogueJson["gameTitle"])
+		if DataStorage.ending == 4:
+			$ViewportContainer/candle2.visible = true
+		elif DataStorage.ending == 3:
+			$ViewportContainer/goodEnd.visible = true
+		$AnimationPlayer.play("load")
 		return
 	new_game()
 
