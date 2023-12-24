@@ -81,6 +81,16 @@ animations = [ {
 "name": "veinerWorm2",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 13 ) ],
+"loop": true,
+"name": "crackerEurypterid0",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 24 ) ],
+"loop": true,
+"name": "wiggleTrilobite0",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 25 ) ],
 "loop": true,
 "name": "wiggleTrilobite1",
@@ -96,11 +106,6 @@ animations = [ {
 "name": "isopodRadiodont",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 26 ) ],
-"loop": true,
-"name": "teaCupPikaiid",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 30 ) ],
 "loop": true,
 "name": "arthrocaris",
@@ -109,6 +114,11 @@ animations = [ {
 "frames": [ ExtResource( 19 ) ],
 "loop": true,
 "name": "teaLily",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 26 ) ],
+"loop": true,
+"name": "teaCupPikaiid",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 27 ) ],
@@ -131,6 +141,11 @@ animations = [ {
 "name": "crabTrapCrinoid",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 27 ) ],
+"loop": true,
+"name": "bigBoySlugPikaiid",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 17 ) ],
 "loop": true,
 "name": "mochiDonutGraptolite",
@@ -141,29 +156,14 @@ animations = [ {
 "name": "driftWorm",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 27 ) ],
-"loop": true,
-"name": "bigBoySlugPikaiid",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 18 ) ],
-"loop": true,
-"name": "letterBonePikaiid",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 22 ) ],
 "loop": true,
 "name": "lesserSlugPikaiid",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 24 ) ],
+"frames": [ ExtResource( 18 ) ],
 "loop": true,
-"name": "wiggleTrilobite0",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 13 ) ],
-"loop": true,
-"name": "crackerEurypterid0",
+"name": "letterBonePikaiid",
 "speed": 5.0
 } ]
 
@@ -196,7 +196,6 @@ script = ExtResource( 9 )
 
 [node name="Screen" type="AnimatedSprite" parent="."]
 frames = SubResource( 5 )
-frame = 2
 playing = true
 centered = false
 
@@ -617,6 +616,7 @@ margin_bottom = 193.0
 rect_min_size = Vector2( 109, 157 )
 theme = ExtResource( 7 )
 scroll_horizontal_enabled = false
+script = ExtResource( 14 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -630,6 +630,7 @@ size_flags_vertical = 3
 [node name="Title" type="RichTextLabel" parent="Species/VBoxContainer"]
 margin_right = 272.0
 margin_bottom = 16.0
+mouse_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_colors/default_color = Color( 0.309804, 0.501961, 0.627451, 1 )
@@ -646,6 +647,7 @@ __meta__ = {
 margin_top = 20.0
 margin_right = 272.0
 margin_bottom = 30.0
+mouse_filter = 1
 texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 2 )
 texture_hover = ExtResource( 1 )
@@ -658,6 +660,7 @@ __meta__ = {
 margin_top = 34.0
 margin_right = 272.0
 margin_bottom = 124.0
+mouse_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
@@ -692,6 +695,7 @@ __meta__ = {
 margin_top = 128.0
 margin_right = 272.0
 margin_bottom = 134.0
+mouse_filter = 1
 custom_fonts/font = SubResource( 8 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -705,7 +709,6 @@ animation = "arthrocaris"
 [node name="lines" type="AnimatedSprite" parent="."]
 modulate = Color( 1, 1, 1, 0.521569 )
 frames = SubResource( 13 )
-frame = 2
 playing = true
 centered = false
 

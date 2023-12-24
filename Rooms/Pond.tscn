@@ -228,14 +228,14 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=121]
 animations = [ {
-"frames": [ ExtResource( 7 ) ],
-"loop": true,
-"name": "driftWormBait0",
-"speed": 5.0
-}, {
 "frames": [  ],
 "loop": true,
 "name": "driftWormBait1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "driftWormBait0",
 "speed": 5.0
 } ]
 
@@ -308,27 +308,27 @@ shader_param/replace_9 = null
 
 [sub_resource type="SpriteFrames" id=146]
 animations = [ {
-"frames": [ ExtResource( 40 ) ],
-"loop": true,
-"name": "lacemouthBait1",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 30 ) ],
 "loop": true,
 "name": "lacemouthBait0",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 40 ) ],
+"loop": true,
+"name": "lacemouthBait1",
 "speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=122]
 animations = [ {
-"frames": [ ExtResource( 8 ) ],
-"loop": true,
-"name": "isopodRadiodontBait0",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 9 ) ],
 "loop": true,
 "name": "isopodRadiodontBait1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "isopodRadiodontBait0",
 "speed": 5.0
 } ]
 
@@ -1200,7 +1200,7 @@ centered = false
 
 [node name="pond" type="AnimatedSprite" parent="."]
 frames = SubResource( 55 )
-frame = 10
+frame = 6
 playing = true
 centered = false
 
@@ -1238,7 +1238,7 @@ light_mask = 2
 material = ExtResource( 60 )
 position = Vector2( 1, 0 )
 frames = SubResource( 40 )
-frame = 2
+frame = 10
 playing = true
 centered = false
 script = ExtResource( 66 )
@@ -1248,7 +1248,7 @@ light_mask = 2
 material = ExtResource( 60 )
 position = Vector2( 203, 167 )
 frames = SubResource( 13 )
-frame = 2
+frame = 10
 playing = true
 centered = false
 script = ExtResource( 66 )
@@ -1302,7 +1302,7 @@ light_mask = 2
 material = ExtResource( 359 )
 position = Vector2( 1, 0 )
 frames = SubResource( 40 )
-frame = 2
+frame = 10
 playing = true
 centered = false
 
@@ -1311,7 +1311,7 @@ light_mask = 2
 material = ExtResource( 359 )
 position = Vector2( 203, 167 )
 frames = SubResource( 13 )
-frame = 2
+frame = 10
 playing = true
 centered = false
 
@@ -1363,7 +1363,7 @@ light_mask = 2
 material = ExtResource( 360 )
 position = Vector2( 203, 167 )
 frames = SubResource( 13 )
-frame = 2
+frame = 10
 playing = true
 centered = false
 
@@ -2327,9 +2327,9 @@ autoplay = true
 [connection signal="mouse_exited" from="Algae" to="ViewportContainer/Viewport/YSort2/Algae1" method="_on_item_mouse_exited"]
 [connection signal="pressed" from="Algae" to="." method="_on_Algae_pressed"]
 [connection signal="mouse_entered" from="crabTrapCrinoid" to="ViewportContainer/Viewport/YSort2/crabTrapCrinoid" method="_on_item_mouse_entered"]
-[connection signal="mouse_exited" from="crabTrapCrinoid" to="Midlight/Viewport/YSort/crabTrapCrinoid" method="_on_item_mouse_exited"]
+[connection signal="mouse_exited" from="crabTrapCrinoid" to="ViewportContainer/Viewport/YSort2/crabTrapCrinoid" method="_on_item_mouse_exited"]
 [connection signal="pressed" from="crabTrapCrinoid" to="." method="_on_crabTrapCrinoid_pressed"]
-[connection signal="mouse_entered" from="crabTrapCrinoid2" to="Midlight/Viewport/YSort/crabTrapCrinoid2" method="_on_item_mouse_entered"]
+[connection signal="mouse_entered" from="crabTrapCrinoid2" to="ViewportContainer/Viewport/YSort2/crabTrapCrinoid2" method="_on_item_mouse_entered"]
 [connection signal="mouse_exited" from="crabTrapCrinoid2" to="ViewportContainer/Viewport/YSort2/crabTrapCrinoid2" method="_on_item_mouse_exited"]
 [connection signal="pressed" from="crabTrapCrinoid2" to="." method="_on_crabTrapCrinoid2_pressed"]
 [connection signal="mouse_entered" from="Slot1/slotButon" to="Slot1/slotButon" method="_on_mouse_entered"]
@@ -2342,22 +2342,22 @@ autoplay = true
 [connection signal="mouse_exited" from="Slot3/slotButon" to="Slot3/slotButon" method="_on_mouse_exited"]
 [connection signal="pressed" from="Slot3/slotButon" to="." method="_on_Slot3_pressed"]
 [connection signal="pressed_data" from="slugPikaiid" to="." method="_on_slugPikaiid_pressed_data"]
-[connection signal="mouse_entered" from="slugPikaiid/item" to="slugPikaiidHighlight" method="_on_item_mouse_entered"]
-[connection signal="mouse_entered" from="slugPikaiid/item" to="slugPikaiidHighlight/slugPikaiid" method="_on_item_mouse_entered"]
-[connection signal="mouse_exited" from="slugPikaiid/item" to="slugPikaiidHighlight" method="_on_item_mouse_exited"]
-[connection signal="mouse_exited" from="slugPikaiid/item" to="slugPikaiidHighlight/slugPikaiid" method="_on_item_mouse_exited"]
+[connection signal="mouse_entered" from="slugPikaiid/item" to="slugPikaiid" method="_on_item_mouse_entered"]
+[connection signal="mouse_entered" from="slugPikaiid/item" to="slugPikaiid/slugPikaiid" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="slugPikaiid/item" to="slugPikaiid" method="_on_item_mouse_exited"]
+[connection signal="mouse_exited" from="slugPikaiid/item" to="slugPikaiid/slugPikaiid" method="_on_item_mouse_exited"]
 [connection signal="pressed" from="slugPikaiid/item" to="slugPikaiid" method="_on_item_pressed"]
 [connection signal="pressed_data" from="slugPikaiid2" to="." method="_on_slugPikaiid_pressed_data"]
-[connection signal="mouse_entered" from="slugPikaiid2/item" to="slugPikaiidHighlight" method="_on_item_mouse_entered"]
-[connection signal="mouse_entered" from="slugPikaiid2/item" to="slugPikaiidHighlight/slugPikaiid" method="_on_item_mouse_entered"]
-[connection signal="mouse_exited" from="slugPikaiid2/item" to="slugPikaiidHighlight" method="_on_item_mouse_exited"]
-[connection signal="mouse_exited" from="slugPikaiid2/item" to="slugPikaiidHighlight/slugPikaiid" method="_on_item_mouse_exited"]
+[connection signal="mouse_entered" from="slugPikaiid2/item" to="slugPikaiid2" method="_on_item_mouse_entered"]
+[connection signal="mouse_entered" from="slugPikaiid2/item" to="slugPikaiid2/slugPikaiid" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="slugPikaiid2/item" to="slugPikaiid2" method="_on_item_mouse_exited"]
+[connection signal="mouse_exited" from="slugPikaiid2/item" to="slugPikaiid2/slugPikaiid" method="_on_item_mouse_exited"]
 [connection signal="pressed" from="slugPikaiid2/item" to="slugPikaiid2" method="_on_item_pressed"]
 [connection signal="pressed_data" from="slugPikaiid3" to="." method="_on_slugPikaiid_pressed_data"]
-[connection signal="mouse_entered" from="slugPikaiid3/item" to="slugPikaiidHighlight" method="_on_item_mouse_entered"]
-[connection signal="mouse_entered" from="slugPikaiid3/item" to="slugPikaiidHighlight/slugPikaiid" method="_on_item_mouse_entered"]
-[connection signal="mouse_exited" from="slugPikaiid3/item" to="slugPikaiidHighlight" method="_on_item_mouse_exited"]
-[connection signal="mouse_exited" from="slugPikaiid3/item" to="slugPikaiidHighlight/slugPikaiid" method="_on_item_mouse_exited"]
+[connection signal="mouse_entered" from="slugPikaiid3/item" to="slugPikaiid3" method="_on_item_mouse_entered"]
+[connection signal="mouse_entered" from="slugPikaiid3/item" to="slugPikaiid3/slugPikaiid" method="_on_item_mouse_entered"]
+[connection signal="mouse_exited" from="slugPikaiid3/item" to="slugPikaiid3" method="_on_item_mouse_exited"]
+[connection signal="mouse_exited" from="slugPikaiid3/item" to="slugPikaiid3/slugPikaiid" method="_on_item_mouse_exited"]
 [connection signal="pressed" from="slugPikaiid3/item" to="slugPikaiid3" method="_on_item_pressed"]
 [connection signal="pressed_data" from="bigBoyPikaiid" to="." method="_on_giantPikaiid_pressed_data"]
 [connection signal="mouse_entered" from="bigBoyPikaiid/item" to="bigBoyPikaiid" method="_on_item_mouse_entered"]

@@ -84,7 +84,7 @@ func _ready():
 					$wiggleTrilobite1.visible = true
 				elif slotName1 == "bigBoyPikaiidBait":
 					$Background/Arthrocaris.visible = true
-					if DataStorage.observedSpecies.has("arthrocaris"):
+					if DataStorage.observedSpecies.has("arthrocaris") == false:
 						yield($AnimationPlayer,"animation_finished")
 						UniversalFunctions.play_dialogue_JSON("arthrocarisDiscover0")
 						yield($Dialogue, "done")
@@ -116,7 +116,7 @@ func _ready():
 					$wiggleTrilobite2.visible = true
 				elif slotName2 == "bigBoyPikaiidBait":
 					$Background/Arthrocaris.visible = true
-					if DataStorage.observedSpecies.has("arthrocaris"):
+					if DataStorage.observedSpecies.has("arthrocaris") == false:
 						yield($AnimationPlayer,"animation_finished")
 						UniversalFunctions.play_dialogue_JSON("arthrocarisDiscover0")
 						yield($Dialogue, "done")

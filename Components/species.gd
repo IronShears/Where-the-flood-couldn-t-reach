@@ -28,11 +28,11 @@ func _on_species_pressed():
 		get_tree().get_root().get_node_or_null("/root/world/Tablet/Species/VBoxContainer/Text").set_bbcode(UniversalFunctions.dialogueJson[name+"Text"+ str(DataStorage.observedSpecies[name])])
 		var file = File.new()
 		if allImages.has(name+str(DataStorage.observedSpecies[name])):
-			get_tree().get_root().get_node_or_null("/root/world/Bag/Tablet/Species/VBoxContainer/image").visible = true
-			get_tree().get_root().get_node_or_null("/root/world/Bag/Tablet/Species/VBoxContainer/image").play(name+str(DataStorage.observedSpecies[name]))
+			get_tree().get_root().get_node_or_null("/root/worldTablet/Species/VBoxContainer/image").visible = true
+			get_tree().get_root().get_node_or_null("/root/world/Tablet/Species/VBoxContainer/image").play(name+str(DataStorage.observedSpecies[name]))
 		elif allImages.has(name):
-			get_tree().get_root().get_node_or_null("/root/world/Bag/Tablet/Species/VBoxContainer/image").visible = true
-			get_tree().get_root().get_node_or_null("/root/world/Bag/Tablet/Species/VBoxContainer/image").play(name)
+			get_tree().get_root().get_node_or_null("/root/world/Tablet/Species/VBoxContainer/image").visible = true
+			get_tree().get_root().get_node_or_null("/root/world/Tablet/Species/VBoxContainer/image").play(name)
 		else:
-			get_tree().get_root().get_node_or_null("/root/world/Bag/Tablet/Species/VBoxContainer/image").visible = false
-		get_tree().get_root().get_node_or_null("/root/world/Bag/Tablet/Species").visible = true
+			get_tree().get_root().get_node_or_null("/root/world/Tablet/Species/VBoxContainer/image").visible = false
+		get_tree().get_root().get_node_or_null("/root/world/Tablet/Species").visible = true

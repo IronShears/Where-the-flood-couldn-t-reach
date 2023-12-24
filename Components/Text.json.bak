@@ -81,7 +81,7 @@ All are descended from marine species that have split somewhere from 485-462 mya
 
 [color=#4f80a0]SCP-XXXX-1 was not initially noted during the first expedition. This space ie extensive and has obscured the diversity and scale of the ecosystem. The entire system has yet to be mapped.[/color]
 ",
-"caveEndTrue":"and SCP-XXXX-1",
+"caveEndTrue":"and [color=#4f80a0]SCP-XXXX-1[/color]",
 "caveEndFalse":"",
 
 "energySource0":"SCP-XXXX’s primary source of energy is currently unknown but results in the production of ketones, methane, and oxygen. The oxygen and methane content of the cave is elevated compared to the broader atmosphere of Earth but remains safely breathable. ",
@@ -287,7 +287,7 @@ sediment to reach
 soft-bodied
 invertebrates and decomposing algae. It shreds its meals into pieces and uses suction to consume them.
 
-This species belongs to the class [color=#4f80a0]Conodonta[/color], jawless fish commonly used as an index fossil and formerly believed to be extinct. It is currently the only vertebrate species class recorded within Miánhua cave.
+This species belongs to the class [color=#4f80a0]Conodonta[/color], jawless fish commonly used as an index fossil and formerly believed to be extinct. It is currently the only vertebrate species recorded within Miánhua cave.
 ",
 "lacemouthText1":"A jawless fish
 characterized by its
@@ -299,7 +299,7 @@ sediment to reach
 soft-bodied
 invertebrates and decomposing algae. It shreds its meals into pieces and uses suction to consume them. [color=#4f80a0]This species is also preyed upon by the carnivorous-plant like Crab Pot Crinoid.[/color]
 
-This species belongs to the class [color=#4f80a0]Conodonta[/color], jawless fish commonly used as an index fossil and formerly believed to be extinct. It is currently the only vertebrate species class recorded within Miánhua cave.
+This species belongs to the class [color=#4f80a0]Conodonta[/color], jawless fish commonly used as an index fossil and formerly believed to be extinct. It is currently the only vertebrate species recorded within Miánhua cave.
 ",
 
 "crackerEurypteridName":"\"Cracker Eurypterid\"",
@@ -1173,7 +1173,7 @@ where the flood couldn't reach.[/center]",
 
 "slugPikaiid1":[
 {"name":"null","text":"\"[color=#4f80a0]Slug Pikaiid[/color]\". A benthic cephalochordate species that feeds on detritus.","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Dr. Sanghera","text":"It has evolved convergently with [color=#4f80a0]Sea Slugs[/color].","tickSpeed":0.04,"type":"Dialogue"}
+{"name":"null","text":"It has evolved convergently with [color=#4f80a0]Sea Slugs[/color].","tickSpeed":0.04,"type":"Dialogue"}
 ],
 
 "slugPikaiid1Late":[

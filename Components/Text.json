@@ -287,7 +287,7 @@ sediment to reach
 soft-bodied
 invertebrates and decomposing algae. It shreds its meals into pieces and uses suction to consume them.
 
-This species belongs to the class [color=#4f80a0]Conodonta[/color], jawless fish commonly used as an index fossil and formerly believed to be extinct. It is currently the only vertebrate species class recorded within Miánhua cave.
+This species belongs to the class [color=#4f80a0]Conodonta[/color], jawless fish commonly used as an index fossil and formerly believed to be extinct. It is currently the only vertebrate species recorded within Miánhua cave.
 ",
 "lacemouthText1":"A jawless fish
 characterized by its
@@ -299,7 +299,7 @@ sediment to reach
 soft-bodied
 invertebrates and decomposing algae. It shreds its meals into pieces and uses suction to consume them. [color=#4f80a0]This species is also preyed upon by the carnivorous-plant like Crab Pot Crinoid.[/color]
 
-This species belongs to the class [color=#4f80a0]Conodonta[/color], jawless fish commonly used as an index fossil and formerly believed to be extinct. It is currently the only vertebrate species class recorded within Miánhua cave.
+This species belongs to the class [color=#4f80a0]Conodonta[/color], jawless fish commonly used as an index fossil and formerly believed to be extinct. It is currently the only vertebrate species recorded within Miánhua cave.
 ",
 
 "crackerEurypteridName":"\"Cracker Eurypterid\"",
@@ -1173,12 +1173,12 @@ where the flood couldn't reach.[/center]",
 
 "slugPikaiid1":[
 {"name":"null","text":"\"[color=#4f80a0]Slug Pikaiid[/color]\". A benthic cephalochordate species that feeds on detritus.","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Dr. Sanghera","text":"It has evolved convergently with [color=#4f80a0]Sea Slugs[/color].","tickSpeed":0.04,"type":"Dialogue"}
+{"name":"null","text":"It has evolved convergently with [color=#4f80a0]Sea Slugs[/color].","tickSpeed":0.04,"type":"Dialogue"}
 ],
 
 "slugPikaiid1Late":[
 {"name":"null","text":"\"[color=#4f80a0]Lesser Slug Pikaiid[/color]\". A benthic cephalochordate species that feeds on detritus.","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Dr. Sanghera","text":"It has evolved convergently with [color=#4f80a0]Sea Slugs[/color].","tickSpeed":0.04,"type":"Dialogue"}
+{"name":"null","text":"It has evolved convergently with [color=#4f80a0]Sea Slugs[/color].","tickSpeed":0.04,"type":"Dialogue"}
 ],
 
 

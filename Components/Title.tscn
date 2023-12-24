@@ -622,7 +622,6 @@ margin_bottom = 14.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-visible = false
 margin_right = 301.0
 margin_bottom = 201.0
 color = Color( 0, 0, 0, 1 )
@@ -679,7 +678,6 @@ anims/load = SubResource( 2 )
 [node name="Cursor" parent="." instance=ExtResource( 6 )]
 
 [node name="Filter" type="Sprite" parent="."]
-visible = false
 material = ExtResource( 3 )
 texture = ExtResource( 4 )
 centered = false
