@@ -100,12 +100,14 @@ func swap(item1, item2):
 	inventory.update()
 	
 func move(scene):
+	cutscene = true
 	animationPlayer.play_backwards("load")
 	yield(animationPlayer,"animation_finished")
 	soundEffects.stream = load("res://Sounds/Move.wav")
 	soundEffects.play()
 	yield(soundEffects,"finished")
 	get_tree().change_scene(scene)
+	cutscene = false
 	
 
 func actions(position, options):
