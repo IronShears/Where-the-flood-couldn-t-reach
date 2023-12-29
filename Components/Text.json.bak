@@ -1178,7 +1178,7 @@ where the flood couldn't reach.[/center]",
 
 "slugPikaiid1Late":[
 {"name":"null","text":"\"[color=#4f80a0]Lesser Slug Pikaiid[/color]\". A benthic cephalochordate species that feeds on detritus.","tickSpeed":0.04,"type":"Dialogue"},
-{"name":"Dr. Sanghera","text":"It has evolved convergently with [color=#4f80a0]Sea Slugs[/color].","tickSpeed":0.04,"type":"Dialogue"}
+{"name":"null","text":"It has evolved convergently with [color=#4f80a0]Sea Slugs[/color].","tickSpeed":0.04,"type":"Dialogue"}
 ],
 
 
@@ -1340,7 +1340,7 @@ FONTS
 
 Tablet Font: Dogica by Roberto Mocci(Open Font License)
 
-Strikethrough font:  Dogica by Roberto Mocci, edited by        	(Open Font License)
+Strikethrough font:  Dogica by Roberto Mocci, edited by IronShears(Open Font License)
    
 Dialogue Font: Basis33 by Manchson(MIT)
 
@@ -1353,7 +1353,7 @@ Foliage Shader: 2D wind sway by godotshaders(CC0)
 
 Highlight Palatteswap: Palette Swap (no recolor / recolor) by Exuin(CC0)
 
-All other code by     	 .
+All other code by IronShears.
 
 
 CRITIQUE
@@ -1362,14 +1362,14 @@ Helping me figure out if body looks like a body: My friend Koby :), Dr Asteria, 
 
 Crtique on Writing: Koby Again :) and Snapdragon(allegedly)
 
-Playtesting: Still Koby :), Snapdragon(allegedly), and     	 .
+Playtesting: Still Koby :), Snapdragon(allegedly), and IronShears.
 
 Biochem consultation: Seraphannim
 
 
 ART
 
-All art by     	 .
+All art by IronShears.
 
 
 

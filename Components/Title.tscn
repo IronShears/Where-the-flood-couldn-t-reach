@@ -569,20 +569,21 @@ __meta__ = {
 [node name="candle" type="AnimatedSprite" parent="ViewportContainer"]
 position = Vector2( 91, 85 )
 frames = SubResource( 15 )
+frame = 3
 playing = true
 
 [node name="candle2" type="AnimatedSprite" parent="ViewportContainer"]
 visible = false
 position = Vector2( 100, 88 )
 frames = SubResource( 15 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="goodEnd" type="AnimatedSprite" parent="ViewportContainer"]
 visible = false
 position = Vector2( 118, 84 )
 frames = SubResource( 22 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="Title" type="RichTextLabel" parent="ViewportContainer"]
