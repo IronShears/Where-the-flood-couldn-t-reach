@@ -14,6 +14,8 @@ config/name="where the flood couldn't reach"
 config/description="Some place quiet to rest your head."
 run/main_scene="res://Components/Title.tscn"
 config/icon="res://Components/Textures/isopodRadiodontBait.png"
+config/macos_native_icon="res://Art/isopodRadiodontBait.icns"
+config/windows_native_icon="res://Art/isopodRadiodontBait.ico"
 
 [autoload]
 

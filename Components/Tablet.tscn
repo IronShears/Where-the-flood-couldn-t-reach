@@ -76,11 +76,6 @@ font_data = ExtResource( 8 )
 
 [sub_resource type="SpriteFrames" id=17]
 animations = [ {
-"frames": [ ExtResource( 29 ) ],
-"loop": true,
-"name": "veinerWorm2",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 13 ) ],
 "loop": true,
 "name": "crackerEurypterid0",
@@ -91,24 +86,19 @@ animations = [ {
 "name": "wiggleTrilobite0",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 25 ) ],
-"loop": true,
-"name": "wiggleTrilobite1",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 23 ) ],
 "loop": true,
 "name": "crackerEurypterid1",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 28 ) ],
+"frames": [ ExtResource( 29 ) ],
 "loop": true,
-"name": "isopodRadiodont",
+"name": "veinerWorm2",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 30 ) ],
+"frames": [ ExtResource( 25 ) ],
 "loop": true,
-"name": "arthrocaris",
+"name": "wiggleTrilobite1",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 19 ) ],
@@ -116,14 +106,19 @@ animations = [ {
 "name": "teaLily",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 30 ) ],
+"loop": true,
+"name": "arthrocaris",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 26 ) ],
 "loop": true,
 "name": "teaCupPikaiid",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 27 ) ],
+"frames": [ ExtResource( 28 ) ],
 "loop": true,
-"name": "bigBoyPikaiid",
+"name": "isopodRadiodont",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 16 ) ],
@@ -136,14 +131,14 @@ animations = [ {
 "name": "lacemouth",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 27 ) ],
+"loop": true,
+"name": "bigBoyPikaiid",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 20 ) ],
 "loop": true,
 "name": "crabTrapCrinoid",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 27 ) ],
-"loop": true,
-"name": "bigBoySlugPikaiid",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 17 ) ],
@@ -159,6 +154,11 @@ animations = [ {
 "frames": [ ExtResource( 22 ) ],
 "loop": true,
 "name": "lesserSlugPikaiid",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 27 ) ],
+"loop": true,
+"name": "bigBoySlugPikaiid",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 18 ) ],
@@ -196,6 +196,7 @@ script = ExtResource( 9 )
 
 [node name="Screen" type="AnimatedSprite" parent="."]
 frames = SubResource( 5 )
+frame = 2
 playing = true
 centered = false
 
@@ -227,7 +228,7 @@ __meta__ = {
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MainScreen"]
 margin_right = 271.0
-margin_bottom = 204.0
+margin_bottom = 218.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
@@ -240,22 +241,38 @@ size_flags_vertical = 0
 theme = ExtResource( 7 )
 custom_colors/default_color = Color( 0.309804, 0.501961, 0.627451, 1 )
 bbcode_enabled = true
+text = "SCP-6684"
 fit_content_height = true
 scroll_active = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Text" type="RichTextLabel" parent="MainScreen/VBoxContainer"]
+[node name="BackButton" type="TextureButton" parent="MainScreen/VBoxContainer"]
 margin_top = 17.0
 margin_right = 271.0
-margin_bottom = 30.0
+margin_bottom = 27.0
+mouse_filter = 1
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 1 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text" type="RichTextLabel" parent="MainScreen/VBoxContainer"]
+margin_top = 31.0
+margin_right = 271.0
+margin_bottom = 44.0
 mouse_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 0
 theme = ExtResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
+bbcode_text = "blah blah blah blah whatever"
+text = "blah blah blah blah whatever"
 fit_content_height = true
 scroll_active = false
 __meta__ = {
@@ -263,9 +280,9 @@ __meta__ = {
 }
 
 [node name="describedSpecies" type="RichTextLabel" parent="MainScreen/VBoxContainer"]
-margin_top = 34.0
+margin_top = 48.0
 margin_right = 271.0
-margin_bottom = 47.0
+margin_bottom = 61.0
 mouse_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 0
@@ -279,9 +296,9 @@ __meta__ = {
 }
 
 [node name="crinoids" type="RichTextLabel" parent="MainScreen/VBoxContainer"]
-margin_top = 51.0
+margin_top = 65.0
 margin_right = 271.0
-margin_bottom = 64.0
+margin_bottom = 78.0
 mouse_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 0
@@ -295,8 +312,8 @@ __meta__ = {
 }
 
 [node name="teaLily" type="Button" parent="MainScreen/VBoxContainer"]
-margin_top = 68.0
-margin_bottom = 80.0
+margin_top = 82.0
+margin_bottom = 94.0
 focus_mode = 0
 mouse_filter = 1
 size_flags_horizontal = 0
@@ -310,8 +327,8 @@ __meta__ = {
 }
 
 [node name="crabTrapCrinoid" type="Button" parent="MainScreen/VBoxContainer"]
-margin_top = 84.0
-margin_bottom = 96.0
+margin_top = 98.0
+margin_bottom = 110.0
 focus_mode = 0
 mouse_filter = 1
 size_flags_horizontal = 0
@@ -325,9 +342,9 @@ __meta__ = {
 }
 
 [node name="hemichordates" type="RichTextLabel" parent="MainScreen/VBoxContainer"]
-margin_top = 100.0
+margin_top = 114.0
 margin_right = 271.0
-margin_bottom = 113.0
+margin_bottom = 127.0
 mouse_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 0
@@ -343,8 +360,8 @@ __meta__ = {
 }
 
 [node name="veinerWorm" type="Button" parent="MainScreen/VBoxContainer"]
-margin_top = 117.0
-margin_bottom = 129.0
+margin_top = 131.0
+margin_bottom = 143.0
 focus_mode = 0
 mouse_filter = 1
 size_flags_horizontal = 0
@@ -358,8 +375,8 @@ __meta__ = {
 }
 
 [node name="driftWorm" type="Button" parent="MainScreen/VBoxContainer"]
-margin_top = 133.0
-margin_bottom = 145.0
+margin_top = 147.0
+margin_bottom = 159.0
 focus_mode = 0
 mouse_filter = 1
 size_flags_horizontal = 0
@@ -389,9 +406,9 @@ __meta__ = {
 }
 
 [node name="chordates" type="RichTextLabel" parent="MainScreen/VBoxContainer"]
-margin_top = 149.0
+margin_top = 163.0
 margin_right = 271.0
-margin_bottom = 162.0
+margin_bottom = 176.0
 mouse_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 0
@@ -407,8 +424,8 @@ __meta__ = {
 }
 
 [node name="teaCupPikaiid" type="Button" parent="MainScreen/VBoxContainer"]
-margin_top = 166.0
-margin_bottom = 178.0
+margin_top = 180.0
+margin_bottom = 192.0
 focus_mode = 0
 mouse_filter = 1
 size_flags_horizontal = 0
@@ -422,8 +439,8 @@ __meta__ = {
 }
 
 [node name="letterBonePikaiid" type="Button" parent="MainScreen/VBoxContainer"]
-margin_top = 182.0
-margin_bottom = 194.0
+margin_top = 196.0
+margin_bottom = 208.0
 focus_mode = 0
 mouse_filter = 1
 size_flags_horizontal = 0
@@ -598,9 +615,9 @@ __meta__ = {
 }
 
 [node name="spacer" type="Label" parent="MainScreen/VBoxContainer"]
-margin_top = 198.0
+margin_top = 212.0
 margin_right = 271.0
-margin_bottom = 204.0
+margin_bottom = 218.0
 mouse_filter = 1
 custom_fonts/font = SubResource( 8 )
 __meta__ = {
@@ -709,10 +726,12 @@ animation = "arthrocaris"
 [node name="lines" type="AnimatedSprite" parent="."]
 modulate = Color( 1, 1, 1, 0.521569 )
 frames = SubResource( 13 )
+frame = 2
 playing = true
 centered = false
 
 [connection signal="pressed" from="Screen/BackButton" to="." method="_on_BackButton_pressed"]
+[connection signal="pressed" from="MainScreen/VBoxContainer/BackButton" to="." method="_on_BackButton_pressed"]
 [connection signal="pressed" from="MainScreen/VBoxContainer/teaLily" to="MainScreen/VBoxContainer/teaLily" method="_on_species_pressed"]
 [connection signal="pressed" from="MainScreen/VBoxContainer/crabTrapCrinoid" to="MainScreen/VBoxContainer/crabTrapCrinoid" method="_on_species_pressed"]
 [connection signal="pressed" from="MainScreen/VBoxContainer/veinerWorm" to="MainScreen/VBoxContainer/veinerWorm" method="_on_species_pressed"]

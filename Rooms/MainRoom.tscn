@@ -317,14 +317,14 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=200]
 animations = [ {
-"frames": [ ExtResource( 35 ) ],
-"loop": true,
-"name": "driftWormBait1",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 36 ) ],
 "loop": true,
 "name": "driftWormBait0",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 35 ) ],
+"loop": true,
+"name": "driftWormBait1",
 "speed": 5.0
 } ]
 
@@ -415,15 +415,15 @@ region = Rect2( 60, 38, 20, 19 )
 
 [sub_resource type="SpriteFrames" id=264]
 animations = [ {
-"frames": [ SubResource( 252 ), SubResource( 253 ), SubResource( 254 ), SubResource( 255 ), SubResource( 256 ), SubResource( 257 ), SubResource( 258 ), SubResource( 259 ), SubResource( 260 ), SubResource( 261 ), SubResource( 262 ), SubResource( 263 ) ],
-"loop": true,
-"name": "isopodRadiodontBait1",
-"speed": 8.0
-}, {
 "frames": [ ExtResource( 42 ) ],
 "loop": true,
 "name": "isopodRadiodontBait0",
 "speed": 5.0
+}, {
+"frames": [ SubResource( 252 ), SubResource( 253 ), SubResource( 254 ), SubResource( 255 ), SubResource( 256 ), SubResource( 257 ), SubResource( 258 ), SubResource( 259 ), SubResource( 260 ), SubResource( 261 ), SubResource( 262 ), SubResource( 263 ) ],
+"loop": true,
+"name": "isopodRadiodontBait1",
+"speed": 8.0
 } ]
 
 [sub_resource type="AtlasTexture" id=401]
@@ -476,40 +476,40 @@ region = Rect2( 204, 58, 68, 29 )
 
 [sub_resource type="SpriteFrames" id=413]
 animations = [ {
-"frames": [  ],
-"loop": true,
-"name": "bigBoyPikaiidBait1",
-"speed": 5.0
-}, {
 "frames": [ SubResource( 401 ), SubResource( 402 ), SubResource( 403 ), SubResource( 404 ), SubResource( 405 ), SubResource( 406 ), SubResource( 407 ), SubResource( 408 ), SubResource( 409 ), SubResource( 410 ), SubResource( 411 ), SubResource( 412 ) ],
 "loop": true,
 "name": "bigBoyPikaiidBait0",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "bigBoyPikaiidBait1",
 "speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=414]
 animations = [ {
-"frames": [ ExtResource( 50 ) ],
-"loop": true,
-"name": "lacemouthBait0",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 51 ) ],
 "loop": true,
 "name": "lacemouthBait1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 50 ) ],
+"loop": true,
+"name": "lacemouthBait0",
 "speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=201]
 animations = [ {
-"frames": [ ExtResource( 38 ) ],
-"loop": true,
-"name": "driftWormBait1",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 37 ) ],
 "loop": true,
 "name": "driftWormBait0",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 38 ) ],
+"loop": true,
+"name": "driftWormBait1",
 "speed": 5.0
 } ]
 
@@ -611,27 +611,27 @@ region = Rect2( 75, 160, 25, 32 )
 
 [sub_resource type="SpriteFrames" id=226]
 animations = [ {
-"frames": [ SubResource( 202 ), SubResource( 203 ), SubResource( 204 ), SubResource( 205 ), SubResource( 206 ), SubResource( 207 ), SubResource( 208 ), SubResource( 209 ), SubResource( 210 ), SubResource( 211 ), SubResource( 212 ), SubResource( 213 ), SubResource( 214 ), SubResource( 215 ), SubResource( 216 ), SubResource( 217 ), SubResource( 218 ), SubResource( 219 ), SubResource( 220 ), SubResource( 221 ), SubResource( 222 ), SubResource( 223 ), SubResource( 224 ), SubResource( 225 ) ],
-"loop": true,
-"name": "isopodRadiodontBait1",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 34 ) ],
 "loop": true,
 "name": "isopodRadiodontBait0",
 "speed": 8.0
+}, {
+"frames": [ SubResource( 202 ), SubResource( 203 ), SubResource( 204 ), SubResource( 205 ), SubResource( 206 ), SubResource( 207 ), SubResource( 208 ), SubResource( 209 ), SubResource( 210 ), SubResource( 211 ), SubResource( 212 ), SubResource( 213 ), SubResource( 214 ), SubResource( 215 ), SubResource( 216 ), SubResource( 217 ), SubResource( 218 ), SubResource( 219 ), SubResource( 220 ), SubResource( 221 ), SubResource( 222 ), SubResource( 223 ), SubResource( 224 ), SubResource( 225 ) ],
+"loop": true,
+"name": "isopodRadiodontBait1",
+"speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=415]
 animations = [ {
-"frames": [ ExtResource( 49 ) ],
-"loop": true,
-"name": "lacemouthBait0",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 48 ) ],
 "loop": true,
 "name": "lacemouthBait1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 49 ) ],
+"loop": true,
+"name": "lacemouthBait0",
 "speed": 5.0
 } ]
 
@@ -685,15 +685,15 @@ region = Rect2( 309, 82, 103, 41 )
 
 [sub_resource type="SpriteFrames" id=428]
 animations = [ {
-"frames": [  ],
-"loop": true,
-"name": "bigBoyPikaiidBait1",
-"speed": 5.0
-}, {
 "frames": [ SubResource( 416 ), SubResource( 417 ), SubResource( 418 ), SubResource( 419 ), SubResource( 420 ), SubResource( 421 ), SubResource( 422 ), SubResource( 423 ), SubResource( 424 ), SubResource( 425 ), SubResource( 426 ), SubResource( 427 ) ],
 "loop": true,
 "name": "bigBoyPikaiidBait0",
 "speed": 8.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "bigBoyPikaiidBait1",
+"speed": 5.0
 } ]
 
 [sub_resource type="AtlasTexture" id=278]
@@ -1815,7 +1815,7 @@ script = ExtResource( 9 )
 
 [node name="Background" type="AnimatedSprite" parent="."]
 frames = SubResource( 75 )
-frame = 2
+frame = 14
 playing = true
 centered = false
 
@@ -1853,7 +1853,7 @@ centered = false
 visible = false
 position = Vector2( 45, 89 )
 frames = SubResource( 388 )
-frame = 1
+frame = 2
 playing = true
 centered = false
 script = ExtResource( 11 )
@@ -1921,7 +1921,7 @@ visible = false
 position = Vector2( 10, 0 )
 frames = SubResource( 413 )
 animation = "bigBoyPikaiidBait0"
-frame = 1
+frame = 2
 playing = true
 centered = false
 
@@ -2086,7 +2086,7 @@ margin_bottom = 9.0
 visible = false
 position = Vector2( 114, 181 )
 frames = SubResource( 338 )
-frame = 3
+frame = 4
 playing = true
 script = ExtResource( 11 )
 
@@ -2102,7 +2102,7 @@ __meta__ = {
 [node name="isopodRadiodont" type="AnimatedSprite" parent="isopodRadiodont2"]
 position = Vector2( 31, 2 )
 frames = SubResource( 351 )
-frame = 4
+frame = 5
 playing = true
 flip_h = true
 script = ExtResource( 11 )
@@ -2138,7 +2138,7 @@ __meta__ = {
 visible = false
 position = Vector2( 126, 165 )
 frames = SubResource( 251 )
-frame = 13
+frame = 1
 playing = true
 centered = false
 script = ExtResource( 43 )
@@ -2217,14 +2217,14 @@ script = ExtResource( 11 )
 [node name="Water" type="AnimatedSprite" parent="TopRockLayer/TeaLily1"]
 show_behind_parent = true
 frames = SubResource( 100 )
-frame = 2
+frame = 14
 playing = true
 centered = false
 
 [node name="TadpolePikaia" type="AnimatedSprite" parent="TopRockLayer/TeaLily1"]
 show_behind_parent = true
 frames = SubResource( 50 )
-frame = 7
+frame = 8
 playing = true
 centered = false
 script = ExtResource( 11 )
